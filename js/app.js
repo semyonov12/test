@@ -2,11 +2,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 	// бургер меню
 	let burger = document.querySelector(".burger-menu");
+	let close = document.querySelector(".menu__close");
 	let documentBody = document.documentElement;
 
 	function menuOpen() {
-		documentBody.classList.toggle("lock");
-		documentBody.classList.toggle("menu-open");
+		documentBody.classList.add("lock");
+		documentBody.classList.add("menu-open");
 	};
 
 	function menuClose() {
@@ -18,6 +19,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
 	if (burger) {
 		burger.addEventListener("click", function () {
 			menuOpen();
+		});
+	}
+
+	if (close) {
+		close.addEventListener("click", function () {
+			menuClose();
 		});
 	}
 
