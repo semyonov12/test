@@ -940,7 +940,7 @@ body {
   .menu {
     overflow: auto;
     background: #252850;
-    position: absolute;
+    position: fixed;
     right: -100%;
     top: 0;
     height: 0;
