@@ -102,10 +102,6 @@ body {
 
 .lock body {
   overflow: hidden;
-  -ms-touch-action: none;
-  touch-action: none;
-  -ms-scroll-chaining: none;
-  overscroll-behavior: none;
 }
 
 [class*=__container] {
@@ -127,12 +123,6 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
-}
-
-@supports (overflow: clip) {
-  .wrapper {
-    overflow: clip;
-  }
 }
 
 .wrapper > main {
