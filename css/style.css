@@ -206,14 +206,6 @@ body {
   opacity: 0;
 }
 
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 6;
-}
-
 .header__top {
   background-color: #252850;
   padding: 1.5625rem 0;
