@@ -154,11 +154,6 @@ body {
   font-size: 1.5rem;
 }
 
-.menu {
-  position: relative;
-  z-index: 5;
-}
-
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,6 +199,14 @@ body {
 
 .menu-open .burger-menu span {
   opacity: 0;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 6;
 }
 
 .header__top {
@@ -935,8 +938,6 @@ body {
     position: fixed;
     right: -100%;
     top: 0;
-    height: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
     padding: 9.375rem 1.25rem 2.5rem;
