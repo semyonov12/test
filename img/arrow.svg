@@ -1,0 +1,7 @@
+<svg id="Группа_2" data-name="Группа 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="22" viewBox="0 0 30 22">
+  <defs>
+    <image id="image" width="30" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAPCAYAAADzun+cAAABeElEQVQ4jWJQUlJcqqSkKMpAJwCyS0lJcSkAAAD//2JiYGAoYGBgmEgPy6F2TGRgYCgAAAAA//+CCygpKc6hpeUodjAwMAAAAAD//0KW4FdSUpynpKQoQwNLZaBm84MFGBgYAAAAAP//wmY5KM6pZjnUUpCZCEsZGBgAAAAA///CZflialgOtRRkFqqlDAwMAAAAAP//wqWBS0lJcZaSkqIsBZbKQs3gwpBkYGAAAAAA//8iZPkiJSVFFTIsVYHqxW4pAwMDAAAA//+iuuVEWcrAwAAAAAD//yLW8pnEWA61FKQWv6UMDAwAAAAA//8i1nI2JSXFaUpKijp41OhA1bARNJCBgQEAAAD//yLV8rlKSoq6WOR0oXLEWcrAwAAAAAD//yLHclDpA7ccailIjHhLGRgYAAAAAP//YiTVdiUlRWYGBoZeBgaGuVChZAYGhuJ79+7/JdoQBgYGAAAAAP//ItliJMsXQLkJpFrKwMDAAAAAAP//AwDfQDyFJ0w6agAAAABJRU5ErkJggg=="/>
+  </defs>
+  <use id="Векторный_смарт-объект" data-name="Векторный смарт-объект" y="7" xlink:href="#image"/>
+  <use id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" xlink:href="#image"/>
+</svg>
