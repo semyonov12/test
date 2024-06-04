@@ -433,7 +433,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 3.75rem;
+  margin-bottom: 3.125rem;
   overflow: auto;
   padding-bottom: 0.3125rem;
 }
@@ -747,6 +747,10 @@ body {
     font-size: 1.375rem;
   }
 
+  .hero__button {
+    margin-bottom: 6.25rem;
+  }
+
   .blog__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -912,19 +916,22 @@ body {
 
   .works {
     padding-top: 1.875rem;
-    padding-bottom: 3.125rem;
+    padding-bottom: 2.5rem;
   }
 
   .works__navigation {
     margin-bottom: 1.25rem;
     margin-right: -0.9375rem;
-    padding-right: 0.9375rem;
     margin-left: -0.9375rem;
     padding-left: 0.9375rem;
   }
 
   .works__title {
     font-size: 1.125rem;
+  }
+
+  .works__title:last-child {
+    margin-right: 0.9375rem;
   }
 
   .works__content {
@@ -938,7 +945,7 @@ body {
   }
 
   .about {
-    padding-bottom: 4.375rem;
+    padding-bottom: 3.125rem;
   }
 
   .about__top {
@@ -948,7 +955,7 @@ body {
 
   .about__title {
     font-size: 1.5rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.9375rem;
   }
 
   .about__text {
@@ -960,12 +967,12 @@ body {
   }
 
   .blog {
-    padding-bottom: 4.375rem;
+    padding-bottom: 3.125rem;
     padding-top: 0.625rem;
   }
 
   .blog__article:not(:last-child) {
-    margin-bottom: 3.125rem;
+    margin-bottom: 2.5rem;
   }
 
   .blog__image {
@@ -973,7 +980,7 @@ body {
   }
 
   .blog__date {
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.9375rem;
     font-size: 0.8125rem;
   }
 
@@ -984,7 +991,7 @@ body {
 
   .blog__text {
     font-size: 1rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5625rem;
   }
 
   .blog__link {
