@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Главная</title>
+	<title>Nina Ostrikova</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 	<!-- стили -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240604135314">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20240604183301">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240604183301">
 	<!-- фавикон -->
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	
@@ -16,39 +17,260 @@
 </head>
 
 <body>
-	<div class="wrapper" id="wrapper">
+	<div class="wrapper">
 		<header class="header" id="header">
 	<div class="header__container">
-			<a href="/" class="header__logo">
-				<img src="@img" alt="логотип">
-			</a>
-			<nav class="header__menu menu">
-				<ul class="menu__list">
-					<li class="menu__item"><a href="#" class="menu__link">пункт1</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">пункт2</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">пункт3</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">пункт4</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">пункт5</a></li>
-				</ul>
-			</nav>
-			<button type="button" class="header__burger burger-menu"><span></span></button>
+		<ul class="header__action">
+			<li>
+				<a href="#" class="header__link">
+					<img src="img/s-1.svg" alt="Иконка">
+				</a>
+			</li>
+			<li>
+				<a href="#" class="header__link">
+					<img src="img/s-2.svg" alt="Иконка">
+				</a>
+			</li>
+			<li>
+				<a href="#" class="header__link">
+					<img src="img/s-3.svg" alt="Иконка">
+				</a>
+			</li>
+		</ul>
+		<nav class="header__menu menu">
+			<ul class="menu__list">
+				<li class="menu__item"><a href="about.html" class="menu__link">Обо мне</a></li>
+				<li class="menu__item"><a href="index.html" class="menu__link">Портфолио</a></li>
+				<li class="menu__item"><a href="blog.html" class="menu__link">Блог</a></li>
+			</ul>
+			<button type="button" class="menu__close"></button>
+		</nav>
+		<ul class="header__social">
+			<li>
+				<a href="#" class="header__item-social">
+					<img src="img/instagram.svg" alt="Иконка">
+				</a>
+			</li>
+			<li>
+				<a href="#" class="header__item-social">
+					<img src="img/vk.svg" alt="Иконка">
+				</a>
+			</li>
+		</ul>
+		<button type="button" class="header__burger burger-menu"><span></span></button>
 	</div>
 </header>
 		<main class="page" id="main">
 			<section class="hero">
 				<div class="hero__container">
+					<div class="hero__main">
+						<h1 class="hero__title">Nina Ostrikova</h1>
+						<div class="hero__sub-title">Графический дизайнер</div>
+						<img src="img/logo.svg" alt="Логотип">
+					</div>
+					<a href="#" class="hero__button">
+						<span>портфолио</span>
+						<img src="img/arrow.svg" alt="Стрелка">
+					</a>
 				</div>
 			</section>
+			<div class="works">
+				<div class="works__container">
+					<div class="works__navigation">
+						<button type="button" class="works__title filter-active" data-filter="*">Все</button>
+						<button type="button" class="works__title" data-filter=".logos">Логотипы</button>
+						<button type="button" class="works__title" data-filter=".branded">Фирменный стиль</button>
+						<button type="button" class="works__title" data-filter=".polygraphy">Полиграфия</button>
+						<button type="button" class="works__title" data-filter=".web">Веб-дизайн</button>
+					</div>
+					<div class="works__content" data-iso-items>
+						<div data-popup="#work-1" data-iso-item class="works__item branded">
+							<img src="img/works1.webp" alt="Картинка">
+						</div>
+						<div data-popup="#work-2" data-iso-item class="works__item web">
+							<img src="img/works2.webp" alt="Картинка">
+						</div>
+						<div data-popup="#work-3" data-iso-item class="works__item logos">
+							<img src="img/works3.webp" alt="Картинка">
+						</div>
+						<div data-popup="#work-4" data-iso-item class="works__item logos">
+							<img src="img/works4.webp" alt="Картинка">
+						</div>
+						<div data-popup="#work-5" data-iso-item class="works__item web">
+							<img src="img/works5.webp" alt="Картинка">
+						</div>
+						<div data-popup="#work-6" data-iso-item class="works__item polygraphy">
+							<img src="img/works6.webp" alt="Картинка">
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer" id="footer">
 	<div class="footer__container">
-
+<a href="mailto:oninap@mail.ru" class="footer__mail">oninap@mail.ru</a>
+<ul class="footer__social">
+	<li class="footer__item-social">
+		<a href="#" class="footer__link">
+			<img src="img/s-2.svg" alt="Иконка">
+		</a>
+	</li>
+	<li class="footer__item-social">
+		<a href="#" class="footer__link">
+			<img src="img/s-1.svg" alt="Иконка">
+		</a>
+	</li>
+	<li class="footer__item-social">
+		<a href="#" class="footer__link">
+			<img src="img/instagram-white.svg" alt="Иконка">
+		</a>
+	</li>
+	<li class="footer__item-social">
+		<a href="#" class="footer__link">
+			<img src="img/vk-white.svg" alt="Иконка">
+		</a>
+	</li>
+</ul>
 	</div>
 </footer>
 	</div>
+<div id="work-1" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__slider swiper">
+				<div class="popup__wrapper swiper-wrapper">	
+					<div class="popup__slide swiper-slide">
+						<img src="img/works1-1.webp" alt="Картинка">
+					</div>
+					<div class="popup__slide swiper-slide">
+						<img src="img/works1-2.webp" alt="Картинка">
+					</div>
+				</div>
+				<button type="button" class="popup__prev swiper-button-prev">
+					<img src="img/arrow-slider.svg" alt="Стрелка">
+				</button>
+				<button type="button" class="popup__next swiper-button-next">
+					<img src="img/arrow-slider.svg" alt="Стрелка">
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="work-2" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__slider swiper">
+				<div class="popup__wrapper swiper-wrapper">	
+					<div class="popup__slide swiper-slide">
+						<img src="img/works4.webp" alt="Картинка">
+					</div>
+					<div class="popup__slide swiper-slide">
+						<img src="img/works3.webp" alt="Картинка">
+					</div>
+				</div>
+				<button type="button" class="popup__prev swiper-button-prev">
+					<img src="img/arrow-slider.svg" alt="Стрелка">
+				</button>
+				<button type="button" class="popup__next swiper-button-next">
+					<img src="img/arrow-slider.svg" alt="Стрелка">
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="work-3" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__slider swiper">
+				<div class="popup__wrapper swiper-wrapper">	
+					<div class="popup__slide swiper-slide">
+						<img src="img/works1-1.webp" alt="Картинка">
+					</div>
+					<div class="popup__slide swiper-slide">
+						<img src="img/works1-2.webp" alt="Картинка">
+					</div>
+				</div>
+				<button type="button" class="popup__prev swiper-button-prev">
+					<img src="img/arrow-slider.svg" alt="Стрелка">
+				</button>
+				<button type="button" class="popup__next swiper-button-next">
+					<img src="img/arrow-slider.svg" alt="Стрелка">
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="work-4" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__slider swiper">
+				<div class="popup__wrapper swiper-wrapper">	
+					<div class="popup__slide swiper-slide">
+						<img src="img/works1-1.webp" alt="Картинка">
+					</div>
+					<div class="popup__slide swiper-slide">
+						<img src="img/works1-2.webp" alt="Картинка">
+					</div>
+				</div>
+				<button type="button" class="popup__prev swiper-button-prev">
+					<img src="img/arrow-slider.svg" alt="Стрелка">
+				</button>
+				<button type="button" class="popup__next swiper-button-next">
+					<img src="img/arrow-slider.svg" alt="Стрелка">
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="work-5" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__slider swiper">
+				<div class="popup__wrapper swiper-wrapper">	
+					<div class="popup__slide swiper-slide">
+						<img src="img/works1-1.webp" alt="Картинка">
+					</div>
+					<div class="popup__slide swiper-slide">
+						<img src="img/works1-2.webp" alt="Картинка">
+					</div>
+				</div>
+				<button type="button" class="popup__prev swiper-button-prev">
+					<img src="img/arrow-slider.svg" alt="Стрелка">
+				</button>
+				<button type="button" class="popup__next swiper-button-next">
+					<img src="img/arrow-slider.svg" alt="Стрелка">
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="work-6" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__slider swiper">
+				<div class="popup__wrapper swiper-wrapper">	
+					<div class="popup__slide swiper-slide">
+						<img src="img/works1-1.webp" alt="Картинка">
+					</div>
+					<div class="popup__slide swiper-slide">
+						<img src="img/works1-2.webp" alt="Картинка">
+					</div>
+				</div>
+				<button type="button" class="popup__prev swiper-button-prev">
+					<img src="img/arrow-slider.svg" alt="Стрелка">
+				</button>
+				<button type="button" class="popup__next swiper-button-next">
+					<img src="img/arrow-slider.svg" alt="Стрелка">
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 
-	<script src="js/app.js?_v=20240604135314"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20240604183301"></script>
+<script src="js/isotope.pkgd.min.js?_v=20240604183301"></script>
+<script src="js/app.js?_v=20240604183301"></script>
 </body>
 
 </html>
