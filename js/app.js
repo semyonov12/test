@@ -1,16 +1,27 @@
-window.addEventListener('resize', () => {
-	// We execute the same script as before
-	let vh = window.innerHeight * 0.01;
-	document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
-
-/* Проверка мобильного браузера */
-let isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
-
-// Добавление класса _touch для HTML если браузер мобильный
-if (isMobile.any()) document.documentElement.classList.add('touch');
 
 document.addEventListener("DOMContentLoaded", function (e) {
+
+		/* Проверка мобильного браузера */
+		let isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
+	
+		// Добавление класса _touch для HTML если браузер мобильный
+		if (isMobile.any()) document.documentElement.classList.add('touch');
+
+	function fullVHfix() {
+		const fullScreens = document.querySelectorAll('[data-fullscreen]');
+		if (fullScreens.length && isMobile.any()) {
+			window.addEventListener('resize', fixHeight);
+			function fixHeight() {
+				let vh = window.innerHeight * 0.01;
+				document.documentElement.style.setProperty('--vh', `${vh}px`);
+			}
+			fixHeight();
+		}
+	}
+	
+	
+	fullVHfix();
+	
 
 	// бургер меню
 	let burger = document.querySelector(".burger-menu");
