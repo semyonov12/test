@@ -146,9 +146,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   row-gap: 0.625rem;
@@ -185,6 +182,30 @@ body {
   opacity: 0;
 }
 
+.header {
+  position: relative;
+  z-index: 6;
+  padding: 1.25rem 0;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2.5rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header__logo {
+  position: relative;
+  z-index: 8;
+}
+
 main {
   height: 312.5rem;
 }
@@ -206,24 +227,6 @@ main {
     transition: right 0.5s ease;
   }
 
-  .menu::before {
-    content: "";
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 3.125rem;
-    top: 0;
-    right: -100%;
-    -webkit-transition: right 0.5s ease 0s;
-    transition: right 0.5s ease 0s;
-    background-color: #7A956B;
-    z-index: 7;
-  }
-
-  .menu-open .menu::before {
-    right: 0;
-  }
-
   .menu-open .menu {
     right: 0;
   }
@@ -237,7 +240,7 @@ main {
   }
 
   .menu__link {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
   }
 
   .burger-menu {
@@ -294,6 +297,24 @@ main {
     opacity: 1;
     -webkit-transition: opacity 0.3s ease 0s;
     transition: opacity 0.3s ease 0s;
+  }
+
+  .header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    -webkit-transition: right 0.5s ease 0s;
+    transition: right 0.5s ease 0s;
+    background-color: #7A956B;
+    z-index: 7;
+  }
+
+  .menu-open .header::before {
+    right: 0;
   }
 }
 
