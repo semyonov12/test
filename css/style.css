@@ -748,7 +748,7 @@ body {
   }
 
   .hero__button {
-    margin-bottom: 6.25rem;
+    margin-bottom: 3.75rem;
   }
 
   .blog__container {
@@ -915,23 +915,17 @@ body {
   }
 
   .works {
-    padding-top: 1.875rem;
+    padding-top: 1.25rem;
     padding-bottom: 2.5rem;
   }
 
   .works__navigation {
     margin-bottom: 1.25rem;
-    margin-right: -0.9375rem;
-    margin-left: -0.9375rem;
-    padding-left: 0.9375rem;
+    gap: 1.25rem;
   }
 
   .works__title {
     font-size: 1.125rem;
-  }
-
-  .works__title:last-child {
-    margin-right: 0.9375rem;
   }
 
   .works__content {
