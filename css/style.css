@@ -185,6 +185,10 @@ body {
   opacity: 0;
 }
 
+main {
+  height: 312.5rem;
+}
+
 @media (max-width: 47.99875em) {
   .menu {
     overflow: auto;
