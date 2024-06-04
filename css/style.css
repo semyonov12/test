@@ -418,8 +418,7 @@ body {
 .works {
   max-width: 83.75rem;
   margin: 0 auto;
-  padding-top: 3.125rem;
-  padding-bottom: 4.375rem;
+  padding: 4.375rem 0;
 }
 
 .works__navigation {
@@ -748,7 +747,7 @@ body {
   }
 
   .hero__button {
-    margin-bottom: 3.75rem;
+    margin-bottom: 4.375rem;
   }
 
   .blog__container {
