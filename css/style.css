@@ -341,10 +341,6 @@ body {
   text-align: center;
 }
 
-.touch .hero__container {
-  min-height: calc(var(--vh, 1vh) * 100 - 4.8125rem);
-}
-
 .hero__main {
   position: relative;
   -ms-grid-row-span: 2;
@@ -888,9 +884,8 @@ body {
     gap: 0.9375rem;
   }
 
-  .touch .hero__container {
-    -webkit-transition: min-height 0.2s;
-    transition: min-height 0.2s;
+  .hero__container {
+    min-height: calc(100vh - 7.5rem);
   }
 
   .hero__main {
@@ -912,6 +907,7 @@ body {
   .hero__button {
     gap: 0.625rem;
     font-size: 1rem;
+    margin-bottom: 3.125rem;
   }
 
   .hero__button img {
