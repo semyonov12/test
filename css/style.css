@@ -889,8 +889,8 @@ body {
   }
 
   .touch .hero__container {
-    -webkit-transition: height 0.2s;
-    transition: height 0.2s;
+    -webkit-transition: min-height 0.2s;
+    transition: min-height 0.2s;
   }
 
   .hero__main {
