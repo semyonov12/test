@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="sv">
 <head>
-	<title>Nina Ostrikova</title>
+	<title>Hemply</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 	<!-- стили -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20240604183301">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240604183301">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20240610152302">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240610152302">
 	<!-- фавикон -->
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	
@@ -17,260 +17,633 @@
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper" id="wrapper">
 		<header class="header" id="header">
 	<div class="header__container">
-		<ul class="header__action">
-			<li>
-				<a href="#" class="header__link">
-					<img src="img/s-1.svg" alt="Иконка">
-				</a>
-			</li>
-			<li>
-				<a href="#" class="header__link">
-					<img src="img/s-2.svg" alt="Иконка">
-				</a>
-			</li>
-			<li>
-				<a href="#" class="header__link">
-					<img src="img/s-3.svg" alt="Иконка">
-				</a>
-			</li>
-		</ul>
-		<nav class="header__menu menu">
-			<ul class="menu__list">
-				<li class="menu__item"><a href="about.html" class="menu__link">Обо мне</a></li>
-				<li class="menu__item"><a href="index.html" class="menu__link">Портфолио</a></li>
-				<li class="menu__item"><a href="blog.html" class="menu__link">Блог</a></li>
-			</ul>
-			<button type="button" class="menu__close"></button>
-		</nav>
-		<ul class="header__social">
-			<li>
-				<a href="#" class="header__item-social">
-					<img src="img/instagram.svg" alt="Иконка">
-				</a>
-			</li>
-			<li>
-				<a href="#" class="header__item-social">
-					<img src="img/vk.svg" alt="Иконка">
-				</a>
-			</li>
-		</ul>
-		<button type="button" class="header__burger burger-menu"><span></span></button>
+		<div class="header__body">
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo">
+			</a>
+			<nav class="header__menu menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a data-goto=".wrapper" href="#" class="menu__link">Hem</a></li>
+					<li class="menu__item"><a data-goto=".effect" href="#" class="menu__link">Effekt</a></li>
+					<li class="menu__item"><a data-goto=".ingredient" href="#" class="menu__link">Ingredienser</a></li>
+					<li class="menu__item"><a data-goto=".use" href="#" class="menu__link">Användning</a></li>
+					<li class="menu__item"><a data-goto=".before" href="#" class="menu__link">Före/Efter</a></li>
+					<li class="menu__item"><a data-goto=".faq" href="#" class="menu__link">FAQ</a></li>
+				</ul>
+				<button data-goto="#to-form" type="button" class="menu__button">BÖRJA IDAG</button>
+			</nav>
+			<button type="button" class="header__burger burger-menu"><span></span></button>
+		</div>
 	</div>
 </header>
 		<main class="page" id="main">
 			<section class="hero">
 				<div class="hero__container">
-					<div class="hero__main">
-						<h1 class="hero__title">Nina Ostrikova</h1>
-						<div class="hero__sub-title">Графический дизайнер</div>
-						<img src="img/logo.svg" alt="Логотип">
+					<div class="hero__body">
+						<h1 class="hero__title">DRÖMMER DU OM <span>TJOCKT OCH LÅNGT HÅR?</span></h1>
+						<div class="hero__media">
+							<div class="hero__image">
+								<img src="img/hero-main.webp" alt="Image">
+							</div>
+							<div class="hero__hemply">
+								<img src="img/Hemply.webp" alt="Hemply">
+							</div>
+							<div class="hero__icon-1">
+								<img src="img/hero-image1.webp" alt="Image">
+							</div>
+							<div class="hero__icon-2">
+								<img src="img/hero-image2.webp" alt="Image">
+							</div>
+							<div class="hero__splashes-1">
+								<img src="img/splashes.webp" alt="Image">
+							</div>
+							<div class="hero__splashes-2">
+								<img src="img/splashes.webp" alt="Image">
+							</div>
+						</div>
+						<div class="hero__sub-title">MED HEMPLY HAIR ÄR <span>DET MÖJLIGT!</span></div>
+						<div class="hero__text">Upptäcker du fler hårstrån på borsten eller kudden? Känner du oro och
+							hopplöshet över ständigt håravfall? Hemply Hair Fall Prevention Lotion löser dessa problem!
+							Vår lotion återfuktar hårbotten, lindrar klåda och irritation, eliminerar mjäll och
+							aktiverar hårsäckarna. Redan efter 28 dagar kommer ditt hår att vara starkt, friskt,
+							glänsande och börja växa aktivt!</div>
+						<div class="hero__block">
+							<div class="hero__desc">Specialerbjudande för nya kunder: beställ idag <span>och spara
+									50%</span></div>
+							<button data-goto="#to-form" type="button" class="hero__button">BÖRJA IDAG</button>
+						</div>
 					</div>
-					<a href="#" class="hero__button">
-						<span>портфолио</span>
-						<img src="img/arrow.svg" alt="Стрелка">
-					</a>
 				</div>
 			</section>
-			<div class="works">
-				<div class="works__container">
-					<div class="works__navigation">
-						<button type="button" class="works__title filter-active" data-filter="*">Все</button>
-						<button type="button" class="works__title" data-filter=".logos">Логотипы</button>
-						<button type="button" class="works__title" data-filter=".branded">Фирменный стиль</button>
-						<button type="button" class="works__title" data-filter=".polygraphy">Полиграфия</button>
-						<button type="button" class="works__title" data-filter=".web">Веб-дизайн</button>
+			<section class="advantages">
+				<div class="advantages__container">
+					<div class="advantages__top">
+						<h2 class="advantages__title">
+							<span>HÅRET FALLER AV OCH VÄXER INTE?</span>
+							<span>LÄS OM VARFÖR DET HÄNDER!</span>
+						</h2>
+						<div class="advantages__images">
+							<div class="advantages__image-1"><img src="img/advantages-image1.webp" alt="Image"></div>
+							<div class="advantages__image-2"><img src="img/advantages-image2.webp" alt="Image"></div>
+							<div class="advantages__image-3"><img src="img/advantages-image3.webp" alt="Image"></div>
+							<div class="advantages__image-4"><img src="img/advantages-image4.webp" alt="Image"></div>
+							<div class="advantages__image-5"><img src="img/advantages-image5.webp" alt="Image"></div>
+						</div>
 					</div>
-					<div class="works__content" data-iso-items>
-						<div data-popup="#work-1" data-iso-item class="works__item branded">
-							<img src="img/works1.webp" alt="Картинка">
+
+					<div class="advantages__body">
+						<div class="advantages__column">
+							<article class="advantages__box">
+								<h4 class="advantages__caption">Hormonella förändringar:</h4>
+								<ul class="advantages__list">
+									<li class="advantages__item">Graviditet, förlossning och klimakteriet</li>
+									<li class="advantages__item">Sköldkörtelproblem</li>
+								</ul>
+							</article>
 						</div>
-						<div data-popup="#work-2" data-iso-item class="works__item web">
-							<img src="img/works2.webp" alt="Картинка">
+						<div class="advantages__column">
+							<article class="advantages__box">
+								<h4 class="advantages__caption">Genetik:</h4>
+								<ul class="advantages__list">
+									<li class="advantages__item">Ärftlig benägenhet för alopeci</li>
+								</ul>
+							</article>
 						</div>
-						<div data-popup="#work-3" data-iso-item class="works__item logos">
-							<img src="img/works3.webp" alt="Картинка">
+						<div class="advantages__column">
+							<article class="advantages__box">
+								<h4 class="advantages__caption">Dålig kost</h4>
+								<ul class="advantages__list">
+									<li class="advantages__item">Brist på vitaminer och mineraler, särskilt järn och
+										protein</li>
+								</ul>
+							</article>
 						</div>
-						<div data-popup="#work-4" data-iso-item class="works__item logos">
-							<img src="img/works4.webp" alt="Картинка">
+						<div class="advantages__column">
+							<article class="advantages__box">
+								<h4 class="advantages__caption">Läkemedel:</h4>
+								<ul class="advantages__list">
+									<li class="advantages__item">Seborroiskt eksem, psoriasis</li>
+								</ul>
+							</article>
 						</div>
-						<div data-popup="#work-5" data-iso-item class="works__item web">
-							<img src="img/works5.webp" alt="Картинка">
+						<div class="advantages__column">
+							<article class="advantages__box">
+								<h4 class="advantages__caption">Infektioner och inflammationer
+									i hårbotten:</h4>
+								<ul class="advantages__list">
+									<li class="advantages__item">Vissa mediciner kan orsaka håravfall som en biverkning
+									</li>
+								</ul>
+							</article>
 						</div>
-						<div data-popup="#work-6" data-iso-item class="works__item polygraphy">
-							<img src="img/works6.webp" alt="Картинка">
+						<div class="advantages__column">
+							<article class="advantages__box">
+								<h4 class="advantages__caption">Stress:</h4>
+								<ul class="advantages__list">
+									<li class="advantages__item">Fysisk eller emotionell stress orsakar håravfall</li>
+								</ul>
+							</article>
+						</div>
+						<div class="advantages__column">
+							<article class="advantages__box">
+								<h4 class="advantages__caption">Dålig blodcirkulation i hårbotten:</h4>
+								<ul class="advantages__list">
+									<li class="advantages__item">Brist på blodtillförsel försvagar hårsäckarna</li>
+								</ul>
+							</article>
+						</div>
+						<div class="advantages__column">
+							<article class="advantages__box">
+								<h4 class="advantages__caption">Kemisk och mekanisk påverkan:</h4>
+								<ul class="advantages__list">
+									<li class="advantages__item">Frekvent färgning, permanent eller användning av varma
+										stylingverktyg</li>
+									<li class="advantages__item">Frekventa strama flätor eller hästsvansar</li>
+								</ul>
+							</article>
+						</div>
+					</div>
+					<div class="advantages__icons">
+						<div class="advantages__icon-1"><img src="img/advantages-icon1.webp" alt="Icon"></div>
+						<div class="advantages__icon-2"><img src="img/advantages-icon2.webp" alt="Icon"></div>
+						<div class="advantages__icon-3"><img src="img/advantages-icon3.webp" alt="Icon"></div>
+						<div class="advantages__icon-4"><img src="img/advantages-icon4.webp" alt="Icon"></div>
+						<div class="advantages__icon-5"><img src="img/advantages-icon5.webp" alt="Icon"></div>
+						<div class="advantages__icon-6"><img src="img/advantages-icon6.webp" alt="Icon"></div>
+						<div class="advantages__icon-7"><img src="img/advantages-icon7.webp" alt="Icon"></div>
+					</div>
+				</div>
+			</section>
+			<section class="effect">
+				<div class="effect__container">
+					<h2 class="effect__title">
+						FRISKT HÅR PÅ <span>28 DAGAR</span>
+					</h2>
+					<div class="effect__sub-title">Hemply Hair Fall Prevention Lotion löser dina problem med hår och
+						hårbotten:</div>
+					<div class="effect__box">
+						<div class="effect__decor">
+							<img src="img/Hemply.webp" alt="Image">
+						</div>
+					</div>
+					<div class="effect__slider swiper">
+						<div class="effect__wrapper swiper-wrapper">
+							<div class="effect__slide swiper-slide">
+								<div class="effect__text">Stoppa håravfall: Ditt hår blir starkt och slutar falla av
+								</div>
+								<img src="img/effect1.webp" alt="Image">
+							</div>
+							<div class="effect__slide swiper-slide">
+								<div class="effect__text">Stärk håret: Märkbar förbättring av hårstrukturen – det blir
+									tjockare och glansigare</div>
+								<img src="img/effect2.webp" alt="Image">
+							</div>
+							<div class="effect__slide swiper-slide">
+								<div class="effect__text">Glöm klåda och irritation: Din hårbotten blir frisk och lugn
+								</div>
+								<img src="img/effect3.webp" alt="Image">
+							</div>
+							<div class="effect__slide swiper-slide">
+								<div class="effect__text">Bli av med mjäll: Fullständig eliminering av mjäll och
+									förhindrar dess återkomst</div>
+								<img src="img/effect4.webp" alt="Image">
+							</div>
+							<div class="effect__slide swiper-slide">
+								<div class="effect__text">Aktivera ny hårväxt: Ditt hår börjar växa snabbare och
+									tjockare</div>
+								<img src="img/effect5.webp" alt="Image">
+							</div>
+						</div>
+						<div class="swiper-pagination effect__pagination"></div>
+						<button type="button" class="effect__prev swiper-button-prev">
+							<svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.861949 4.5286C0.6016 4.78895 0.6016 5.21105 0.861949 5.4714L5.10459 9.71405C5.36494 9.97439 5.78705 9.97439 6.0474 9.71405C6.30775 9.4537 6.30775 9.03159 6.0474 8.77124L2.27616 5L6.0474 1.22876C6.30775 0.968415 6.30775 0.546305 6.0474 0.285955C5.78705 0.0256057 5.36494 0.0256057 5.10459 0.285955L0.861949 4.5286ZM2.66669 4.33333H1.33335V5.66667H2.66669V4.33333Z"
+									fill="#B9D478" />
+							</svg>
+						</button>
+						<button type="button" class="effect__next swiper-button-next">
+							<svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M6.13805 5.4714C6.3984 5.21106 6.3984 4.78895 6.13805 4.5286L1.89541 0.285955C1.63506 0.0256054 1.21295 0.0256054 0.952602 0.285955C0.692252 0.546304 0.692252 0.968414 0.952602 1.22876L4.72384 5L0.952601 8.77124C0.692252 9.03158 0.692252 9.45369 0.952601 9.71404C1.21295 9.97439 1.63506 9.97439 1.89541 9.71404L6.13805 5.4714ZM4.33331 5.66667L5.66665 5.66667L5.66665 4.33333L4.33331 4.33333L4.33331 5.66667Z"
+									fill="#B9D478" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="after">
+				<div class="after__container">
+					<div class="after__body">
+						<div class="after__image">
+							<img src="img/after-image.webp" alt="Image">
+						</div>
+						<div class="after__content">
+							<div data-da=".after__image, 767.98, last" class="after__top">
+								<h2 class="after__title">Redan efter <span>28 dagar</span> kommer du att märka</h2>
+								<div class="after__sub-title">Glöm rädslor och osäkerhet kopplade till håravfall. Börja
+									en ny fas med Hemply Hair och njut av friskt, tjockt hår!</div>
+							</div>
+							<ul class="after__list">
+								<li class="after__item">
+									<div class="after__icon">
+										<img src="img/after1.webp" alt="Icon">
+									</div>
+									<div class="after__text">
+										Självförtroende i ditt utseende och attraktionskraft
+									</div>
+								</li>
+								<li class="after__item">
+									<div class="after__icon">
+										<img src="img/after2.webp" alt="Icon">
+									</div>
+									<div class="after__text">
+										En frisk och återfuktad hårbotten
+									</div>
+								</li>
+								<li class="after__item">
+									<div class="after__icon">
+										<img src="img/after3.webp" alt="Icon">
+									</div>
+									<div class="after__text">
+										Starkt och glansigt hår
+									</div>
+								</li>
+							</ul>
+							<button data-goto="#to-form" type="button" class="after__link">BÖRJA IDAG</button>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+			<section class="ingredient">
+				<div class="ingredient__container">
+					<div class="ingredient__bg">
+						<div class="ingredient__top-text">VARFÖR FUNGERAR HEMPLY HAIR? </div>
+						<h2 class="ingredient__title">LÄS OM VÅRA INGREDIENSER</h2>
+						<div class="ingredient__sub-title">Hemply Hair Fall Prevention Lotion innehåller kraftfulla
+							naturliga ingredienser som gör det effektivt och säkert för ditt hår:</div>
+						<div class="ingredient__body">
+							<div class="ingredient__image">
+								<img src="img/Hemply.webp" alt="Hemply">
+							</div>
+							<div class="ingredient__decor">
+								<img src="img/ingredient-decor.webp" alt="">
+							</div>
+							<div class="ingredient__items">
+								<div class="ingredient__item ingredient__item_1">
+									<h4 class="ingredient__caption">Propanediol</h4>
+									<div class="ingredient__text">Återfuktar hårbotten och håret, vilket gör dem mjuka
+										och
+										friska</div>
+								</div>
+								<div class="ingredient__item ingredient__item_2">
+									<h4 class="ingredient__caption">Achillea Millefolium</h4>
+									<div class="ingredient__text">Hjälper till att bli av med mjäll och förhindrar dess
+										återkomst</div>
+								</div>
+								<div class="ingredient__item ingredient__item_3">
+									<h4 class="ingredient__caption">Tussilago Farfara</h4>
+									<div class="ingredient__text">Lindrar klåda och irritation, främjar läkning av små
+										sår
+									</div>
+								</div>
+								<div class="ingredient__item ingredient__item_4">
+									<h4 class="ingredient__caption">Cinchona Succirubra</h4>
+									<div class="ingredient__text">Stärker håret och stimulerar blodcirkulationen, vilket
+										främjar ny hårväxt</div>
+								</div>
+							</div>
+						</div>
+						<div class="ingredient__bottom">
+							<div class="ingredient__row">
+								<div class="ingredient__box">Naturliga ingredienser</div>
+								<div class="ingredient__box">Heltäckande verkan</div>
+								<div class="ingredient__box">Kliniskt beprövat</div>
+							</div>
+							<div class="ingredient__desc">Övertyga dig om effektiviteten av Hemply Hair – din väg till
+								friskt och vackert hår börjar här!</div>
+							<button data-goto="#to-form" type="button" class="ingredient__link">BÖRJA IDAG</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="use">
+				<div class="use__container">
+					<div class="use__content">
+						<h2 class="use__title">HUR UPPNÅ <span>PERFEKT HÅR?</span> FÖLJ DESSA STEG!</h2>
+						<ul class="use__list">
+							<li class="use__item">
+								<h4 class="use__caption">Applicering:</h4>
+								<div class="use__text">Applicera en liten mängd lotion på rent, fuktigt hår och
+									hårbotten. Se till att lotionen är jämnt fördelad över hela ytan.</div>
+							</li>
+							<li class="use__item">
+								<h4 class="use__caption">Massage:</h4>
+								<div class="use__text">Massera försiktigt in lotionen i hårbotten med mjuka
+									cirkelrörelser i 2-3 minuter. Detta hjälper till att förbättra blodcirkulationen och
+									aktivera hårsäckarna.</div>
+							</li>
+							<li class="use__item">
+								<h4 class="use__caption">Låt verka och skölj inte ur:</h4>
+								<div class="use__text">Låt lotionen vara kvar i håret, skölj inte ur. Lotionen
+									absorberas snabbt och lämnar inga feta rester.</div>
+							</li>
+						</ul>
+						<button type="button" data-goto="#to-form" data-da=".use__container, 767.98, last" class="use__link">BÖRJA IDAG</button>
+					</div>
+					<div class="use__image">
+						<img src="img/use-image.webp" alt="Image">
+						<div class="use__desc">Följ dessa enkla steg varje dag och njut av friskt, starkt och glänsande
+							hår på 28 dagar med Hemply Hair!</div>
+					</div>
+				</div>
+			</section>
+			<section class="before">
+				<div class="before__container">
+					<h2 class="before__title">
+						DITT HÅR KAN SE LIKADANT UT – <span>RESULTAT MED HEMPLY HAIR</span>
+					</h2>
+					<div class="before__body">
+						<div class="before__slider swiper">
+							<div class="before__wrapper swiper-wrapper">
+								<div class="before__slide swiper-slide">
+									<img src="img/before1.webp" alt="Image">
+								</div>
+								<div class="before__slide swiper-slide">
+									<img src="img/before2.webp" alt="Image">
+								</div>
+								<div class="before__slide swiper-slide">
+									<img src="img/before3.webp" alt="Image">
+									<img class="before__gif" src="img/1.gif" alt="">
+									<div class="before__play">
+										<svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16 7.76795C17.3333 8.53775 17.3333 10.4623 16 11.2321L3.25 18.5933C1.91667 19.3631 0.249999 18.4008 0.249999 16.8612L0.25 2.13878C0.25 0.599183 1.91667 -0.363068 3.25 0.406733L16 7.76795Z" fill="#B9D478" />
+										  </svg>
+									</div>
+								</div>
+								<div class="before__slide swiper-slide">
+									<img src="img/before4.webp" alt="Image">
+								</div>
+								<div class="before__slide swiper-slide">
+									<img src="img/before5.webp" alt="Image">
+								</div>
+								<div class="before__slide swiper-slide">
+									<img src="img/before1.webp" alt="Image">
+								</div>
+								<div class="before__slide swiper-slide">
+									<img src="img/before2.webp" alt="Image">
+								</div>
+								<div class="before__slide swiper-slide">
+									<img src="img/before3.webp" alt="Image">
+								</div>
+								<div class="before__slide swiper-slide">
+									<img src="img/before4.webp" alt="Image">
+								</div>
+								<div class="before__slide swiper-slide">
+									<img src="img/before5.webp" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div class="before__buttons">
+							<button type="button" class="before__prev swiper-button-prev">
+								<svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0.861949 4.5286C0.6016 4.78895 0.6016 5.21105 0.861949 5.4714L5.10459 9.71405C5.36494 9.97439 5.78705 9.97439 6.0474 9.71405C6.30775 9.4537 6.30775 9.03159 6.0474 8.77124L2.27616 5L6.0474 1.22876C6.30775 0.968415 6.30775 0.546305 6.0474 0.285955C5.78705 0.0256057 5.36494 0.0256057 5.10459 0.285955L0.861949 4.5286ZM2.66669 4.33333H1.33335V5.66667H2.66669V4.33333Z"
+										fill="#B9D478" />
+								</svg>
+							</button>
+							<div class="swiper-pagination before__pagination"></div>
+							<button type="button" class="before__next swiper-button-next">
+								<svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6.13805 5.4714C6.3984 5.21106 6.3984 4.78895 6.13805 4.5286L1.89541 0.285955C1.63506 0.0256054 1.21295 0.0256054 0.952602 0.285955C0.692252 0.546304 0.692252 0.968414 0.952602 1.22876L4.72384 5L0.952601 8.77124C0.692252 9.03158 0.692252 9.45369 0.952601 9.71404C1.21295 9.97439 1.63506 9.97439 1.89541 9.71404L6.13805 5.4714ZM4.33331 5.66667L5.66665 5.66667L5.66665 4.33333L4.33331 4.33333L4.33331 5.66667Z"
+										fill="#B9D478" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="chance">
+				<div class="chance__container">
+					<div class="chance__body">
+						<div class="chance__image">
+							<img src="img/chance-image.webp" alt="Image">
+						</div>
+						<div class="chance__content">
+							<h2 class="chance__title">
+								MISSA INTE CHANSEN – FRISKT HÅR REDAN EFTER 28 DAGAR!
+							</h2>
+							<div class="chance__text">Föreställ dig ett liv utan ständig stress över håravfall. Friskt,
+								tjockt och glänsande hår som väcker beundran och stärker ditt självförtroende. Med
+								Hemply Hair är det möjligt! Bara 28 dagars daglig användning och du kommer att märka en
+								enorm förändring. Din hårbotten kommer att vara frisk och ditt hår starkt och vackert.
+							</div>
+							<button data-goto="#to-form" type="button" class="chance__link">BÖRJA IDAG</button>
+							<div class="chance__icon-1">
+								<img src="img/advantages-icon6.webp" alt="Icon">
+							</div>
+							<div class="chance__icon-2">
+								<img src="img/advantages-icon6.webp" alt="Icon">
+							</div>
+							<div class="chance__icon-3">
+								<img src="img/advantages-icon3.webp" alt="Icon">
+							</div>
+							<div class="chance__icon-4">
+								<img src="img/advantages-icon7.webp" alt="Icon">
+							</div>
+							<div class="chance__icon-5">
+								<img src="img/advantages-icon4.webp" alt="Icon">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="how">
+				<div class="how__container">
+					<h2 class="how__title">HUR BESTÄLLER DU?</h2>
+					<div class="how__body">
+						<div class="how__item">
+							<h4 class="how__caption">Fyll i beställningsformuläret nedan</h4>
+							<div class="how__text">Ange ditt namn och telefonnummer</div>
+						</div>
+						<div class="how__item">
+							<h4 class="how__caption">Bekräfta beställningen:</h4>
+							<div class="how__text">Vår kundtjänst kommer att kontakta dig för att bekräfta detaljerna
+								och slutföra beställningen</div>
+						</div>
+						<div class="how__item">
+							<h4 class="how__caption">Snabb leverans:</h4>
+							<div class="how__text">Din beställning levereras över hela <br> Sverige inom <b>2-4
+									arbetsdagar</b></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="action">
+				<div data-da=".action__items, 1200, last" id="to-form"></div>
+				<div class="action__container">
+					<h2 class="action__title">
+						<span>AGERA NU</span> OCH FÅ FRISKT OCH VACKERT HÅR!
+					</h2>
+					<div class="action__body">
+						<div class="action__items">
+							<div class="action__item">
+								<div class="action__icon">
+									<img src="img/check.svg" alt="Icon">
+								</div>
+								<div class="action__text">Befriar dig från mjäll och förhindrar dess uppkomst</div>
+							</div>
+							<div class="action__item">
+								<div class="action__icon">
+									<img src="img/check.svg" alt="Icon">
+								</div>
+								<div class="action__text">Eliminerar klåda och irritation i hårbotten</div>
+							</div>
+							<div class="action__item">
+								<div class="action__icon">
+									<img src="img/check.svg" alt="Icon">
+								</div>
+								<div class="action__text">Återfuktar hår och hårbotten</div>
+							</div>
+							<div class="action__item">
+								<div class="action__icon">
+									<img src="img/check.svg" alt="Icon">
+								</div>
+								<div class="action__text">Stärker hårstrukturen</div>
+							</div>
+							<div class="action__item">
+								<div class="action__icon">
+									<img src="img/check.svg" alt="Icon">
+								</div>
+								<div class="action__text">Aktiverar ny hårväxt</div>
+							</div>
+							<div class="action__item">
+								<div class="action__icon">
+									<img src="img/check.svg" alt="Icon">
+								</div>
+								<div class="action__text">Stoppar håravfall</div>
+							</div>
+						</div>
+						<div class="action__media">
+							<div class="action__image">
+								<img src="img/Hemply.webp" alt="Hemply">
+							</div>
+							<div class="action__decor"></div>
+							<div class="action__splashes-1">
+								<img src="img/splashes.webp" alt="Image">
+							</div>
+							<div class="action__splashes-2">
+								<img src="img/splashes.webp" alt="Image">
+							</div>
+						</div>
+						<form action="#" class="action__form form">
+							<h3 class="form__title">Ny kundrabatt <b>50% endast idag!</b></h3>
+							<div class="form__timer timer">
+								<div class="timer__column">
+									<div class="timer__value" id="hour">06</div>
+									<div class="timer__text">Timmar</div>
+								</div>
+								<div class="timer__column">
+									<div class="timer__value" id="minutes">00</div>
+									<div class="timer__text">Minuter</div>
+								</div>
+								<div class="timer__column">
+									<div class="timer__value" id="seconds">00</div>
+									<div class="timer__text">Sekunder</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__rating">
+									<img src="img/star.webp" alt="Star">
+									<img src="img/star.webp" alt="Star">
+									<img src="img/star.webp" alt="Star">
+									<img src="img/star.webp" alt="Star">
+									<img src="img/star.webp" alt="Star">
+								</div>
+								<div class="form__text">(2.376 nöjda kunder)</div>
+							</div>
+							<div class="form__box">
+								<div class="form__old-price">2394 kr</div>
+								<div class="form__price">1197 kr</div>
+							</div>
+							<input type="text" class="form__input" placeholder="Namn">
+							<input type="tel" class="form__input" placeholder="Telefonnummer">
+							<button type="submit" class="form__submit">BESTÄLL NU!</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="faq">
+				<div class="faq__container">
+					<div class="faq__content">
+						<h2 class="faq__title">VANLIGA FRÅGOR OM HEMPLY HAIR</h2>
+						<div data-spollers data-one-spoller class="spollers">
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Hur ofta behöver jag använda Hemply Hair Fall Prevention Lotion?</button>
+								<div class="spollers__body">För bästa resultat, använd lotionen dagligen. Applicera den på rent, fuktigt hår och hårbotten.</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Är produkten lämplig för alla hårtyper?</button>
+								<div class="spollers__body">Ja, Hemply Hair är lämplig för alla hårtyper, inklusive färgat hår.</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">När kommer jag att se de första resultaten?</button>
+								<div class="spollers__body">Du kommer att märka förbättringar redan efter 28 dagars regelbunden användning. Håret slutar falla av och blir starkare och glansigare, och hårbotten blir friskare.</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Har produkten några biverkningar?</button>
+								<div class="spollers__body">Hemply Hair är baserad på naturliga ingredienser och orsakar inga biverkningar. Om du är allergisk mot någon av ingredienserna, rådgör med din läkare innan användning.</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Har produkten några biverkningar?</button>
+								<div class="spollers__body">För att beställa, fyll i formuläret ovan på vår webbplats. Efter att din beställning har bekräftats av vår kundtjänst, tar leveransen inom Sverige 2-4 arbetsdagar.</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Kan jag returnera produkten om den inte passar mig?</button>
+								<div class="spollers__body">Ja, du kan returnera produkten inom 30 dagar från mottagandet, förutsatt att den är oöppnad och oanvänd.</div>
+							</div>
+						</div>
+					</div>
+					<div class="faq__image">
+						<img src="img/faq-image.webp" alt="Image">
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer" id="footer">
 	<div class="footer__container">
-<a href="mailto:oninap@mail.ru" class="footer__mail">oninap@mail.ru</a>
-<ul class="footer__social">
-	<li class="footer__item-social">
-		<a href="#" class="footer__link">
-			<img src="img/s-2.svg" alt="Иконка">
-		</a>
-	</li>
-	<li class="footer__item-social">
-		<a href="#" class="footer__link">
-			<img src="img/s-1.svg" alt="Иконка">
-		</a>
-	</li>
-	<li class="footer__item-social">
-		<a href="#" class="footer__link">
-			<img src="img/instagram-white.svg" alt="Иконка">
-		</a>
-	</li>
-	<li class="footer__item-social">
-		<a href="#" class="footer__link">
-			<img src="img/vk-white.svg" alt="Иконка">
-		</a>
-	</li>
-</ul>
+		<div class="footer__body">
+			<div class="footer__logo">
+				<img src="img/logo.svg" alt="logo">
+			</div>
+			<nav class="footer__menu">
+				<ul class="footer__list">
+					<li class="footer__item"><a data-goto=".wrapper" href="#" class="footer__link">Hem</a></li>
+					<li class="footer__item"><a data-goto=".effect" href="#" class="footer__link">Effekt</a></li>
+					<li class="footer__item"><a data-goto=".ingredient" href="#" class="footer__link">Ingredienser</a></li>
+					<li class="footer__item"><a data-goto=".use" href="#" class="footer__link">Användning</a></li>
+					<li class="footer__item"><a data-goto=".before" href="#" class="footer__link">Före/Efter</a></li>
+					<li class="footer__item"><a data-goto=".faq" href="#" class="footer__link">FAQ</a></li>
+				</ul>
+			</nav>
+			<div class="footer__copy">Copyright 2024 Hemply</div>
+		</div>
 	</div>
 </footer>
 	</div>
-<div id="work-1" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<div class="popup__slider swiper">
-				<div class="popup__wrapper swiper-wrapper">	
-					<div class="popup__slide swiper-slide">
-						<img src="img/works1-1.webp" alt="Картинка">
-					</div>
-					<div class="popup__slide swiper-slide">
-						<img src="img/works1-2.webp" alt="Картинка">
-					</div>
-				</div>
-				<button type="button" class="popup__prev swiper-button-prev">
-					<img src="img/arrow-slider.svg" alt="Стрелка">
-				</button>
-				<button type="button" class="popup__next swiper-button-next">
-					<img src="img/arrow-slider.svg" alt="Стрелка">
-				</button>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="work-2" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<div class="popup__slider swiper">
-				<div class="popup__wrapper swiper-wrapper">	
-					<div class="popup__slide swiper-slide">
-						<img src="img/works4.webp" alt="Картинка">
-					</div>
-					<div class="popup__slide swiper-slide">
-						<img src="img/works3.webp" alt="Картинка">
-					</div>
-				</div>
-				<button type="button" class="popup__prev swiper-button-prev">
-					<img src="img/arrow-slider.svg" alt="Стрелка">
-				</button>
-				<button type="button" class="popup__next swiper-button-next">
-					<img src="img/arrow-slider.svg" alt="Стрелка">
-				</button>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="work-3" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<div class="popup__slider swiper">
-				<div class="popup__wrapper swiper-wrapper">	
-					<div class="popup__slide swiper-slide">
-						<img src="img/works1-1.webp" alt="Картинка">
-					</div>
-					<div class="popup__slide swiper-slide">
-						<img src="img/works1-2.webp" alt="Картинка">
-					</div>
-				</div>
-				<button type="button" class="popup__prev swiper-button-prev">
-					<img src="img/arrow-slider.svg" alt="Стрелка">
-				</button>
-				<button type="button" class="popup__next swiper-button-next">
-					<img src="img/arrow-slider.svg" alt="Стрелка">
-				</button>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="work-4" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<div class="popup__slider swiper">
-				<div class="popup__wrapper swiper-wrapper">	
-					<div class="popup__slide swiper-slide">
-						<img src="img/works1-1.webp" alt="Картинка">
-					</div>
-					<div class="popup__slide swiper-slide">
-						<img src="img/works1-2.webp" alt="Картинка">
-					</div>
-				</div>
-				<button type="button" class="popup__prev swiper-button-prev">
-					<img src="img/arrow-slider.svg" alt="Стрелка">
-				</button>
-				<button type="button" class="popup__next swiper-button-next">
-					<img src="img/arrow-slider.svg" alt="Стрелка">
-				</button>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="work-5" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<div class="popup__slider swiper">
-				<div class="popup__wrapper swiper-wrapper">	
-					<div class="popup__slide swiper-slide">
-						<img src="img/works1-1.webp" alt="Картинка">
-					</div>
-					<div class="popup__slide swiper-slide">
-						<img src="img/works1-2.webp" alt="Картинка">
-					</div>
-				</div>
-				<button type="button" class="popup__prev swiper-button-prev">
-					<img src="img/arrow-slider.svg" alt="Стрелка">
-				</button>
-				<button type="button" class="popup__next swiper-button-next">
-					<img src="img/arrow-slider.svg" alt="Стрелка">
-				</button>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="work-6" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<div class="popup__slider swiper">
-				<div class="popup__wrapper swiper-wrapper">	
-					<div class="popup__slide swiper-slide">
-						<img src="img/works1-1.webp" alt="Картинка">
-					</div>
-					<div class="popup__slide swiper-slide">
-						<img src="img/works1-2.webp" alt="Картинка">
-					</div>
-				</div>
-				<button type="button" class="popup__prev swiper-button-prev">
-					<img src="img/arrow-slider.svg" alt="Стрелка">
-				</button>
-				<button type="button" class="popup__next swiper-button-next">
-					<img src="img/arrow-slider.svg" alt="Стрелка">
-				</button>
-			</div>
-		</div>
-	</div>
-</div>
 
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20240604183301"></script>
-<script src="js/isotope.pkgd.min.js?_v=20240604183301"></script>
-<script src="js/app.js?_v=20240604183301"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20240610152302"></script>
+<script src="js/app.js?_v=20240610152302"></script>
+
 </body>
 
 </html>
