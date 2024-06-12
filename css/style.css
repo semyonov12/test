@@ -3355,6 +3355,7 @@ body {
     -webkit-transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
+    border-radius: 0;
   }
 
   .use__item:not(:last-child) {
