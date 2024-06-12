@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
 	<title>Hemply</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 	<!-- стили -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20240612182434">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240612182434">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20240612191009">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240612191009">
 	<!-- фавикон -->
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
-
+	
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	
 </head>
 
 <body>
 	<div class="wrapper" id="wrapper">
 		<header class="header" id="header">
-			<div class="header__container">
-				<div class="header__body">
-					<a href="/" class="header__logo">
-						<img src="img/logo.svg" alt="logo">
-					</a>
-					<nav class="header__menu menu">
-						<ul class="menu__list">
-							<li class="menu__item"><a data-goto=".wrapper" href="#" class="menu__link">Hem</a></li>
-							<li class="menu__item"><a data-goto=".effect" href="#" class="menu__link">Effekt</a></li>
-							<li class="menu__item"><a data-goto=".ingredient" href="#"
-									class="menu__link">Ingredienser</a></li>
-							<li class="menu__item"><a data-goto=".use" href="#" class="menu__link">Användning</a></li>
-							<li class="menu__item"><a data-goto=".before" href="#" class="menu__link">Före/Efter</a>
-							</li>
-							<li class="menu__item"><a data-goto=".faq" href="#" class="menu__link">FAQ</a></li>
-						</ul>
-						<button data-goto="#to-form" type="button" class="menu__button">BÖRJA IDAG</button>
-					</nav>
-					<button type="button" class="header__burger burger-menu"><span></span></button>
-				</div>
-			</div>
-		</header>
+	<div class="header__container">
+		<div class="header__body">
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo">
+			</a>
+			<nav class="header__menu menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a data-goto=".wrapper" href="#" class="menu__link">Hem</a></li>
+					<li class="menu__item"><a data-goto=".effect" href="#" class="menu__link">Effekt</a></li>
+					<li class="menu__item"><a data-goto=".ingredient" href="#" class="menu__link">Ingredienser</a></li>
+					<li class="menu__item"><a data-goto=".use" href="#" class="menu__link">Användning</a></li>
+					<li class="menu__item"><a data-goto=".before" href="#" class="menu__link">Före/Efter</a></li>
+					<li class="menu__item"><a data-goto=".faq" href="#" class="menu__link">FAQ</a></li>
+				</ul>
+				<button data-goto="#to-form" type="button" class="menu__button">BÖRJA IDAG</button>
+			</nav>
+			<button type="button" class="header__burger burger-menu"><span></span></button>
+		</div>
+	</div>
+</header>
 		<main class="page" id="main">
 			<section class="hero">
 				<div class="hero__container">
@@ -197,27 +194,27 @@
 							<div class="effect__slide swiper-slide">
 								<div class="effect__text">Stoppa håravfall: Ditt hår blir starkt och slutar falla av
 								</div>
-								<img src="img/effect1.png" alt="Image">
+								<img src="img/effect1.webp" alt="Image">
 							</div>
 							<div class="effect__slide swiper-slide">
 								<div class="effect__text">Stärk håret: Märkbar förbättring av hårstrukturen – det blir
 									tjockare och glansigare</div>
-								<img src="img/effect2.png" alt="Image">
+								<img src="img/effect2.webp" alt="Image">
 							</div>
 							<div class="effect__slide swiper-slide">
 								<div class="effect__text">Glöm klåda och irritation: Din hårbotten blir frisk och lugn
 								</div>
-								<img src="img/effect3.png" alt="Image">
+								<img src="img/effect3.webp" alt="Image">
 							</div>
 							<div class="effect__slide swiper-slide">
 								<div class="effect__text">Bli av med mjäll: Fullständig eliminering av mjäll och
 									förhindrar dess återkomst</div>
-								<img src="img/effect4.png" alt="Image">
+								<img src="img/effect4.webp" alt="Image">
 							</div>
 							<div class="effect__slide swiper-slide">
 								<div class="effect__text">Aktivera ny hårväxt: Ditt hår börjar växa snabbare och
 									tjockare</div>
-								<img src="img/effect5.png" alt="Image">
+								<img src="img/effect5.webp" alt="Image">
 							</div>
 						</div>
 						<div class="swiper-pagination effect__pagination"></div>
@@ -291,12 +288,7 @@
 						<div class="ingredient__sub-title">Hemply Hair Fall Prevention Lotion innehåller kraftfulla
 							naturliga ingredienser som gör det effektivt och säkert för ditt hår:</div>
 						<div class="ingredient__body">
-							<div class="ingredient__image">
-								<img src="img/Hemply.webp" alt="Hemply">
-							</div>
-							<div class="ingredient__decor">
-								<img src="img/ingredient-decor.webp" alt="">
-							</div>
+							
 							<div class="ingredient__items">
 								<div class="ingredient__item ingredient__item_1">
 									<h4 class="ingredient__caption">Propanediol</h4>
@@ -376,7 +368,7 @@
 						<div class="before__slider swiper">
 							<div class="before__wrapper swiper-wrapper">
 								<div class="before__slide swiper-slide">
-									<video playsinline="" loop muted preload="metadata">
+									<video playsinline="" loop muted >
 										<source src="video/1.webm" type="video/webm">
 										<source src="video/1.mp4" type="video/mp4">
 									</video>
@@ -390,7 +382,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted >
 										<source src="video/2.webm" type="video/webm">
 										<source src="video/2.mp4" type="video/mp4">
 									</video>
@@ -404,7 +396,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted >
 										<source src="video/3.webm" type="video/webm">
 										<source src="video/3.mp4" type="video/mp4">
 									</video>
@@ -418,7 +410,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted > 
 										<source src="video/4.webm" type="video/webm">
 										<source src="video/4.mp4" type="video/mp4">
 									</video>
@@ -432,7 +424,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted >
 										<source src="video/5.webm" type="video/webm">
 										<source src="video/5.mp4" type="video/mp4">
 									</video>
@@ -446,7 +438,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted >
 										<source src="video/6.webm" type="video/webm">
 										<source src="video/6.mp4" type="video/mp4">
 									</video>
@@ -460,7 +452,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted >
 										<source src="video/7.webm" type="video/webm">
 										<source src="video/7.mp4" type="video/mp4">
 									</video>
@@ -474,7 +466,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted >
 										<source src="video/8.webm" type="video/webm">
 										<source src="video/8.mp4" type="video/mp4">
 									</video>
@@ -488,7 +480,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video playsinline="" loop muted preload="metadata">
+									<video playsinline="" loop muted >
 										<source src="video/1.webm" type="video/webm">
 										<source src="video/1.mp4" type="video/mp4">
 									</video>
@@ -502,7 +494,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted >
 										<source src="video/2.webm" type="video/webm">
 										<source src="video/2.mp4" type="video/mp4">
 									</video>
@@ -516,7 +508,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted >
 										<source src="video/3.webm" type="video/webm">
 										<source src="video/3.mp4" type="video/mp4">
 									</video>
@@ -530,7 +522,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted > 
 										<source src="video/4.webm" type="video/webm">
 										<source src="video/4.mp4" type="video/mp4">
 									</video>
@@ -544,7 +536,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted >
 										<source src="video/5.webm" type="video/webm">
 										<source src="video/5.mp4" type="video/mp4">
 									</video>
@@ -558,7 +550,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted >
 										<source src="video/6.webm" type="video/webm">
 										<source src="video/6.mp4" type="video/mp4">
 									</video>
@@ -572,7 +564,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted >
 										<source src="video/7.webm" type="video/webm">
 										<source src="video/7.mp4" type="video/mp4">
 									</video>
@@ -586,7 +578,7 @@
 									</div>
 								</div>
 								<div class="before__slide swiper-slide">
-									<video loop muted preload="metadata">
+									<video loop muted >
 										<source src="video/8.webm" type="video/webm">
 										<source src="video/8.mp4" type="video/mp4">
 									</video>
@@ -826,34 +818,30 @@
 			</section>
 		</main>
 		<footer class="footer" id="footer">
-			<div class="footer__container">
-				<div class="footer__body">
-					<div class="footer__logo">
-						<img src="img/logo.svg" alt="logo">
-					</div>
-					<nav class="footer__menu">
-						<ul class="footer__list">
-							<li class="footer__item"><a data-goto=".wrapper" href="#" class="footer__link">Hem</a></li>
-							<li class="footer__item"><a data-goto=".effect" href="#" class="footer__link">Effekt</a>
-							</li>
-							<li class="footer__item"><a data-goto=".ingredient" href="#"
-									class="footer__link">Ingredienser</a></li>
-							<li class="footer__item"><a data-goto=".use" href="#" class="footer__link">Användning</a>
-							</li>
-							<li class="footer__item"><a data-goto=".before" href="#" class="footer__link">Före/Efter</a>
-							</li>
-							<li class="footer__item"><a data-goto=".faq" href="#" class="footer__link">FAQ</a></li>
-						</ul>
-					</nav>
-					<div class="footer__copy">Copyright 2024 Hemply</div>
-				</div>
+	<div class="footer__container">
+		<div class="footer__body">
+			<div class="footer__logo">
+				<img src="img/logo.svg" alt="logo">
 			</div>
-		</footer>
+			<nav class="footer__menu">
+				<ul class="footer__list">
+					<li class="footer__item"><a data-goto=".wrapper" href="#" class="footer__link">Hem</a></li>
+					<li class="footer__item"><a data-goto=".effect" href="#" class="footer__link">Effekt</a></li>
+					<li class="footer__item"><a data-goto=".ingredient" href="#" class="footer__link">Ingredienser</a></li>
+					<li class="footer__item"><a data-goto=".use" href="#" class="footer__link">Användning</a></li>
+					<li class="footer__item"><a data-goto=".before" href="#" class="footer__link">Före/Efter</a></li>
+					<li class="footer__item"><a data-goto=".faq" href="#" class="footer__link">FAQ</a></li>
+				</ul>
+			</nav>
+			<div class="footer__copy">Copyright 2024 Hemply</div>
+		</div>
+	</div>
+</footer>
 	</div>
 
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20240612182434"></script>
-	<script src="js/app.js?_v=20240612182434"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20240612191009"></script>
+<script src="js/app.js?_v=20240612191009"></script>
 
 </body>
 
