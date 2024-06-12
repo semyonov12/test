@@ -1604,7 +1604,8 @@ body {
 }
 
 .before__slide img,
-.before__slide video {
+.before__slide video,
+.before__slide source {
   position: absolute;
   width: 102%;
   height: 102%;
