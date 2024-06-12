@@ -648,27 +648,27 @@ document.addEventListener("DOMContentLoaded", function (e) {
 	function startTimer() {
 		let startTime = storage.get('timerStart');
 		const now = Date.now();
-	
+
 		if (!startTime || (now - parseInt(startTime)) >= countdownTime) {
 			startTime = now; // Начать новый отсчет, если нет времени старта или прошло больше времени, чем заданный интервал
 			storage.set('timerStart', startTime);
 		} else {
 			startTime = parseInt(startTime); // Продолжить существующий отсчет
 		}
-	
+
 		function updateTimer() {
 			const currentTime = Date.now();
 			const elapsedTime = currentTime - startTime;
 			const remainingTime = countdownTime - (elapsedTime % countdownTime);
 			const { hours, minutes, seconds } = formatTime(remainingTime);
-	
+
 			document.getElementById('hour').textContent = hours;
 			document.getElementById('minutes').textContent = minutes;
 			document.getElementById('seconds').textContent = seconds;
-	
+
 			requestAnimationFrame(updateTimer);
 		}
-	
+
 		updateTimer();
 	}
 
@@ -676,21 +676,28 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 
 
-	//запускать гиф
+	//Видео
 
 	document.addEventListener("click", function (e) {
 		const targetElement = e.target;
-		if(targetElement.closest('.before__play')) {
+	
+		if (targetElement.closest('.before__play')) {
 			const parent = targetElement.closest('.before__slide');
-			if(parent) {
-				parent.classList.add('gif-play');
+			if (parent) {
+				const video = parent.querySelector('video');
+				if (video) {
+					parent.classList.add('video-play');
+					video.play();
+				}
 			}
-		}
-
-		if(targetElement.closest('.before__gif')) {
+		} else if (targetElement.closest('.before__slide') && targetElement.closest('.before__slide').classList.contains('video-play')) {
 			const parent = targetElement.closest('.before__slide');
-			if(parent.classList.contains('gif-play')) {
-				parent.classList.remove('gif-play');
+			if (parent) {
+				const video = parent.querySelector('video');
+				if (video) {
+					parent.classList.remove('video-play');
+					video.pause();
+				}
 			}
 		}
 	});
