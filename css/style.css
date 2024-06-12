@@ -1228,8 +1228,6 @@ body {
 
 .ingredient__item {
   z-index: 2;
-  -webkit-backdrop-filter: blur(4.0625rem);
-  backdrop-filter: blur(4.0625rem);
   background: #2c2e1a;
   border-radius: 0.3125rem;
   padding: 0.625rem 0.9375rem;
@@ -1267,8 +1265,8 @@ body {
   font-size: 0.8125rem;
   color: #fff;
   background: rgba(35, 34, 31, 0.1);
-  -webkit-backdrop-filter: blur(0.625rem);
-  backdrop-filter: blur(0.625rem);
+  -webkit-backdrop-filter: blur(0.3125rem);
+  backdrop-filter: blur(0.3125rem);
   border: 0.0625rem solid #b9d478;
   border-radius: 3.9375rem;
   text-align: center;
@@ -3680,10 +3678,17 @@ body {
   }
 
   .ingredient__items {
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     gap: 0.9375rem;
-    justify-items: end;
   }
 
   .use__title span {
