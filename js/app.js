@@ -686,6 +686,13 @@ document.addEventListener("DOMContentLoaded", function (e) {
 				parent.classList.add('gif-play');
 			}
 		}
+
+		if(targetElement.closest('.before__gif')) {
+			const parent = targetElement.closest('.before__slide');
+			if(parent.classList.contains('gif-play')) {
+				parent.classList.remove('gif-play');
+			}
+		}
 	});
 
 });

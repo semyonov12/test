@@ -7,22 +7,6 @@
 }
 
 @font-face {
-  font-family: avantgardegothicc;
-  font-display: swap;
-  src: url("../fonts/avantgardegothicc-bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: avantgardegothicc;
-  font-display: swap;
-  src: url("../fonts/avantgardegothicc-regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: inter;
   font-display: swap;
   src: url("../fonts/inter-bold.woff2") format("woff2");
@@ -116,7 +100,7 @@ a:active {
 input,
 button,
 textarea {
-  font-family: "avantgardegothicc", sans-serif;
+  font-family: "inter", sans-serif;
   font-size: inherit;
 }
 
@@ -164,7 +148,7 @@ body {
 }
 
 body {
-  font-family: "avantgardegothicc", sans-serif;
+  font-family: "inter", sans-serif;
   font-weight: 400;
   color: #2c2e1a;
   font-size: 1rem;
@@ -481,7 +465,7 @@ body {
   font-size: 0.875rem;
   line-height: 150%;
   text-align: center;
-  max-width: 36.875rem;
+  max-width: 38.75rem;
   margin: 0 auto 2.5rem;
 }
 
@@ -867,6 +851,7 @@ body {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  width: 20%;
 }
 
 .effect__slide img {
@@ -1601,8 +1586,8 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   cursor: pointer;
 }
 
@@ -1621,6 +1606,8 @@ body {
   aspect-ratio: 253/398;
   border-radius: 0.9375rem;
   overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .before__slide img {
@@ -2460,6 +2447,10 @@ body {
     width: auto !important;
   }
 
+  .before__slide {
+    width: 20%;
+  }
+
   .before__prev {
     position: static;
     margin: 0;
@@ -2818,6 +2809,10 @@ body {
     height: 18.125rem;
   }
 
+  .effect__slide {
+    width: 25%;
+  }
+
   .use {
     padding-bottom: 2.1875rem;
   }
@@ -2896,6 +2891,10 @@ body {
 }
 
 @media (max-width: 62em) {
+  .effect__slide {
+    width: 33.333%;
+  }
+
   .after__content {
     padding: 5rem 1.25rem;
   }
@@ -3183,6 +3182,10 @@ body {
 
   .effect__slider {
     margin-top: -0.3125rem;
+  }
+
+  .effect__slide {
+    width: 50%;
   }
 
   .swiper-button-prev {
@@ -3621,6 +3624,10 @@ body {
 
   .effect__title span {
     padding: 0.3125rem 0.625rem;
+  }
+
+  .effect__slide {
+    width: 100%;
   }
 
   .after__image::after {
