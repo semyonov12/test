@@ -1137,6 +1137,7 @@ body {
 }
 
 .ingredient__bg {
+  background: url("../img/ingredient-bg.webp") center/cover no-repeat;
   padding: 1.875rem 0.9375rem;
   border-radius: 0.9375rem;
   overflow: hidden;
