@@ -4,9 +4,8 @@
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
 	<!-- стили -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240623145836">
+	<link rel="stylesheet" href="css/style.css?_v=20240624111248">
 	<!-- фавикон -->
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	
@@ -26,12 +25,12 @@
 		<nav class="header__menu menu">
 			<div class="menu__container">
 				<ul class="menu__list">
-					<li class="menu__item"><a href="#" class="menu__link">История любви</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Место проведения</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Программа</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Дресс-код</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Вопросы для гостей</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+					<li class="menu__item"><a href="#" data-goto=".story" class="menu__link">История любви</a></li>
+					<li class="menu__item"><a href="#" data-goto=".place" class="menu__link">Место проведения</a></li>
+					<li class="menu__item"><a href="#" data-goto=".program" class="menu__link">Программа</a></li>
+					<li class="menu__item"><a href="#" data-goto=".dress-code" class="menu__link">Дресс-код</a></li>
+					<li class="menu__item"><a href="#" data-goto=".questions" class="menu__link">Вопросы для гостей</a></li>
+					<li class="menu__item"><a href="#" data-goto=".contacts" class="menu__link">Контакты</a></li>
 				</ul>
 			</div>
 
@@ -88,39 +87,41 @@
 					</div>
 				</section>
 				<section class="story">
-					<div class="story__text-mobile text">С каждым годом наша любовь становилась всё сильнее, и теперь мы
-						готовы сделать следующий шаг. Мы счастливы разделить этот особенный момент с вами и надеемся,
-						что вы
-						станете частью нашей дальнейшей истории.</div>
-					<div class="story__image">
-						<img src="img/1.webp" alt="Image">
-						<img src="img/2.webp" alt="Image">
-					</div>
-					<div class="story__content">
-						<div class="story__container">
-							<div class="story__body">
-								<div class="story__top">
-									<h2 class="story__title title">история любви</h2>
-									<div class="story__decor">
-										<svg width="211" height="273" viewBox="0 0 211 273" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M179.264 0H184.406C185.97 0.350755 187.601 0.578792 189.131 1.04872C195.861 3.11499 200.735 7.31622 204.462 13.2052C207.694 18.3129 209.424 24.5831 210.305 30.5138C210.982 35.0685 210.97 39.7632 210.997 44.3578C211.093 61.0628 209.193 77.5197 205.514 93.8096C202.786 105.894 198.826 117.627 194.363 129.169C186.372 149.834 176.073 169.687 163.805 188.129C156.28 199.441 147.805 210.096 139.208 220.6C129.927 231.938 120.561 243.137 110.751 254.023C104.948 260.463 98.8977 266.652 93.0023 273H92.8083C93.4927 270.974 94.8509 269.002 96.0928 267.279C100.02 261.831 104.996 257.254 109.205 252.038C113.722 246.441 117.955 240.61 122.146 234.767C131.879 221.197 140.906 207.086 149.834 192.975C152.235 189.178 154.641 185.384 157.063 181.601C158.432 179.462 159.928 177.336 161.171 175.124C162.083 173.501 162.825 171.755 163.648 170.084C165.32 166.689 166.992 163.296 168.647 159.893C173.145 150.645 177.616 141.396 181.475 131.855C183.968 125.69 186.077 119.433 188.131 113.112C190.922 104.524 192.387 95.3128 193.741 86.4042C194.518 81.2882 195.345 76.1582 195.909 71.0138C196.877 62.1771 197.284 53.2602 197.068 44.3725C196.966 40.197 196.852 35.987 196.153 31.8612C195.587 28.5164 194.531 25.1625 192.979 22.1479C191.381 19.0464 189.006 16.3472 185.6 15.2869C181.101 13.886 176.739 15.4291 172.733 17.5443C170.19 18.8868 167.876 20.5811 165.52 22.2181C155.376 29.2667 146.626 38.2417 139.387 48.2256C132.895 57.1797 127.598 66.9003 124.297 77.4962C122.919 81.9202 121.729 86.4418 120.803 90.9827C119.536 97.1947 118.52 103.33 116.627 109.4C119.81 114.355 121.906 119.143 121.698 125.141C121.545 129.536 119.724 132.911 116.563 135.85C108.574 133.568 103.28 126.677 98.1199 120.586C94.9362 116.828 91.8194 113.052 88.411 109.49C79.4985 100.176 69.7166 91.5783 59.3119 83.9745C52.2606 78.821 44.1453 73.3642 35.6601 70.9894C32.1421 70.0048 26.8686 68.9375 23.5103 70.98C22.0692 71.8565 21.3739 73.6721 21.0128 75.2441C19.1106 83.5204 22.0498 92.5068 25.5646 99.9559C35.5141 121.045 51.4188 138.879 64.8735 157.741C71.5889 167.155 77.4485 177.149 83.8545 186.771C93.0469 200.578 102.663 214.047 111.403 228.164C109.28 227.374 107.518 226.233 105.922 224.614C103.423 222.079 101.661 218.917 99.6396 216.018C98.1873 213.935 96.565 212.057 94.8662 210.173C85.7247 200.04 75.7061 190.747 66.45 180.727C62.6201 176.581 58.8782 172.349 55.3885 167.909C53.6478 165.695 52.129 163.181 50.3039 161.063C49.6083 160.256 48.6731 159.548 47.8899 158.813C46.4147 157.429 44.9827 155.985 43.5984 154.509C34.0636 144.343 26.094 132.8 18.0358 121.46C13.0004 114.374 7.26508 107.412 3.92992 99.3051C0.884338 91.9032 -0.230313 84.34 0.0387507 76.3631C0.294918 68.7617 3.22736 60.8168 8.87302 55.5907C15.0008 49.9185 23.2254 47.9811 31.3823 48.3445C48.1939 49.0936 64.1615 59.3411 77.1815 69.2225C81.6958 72.6485 86.2004 76.2148 90.3709 80.0592C95.7944 85.0583 100.838 90.5494 105.812 95.993C106.117 93.6481 106.199 91.2821 106.567 88.9358C108.98 73.5409 114.701 58.6439 122.969 45.4577C131.834 31.3181 143.477 19.3198 157.154 9.8179C160.716 7.34273 164.333 4.89052 168.321 3.13791C170.428 2.21222 172.747 1.34684 174.99 0.817004C176.399 0.484161 177.848 0.325519 179.264 0Z"
-												fill="#404040" fill-opacity="0.1" />
-										</svg>
-									</div>
+					<div class="story__container container-left">
+						<div class="story__text-mobile text">С каждым годом наша любовь становилась всё сильнее, и теперь мы
+							готовы сделать следующий шаг. Мы счастливы разделить этот особенный момент с вами и надеемся,
+							что вы
+							станете частью нашей дальнейшей истории.</div>
+						<div class="story__media">
+							<div class="story__image-1">
+								<img src="img/pic01.webp" alt="">
+							</div>
+							<div class="story__image-2">
+								<img src="img/pic02.webp" alt="">
+							</div>
+						</div>
+						<div class="story__content">
+							<div class="story__top">
+								<h2 class="story__title title">история любви</h2>
+								<div class="story__decor">
+									<svg width="211" height="273" viewBox="0 0 211 273" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M179.264 0H184.406C185.97 0.350755 187.601 0.578792 189.131 1.04872C195.861 3.11499 200.735 7.31622 204.462 13.2052C207.694 18.3129 209.424 24.5831 210.305 30.5138C210.982 35.0685 210.97 39.7632 210.997 44.3578C211.093 61.0628 209.193 77.5197 205.514 93.8096C202.786 105.894 198.826 117.627 194.363 129.169C186.372 149.834 176.073 169.687 163.805 188.129C156.28 199.441 147.805 210.096 139.208 220.6C129.927 231.938 120.561 243.137 110.751 254.023C104.948 260.463 98.8977 266.652 93.0023 273H92.8083C93.4927 270.974 94.8509 269.002 96.0928 267.279C100.02 261.831 104.996 257.254 109.205 252.038C113.722 246.441 117.955 240.61 122.146 234.767C131.879 221.197 140.906 207.086 149.834 192.975C152.235 189.178 154.641 185.384 157.063 181.601C158.432 179.462 159.928 177.336 161.171 175.124C162.083 173.501 162.825 171.755 163.648 170.084C165.32 166.689 166.992 163.296 168.647 159.893C173.145 150.645 177.616 141.396 181.475 131.855C183.968 125.69 186.077 119.433 188.131 113.112C190.922 104.524 192.387 95.3128 193.741 86.4042C194.518 81.2882 195.345 76.1582 195.909 71.0138C196.877 62.1771 197.284 53.2602 197.068 44.3725C196.966 40.197 196.852 35.987 196.153 31.8612C195.587 28.5164 194.531 25.1625 192.979 22.1479C191.381 19.0464 189.006 16.3472 185.6 15.2869C181.101 13.886 176.739 15.4291 172.733 17.5443C170.19 18.8868 167.876 20.5811 165.52 22.2181C155.376 29.2667 146.626 38.2417 139.387 48.2256C132.895 57.1797 127.598 66.9003 124.297 77.4962C122.919 81.9202 121.729 86.4418 120.803 90.9827C119.536 97.1947 118.52 103.33 116.627 109.4C119.81 114.355 121.906 119.143 121.698 125.141C121.545 129.536 119.724 132.911 116.563 135.85C108.574 133.568 103.28 126.677 98.1199 120.586C94.9362 116.828 91.8194 113.052 88.411 109.49C79.4985 100.176 69.7166 91.5783 59.3119 83.9745C52.2606 78.821 44.1453 73.3642 35.6601 70.9894C32.1421 70.0048 26.8686 68.9375 23.5103 70.98C22.0692 71.8565 21.3739 73.6721 21.0128 75.2441C19.1106 83.5204 22.0498 92.5068 25.5646 99.9559C35.5141 121.045 51.4188 138.879 64.8735 157.741C71.5889 167.155 77.4485 177.149 83.8545 186.771C93.0469 200.578 102.663 214.047 111.403 228.164C109.28 227.374 107.518 226.233 105.922 224.614C103.423 222.079 101.661 218.917 99.6396 216.018C98.1873 213.935 96.565 212.057 94.8662 210.173C85.7247 200.04 75.7061 190.747 66.45 180.727C62.6201 176.581 58.8782 172.349 55.3885 167.909C53.6478 165.695 52.129 163.181 50.3039 161.063C49.6083 160.256 48.6731 159.548 47.8899 158.813C46.4147 157.429 44.9827 155.985 43.5984 154.509C34.0636 144.343 26.094 132.8 18.0358 121.46C13.0004 114.374 7.26508 107.412 3.92992 99.3051C0.884338 91.9032 -0.230313 84.34 0.0387507 76.3631C0.294918 68.7617 3.22736 60.8168 8.87302 55.5907C15.0008 49.9185 23.2254 47.9811 31.3823 48.3445C48.1939 49.0936 64.1615 59.3411 77.1815 69.2225C81.6958 72.6485 86.2004 76.2148 90.3709 80.0592C95.7944 85.0583 100.838 90.5494 105.812 95.993C106.117 93.6481 106.199 91.2821 106.567 88.9358C108.98 73.5409 114.701 58.6439 122.969 45.4577C131.834 31.3181 143.477 19.3198 157.154 9.8179C160.716 7.34273 164.333 4.89052 168.321 3.13791C170.428 2.21222 172.747 1.34684 174.99 0.817004C176.399 0.484161 177.848 0.325519 179.264 0Z"
+											fill="#404040" fill-opacity="0.1" />
+									</svg>
 								</div>
-								<div class="story__text text">
-									<p>Наша история началась пять лет назад, когда мы встретились на вечеринке у общих
-										друзей. С тех пор мы прошли вместе через множество приключений и счастливых
-										моментов. Наши отношения развивались и крепли с каждым днём. Мы вместе
-										путешествовали, поддерживали друг друга в трудные времена и радовались общим
-										победам.</p>
-									<p>С каждым годом наша любовь становилась всё сильнее, и теперь мы готовы сделать
-										следующий шаг. Мы счастливы разделить этот особенный момент с вами и надеемся,
-										что
-										вы станете частью нашей дальнейшей истории.</p>
-								</div>
+							</div>
+							<div class="story__text text">
+								<p>Наша история началась пять лет назад, когда мы встретились на вечеринке у общих
+									друзей. С тех пор мы прошли вместе через множество приключений и счастливых
+									моментов. Наши отношения развивались и крепли с каждым днём. Мы вместе
+									путешествовали, поддерживали друг друга в трудные времена и радовались общим
+									победам.</p>
+								<p >С каждым годом наша любовь становилась всё сильнее, и теперь мы готовы сделать
+									следующий шаг. Мы счастливы разделить этот особенный момент с вами и надеемся,
+									что
+									вы станете частью нашей дальнейшей истории.</p>
 							</div>
 						</div>
 					</div>
@@ -129,9 +130,62 @@
 					<div class="date__container">
 						<h2 class="date__title title">дата свадьбы</h2>
 						<div class="date__sub-title">Октябрь 2024</div>
-						<div class="date__image">
-							<img src="img/calendar.webp" alt="Image">
-						</div>
+						<table class="date__table">
+							  <tr>
+								<th>Пн</th>
+								<th>Вт</th>
+								<th>Ср</th>
+								<th>Чт</th>
+								<th>Пт</th>
+								<th>Сб</th>
+								<th>Вс</th>
+							  </tr>
+							  <tr>
+								<td></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td class="date__current">4</td>
+								<td>5</td>
+								<td>6</td>
+							  </tr>
+							  <tr>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+							  </tr>
+							  <tr>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+							  </tr>
+							  <tr>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+							  </tr>
+							  <tr>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td>31</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							  </tr>
+							</table>
 					</div>
 				</section>
 				<section class="place">
@@ -152,7 +206,9 @@
 								<div class="place__text">Для вашего удобства мы подготовили карту. Надеемся, что вы
 									легко найдете место проведения свадьбы и порадуете нас своим присутствием!</div>
 								<div class="place__cart">
-									<iframe src="https://yandex.ru/map-widget/v1/?z=11&l=map,trf&pt= 44.00129622222906,56.237785650000006&scroll=false" width="100%" height="300" frameborder="0"></iframe>
+									<iframe loading="lazy"
+										src="https://yandex.ru/map-widget/v1/?z=11&l=map,trf&pt= 44.00129622222906,56.237785650000006&scroll=false"
+										width="100%" height="300"></iframe>
 								</div>
 							</div>
 						</div>
@@ -173,7 +229,7 @@
 							</div>
 							<div class="spollers__body">
 								<div class="spollers__image">
-									<img src="img/program-image.webp" alt="Image">
+									<img src="img/program-image.webp" alt="Картинка">
 								</div>
 								<div class="spollers__text">Собираясь на мероприятие, просим взять с собой ваши
 									прекрасные улыбки и хорошее настроение.</div>
@@ -186,7 +242,7 @@
 							</div>
 							<div class="spollers__body">
 								<div class="spollers__image">
-									<img src="img/program-image.webp" alt="Image">
+									<img src="img/program-image.webp" alt="Картинка">
 								</div>
 								<div class="spollers__text">Собираясь на мероприятие, просим взять с собой ваши
 									прекрасные улыбки и хорошее настроение.</div>
@@ -199,7 +255,7 @@
 							</div>
 							<div class="spollers__body">
 								<div class="spollers__image">
-									<img src="img/program-image.webp" alt="Image">
+									<img src="img/program-image.webp" alt="Картинка">
 								</div>
 								<div class="spollers__text">Собираясь на мероприятие, просим взять с собой ваши
 									прекрасные улыбки и хорошее настроение.</div>
@@ -212,7 +268,7 @@
 							</div>
 							<div class="spollers__body">
 								<div class="spollers__image">
-									<img src="img/program-image.webp" alt="Image">
+									<img src="img/program-image.webp" alt="Картинка">
 								</div>
 								<div class="spollers__text">Собираясь на мероприятие, просим взять с собой ваши
 									прекрасные улыбки и хорошее настроение.</div>
@@ -225,7 +281,7 @@
 							</div>
 							<div class="spollers__body">
 								<div class="spollers__image">
-									<img src="img/program-image.webp" alt="Image">
+									<img src="img/program-image.webp" alt="Картинка">
 								</div>
 								<div class="spollers__text">Собираясь на мероприятие, просим взять с собой ваши
 									прекрасные улыбки и хорошее настроение.</div>
@@ -238,7 +294,7 @@
 							</div>
 							<div class="spollers__body">
 								<div class="spollers__image">
-									<img src="img/program-image.webp" alt="Image">
+									<img src="img/program-image.webp" alt="Картинка">
 								</div>
 								<div class="spollers__text">Собираясь на мероприятие, просим взять с собой ваши
 									прекрасные улыбки и хорошее настроение.</div>
@@ -251,7 +307,7 @@
 							</div>
 							<div class="spollers__body">
 								<div class="spollers__image">
-									<img src="img/program-image.webp" alt="Image">
+									<img src="img/program-image.webp" alt="Картинка">
 								</div>
 								<div class="spollers__text">Собираясь на мероприятие, просим взять с собой ваши
 									прекрасные улыбки и хорошее настроение.</div>
@@ -264,7 +320,7 @@
 							</div>
 							<div class="spollers__body">
 								<div class="spollers__image">
-									<img src="img/program-image.webp" alt="Image">
+									<img src="img/program-image.webp" alt="Картинка">
 								</div>
 								<div class="spollers__text">Собираясь на мероприятие, просим взять с собой ваши
 									прекрасные улыбки и хорошее настроение.</div>
@@ -277,7 +333,7 @@
 							</div>
 							<div class="spollers__body">
 								<div class="spollers__image">
-									<img src="img/program-image.webp" alt="Image">
+									<img src="img/program-image.webp" alt="Картинка">
 								</div>
 								<div class="spollers__text">Собираясь на мероприятие, просим взять с собой ваши
 									прекрасные улыбки и хорошее настроение.</div>
@@ -290,7 +346,7 @@
 							</div>
 							<div class="spollers__body">
 								<div class="spollers__image">
-									<img src="img/program-image.webp" alt="Image">
+									<img src="img/program-image.webp" alt="Картинка">
 								</div>
 								<div class="spollers__text">Собираясь на мероприятие, просим взять с собой ваши
 									прекрасные улыбки и хорошее настроение.</div>
@@ -303,7 +359,7 @@
 							</div>
 							<div class="spollers__body">
 								<div class="spollers__image">
-									<img src="img/program-image.webp" alt="Image">
+									<img src="img/program-image.webp" alt="Картинка">
 								</div>
 								<div class="spollers__text">Собираясь на мероприятие, просим взять с собой ваши
 									прекрасные улыбки и хорошее настроение.</div>
@@ -316,7 +372,7 @@
 							</div>
 							<div class="spollers__body">
 								<div class="spollers__image">
-									<img src="img/program-image.webp" alt="Image">
+									<img src="img/program-image.webp" alt="Картинка">
 								</div>
 								<div class="spollers__text">Собираясь на мероприятие, просим взять с собой ваши
 									прекрасные улыбки и хорошее настроение.</div>
@@ -355,7 +411,7 @@
 						</div>
 					</div>
 					<div data-da=".dress-code__bottom, 767.98, 2" class="dress-code__image">
-						<img src="img/dress-code-image.webp" alt="Image">
+						<img src="img/dress-code-image.webp" alt="Картинка">
 					</div>
 				</section>
 			</div>
@@ -363,89 +419,110 @@
 				<div class="questions__container">
 					<form action="#" class="questions__form">
 						<h2 class="questions__title title">Вопросы <br> для гостей</h2>
-						<div class="questions__text text">Подтвердите, пожалуйста, своё присутствие на нашем торжестве!</div>
-							<div class="questions__item">
-								<input type="text" class="questions__input" placeholder="Введите Имя">
-								<div class="questions__decor">*</div>
-							</div>
-							<div class="questions__item">
-								<h4 class="questions__caption">Присутсвие *</h4>
-								<div class="options">
-									<div class="options__item">
-										<input hidden id="o_1" class="options__input" checked type="radio" value="yes" name="presence">
-										<label for="o_1" class="options__label"><span class="options__text text">Я с удовольствием приду</span></label>
-									</div>
-									<div class="options__item">
-										<input hidden id="o_2" class="options__input" type="radio" value="no" name="presence">
-										<label for="o_2" class="options__label"><span class="options__text text">К сожалению, не смогу присутствовать</span></label>
-									</div>
+						<div class="questions__text text">Подтвердите, пожалуйста, своё присутствие на нашем торжестве!
+						</div>
+						<div class="questions__item">
+							<input type="text" class="questions__input" placeholder="Введите Имя">
+							<div class="questions__decor">*</div>
+						</div>
+						<div class="questions__item">
+							<h4 class="questions__caption">Присутсвие *</h4>
+							<div class="options">
+								<div class="options__item">
+									<input hidden id="o_1" class="options__input" checked type="radio" value="yes"
+										name="presence">
+									<label for="o_1" class="options__label"><span class="options__text text">Я с
+											удовольствием приду</span></label>
+								</div>
+								<div class="options__item">
+									<input hidden id="o_2" class="options__input" type="radio" value="no"
+										name="presence">
+									<label for="o_2" class="options__label"><span class="options__text text">К
+											сожалению, не смогу присутствовать</span></label>
 								</div>
 							</div>
-							<div class="questions__item">
-								<h4 class="questions__caption">Выбор алкоголя </h4>
-								<div class="checkbox">
-									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1">
-									<label for="c_1" class="checkbox__label"><span class="checkbox__text text">Шампанское</span></label>
+						</div>
+						<div class="questions__item">
+							<h4 class="questions__caption">Выбор алкоголя </h4>
+							<div class="checkbox">
+								<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1">
+								<label for="c_1" class="checkbox__label"><span
+										class="checkbox__text text">Шампанское</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="2">
+								<label for="c_2" class="checkbox__label"><span class="checkbox__text text">Красное сухое
+										вино</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="3">
+								<label for="c_3" class="checkbox__label"><span class="checkbox__text text">Красное
+										полусладкое вино</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="4">
+								<label for="c_4" class="checkbox__label"><span class="checkbox__text text">Белое
+										полусладкое вино</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="5">
+								<label for="c_5" class="checkbox__label"><span class="checkbox__text text">Белое сухое
+										вино</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="6">
+								<label for="c_6" class="checkbox__label"><span
+										class="checkbox__text text">Виски</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="7">
+								<label for="c_7" class="checkbox__label"><span
+										class="checkbox__text text">Коньяк</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="8">
+								<label for="c_8" class="checkbox__label"><span
+										class="checkbox__text text">Водка</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="9">
+								<label for="c_9" class="checkbox__label"><span
+										class="checkbox__text text">Ром</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="10">
+								<label for="c_10" class="checkbox__label"><span
+										class="checkbox__text text">Джин</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="11">
+								<label for="c_11" class="checkbox__label"><span
+										class="checkbox__text text">Безалкогольные напитки</span></label>
+							</div>
+						</div>
+						<div class="questions__item">
+							<h4 class="questions__caption">Предпочтения в горячих блюдах</h4>
+							<div class="options">
+								<div class="options__item">
+									<input hidden id="o_3" class="options__input" checked type="radio" value="fish"
+										name="preferences">
+									<label for="o_3" class="options__label"><span
+											class="options__text text">Рыба</span></label>
 								</div>
-								<div class="checkbox">
-									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="2">
-									<label for="c_2" class="checkbox__label"><span class="checkbox__text text">Красное сухое вино</span></label>
-								</div>
-								<div class="checkbox">
-									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="3">
-									<label for="c_3" class="checkbox__label"><span class="checkbox__text text">Красное полусладкое вино</span></label>
-								</div>
-								<div class="checkbox">
-									<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="4">
-									<label for="c_4" class="checkbox__label"><span class="checkbox__text text">Белое полусладкое вино</span></label>
-								</div>
-								<div class="checkbox">
-									<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="5">
-									<label for="c_5" class="checkbox__label"><span class="checkbox__text text">Белое сухое вино</span></label>
-								</div>
-								<div class="checkbox">
-									<input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="6">
-									<label for="c_6" class="checkbox__label"><span class="checkbox__text text">Виски</span></label>
-								</div>
-								<div class="checkbox">
-									<input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="7">
-									<label for="c_7" class="checkbox__label"><span class="checkbox__text text">Коньяк</span></label>
-								</div>
-								<div class="checkbox">
-									<input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="8">
-									<label for="c_8" class="checkbox__label"><span class="checkbox__text text">Водка</span></label>
-								</div>
-								<div class="checkbox">
-									<input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="9">
-									<label for="c_9" class="checkbox__label"><span class="checkbox__text text">Ром</span></label>
-								</div>
-								<div class="checkbox">
-									<input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="10">
-									<label for="c_10" class="checkbox__label"><span class="checkbox__text text">Джин</span></label>
-								</div>
-								<div class="checkbox">
-									<input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="11">
-									<label for="c_11" class="checkbox__label"><span class="checkbox__text text">Безалкогольные напитки</span></label>
+								<div class="options__item">
+									<input hidden id="o_4" class="options__input" type="radio" value="meat"
+										name="preferences">
+									<label for="o_4" class="options__label"><span
+											class="options__text text">Мясо</span></label>
 								</div>
 							</div>
-							<div class="questions__item">
-								<h4 class="questions__caption">Предпочтения в горячих блюдах</h4>
-								<div class="options">
-									<div class="options__item">
-										<input hidden id="o_3" class="options__input" checked type="radio" value="fish" name="preferences">
-										<label for="o_3" class="options__label"><span class="options__text text">Рыба</span></label>
-									</div>
-									<div class="options__item">
-										<input hidden id="o_4" class="options__input" type="radio" value="meat" name="preferences">
-										<label for="o_4" class="options__label"><span class="options__text text">Мясо</span></label>
-									</div>
-								</div>
-							</div>
-							<div class="questions__item">
-								<h4 class="questions__caption">Музыкальные композиции, которые хотели бы услышать на празднике</h4>
-								<input type="text" class="questions__input" placeholder="Выши любимые исполнители">
-							</div>
-							<button type="submit" class="questions__submit">ОТПРАВИТЬ</button>
+						</div>
+						<div class="questions__item">
+							<h4 class="questions__caption">Музыкальные композиции, которые хотели бы услышать на
+								празднике</h4>
+							<input type="text" class="questions__input" placeholder="Выши любимые исполнители">
+						</div>
+						<button type="submit" class="questions__submit">ОТПРАВИТЬ</button>
 					</form>
 					<div class="questions__column">
 						<h2 class="questions__title title">ДО СВАДЬБЫ ОСТАЛОСЬ</h2>
@@ -463,14 +540,14 @@
 					<h2 class="contacts__title title">Связаться с нами</h2>
 					<div class="contacts__body">
 						<div class="contacts__column">
-							<div data-da=".contacts__block_1, 991.98" class="contacts__image">
+							<div class="contacts__image">
 								<img src="img/contacts-image1.webp" alt="Картинка">
 							</div>
 							<div class="contacts__content">
 								<h3 class="contacts__caption">Невеста</h3>
 								<a href="tel:+79999999999" class="contacts__link _icon-phone">+7 999 999-99-99</a>
 								<a href="mailto:pochta@gmail.com" class="contacts__link _icon-mail">pochta@gmail.com</a>
-								<div class="contacts__block contacts__block_1">
+								<div class="contacts__block">
 									<div class="contacts__social">
 										<a href="#" class="contacts__item-social _icon-instagram"></a>
 										<a href="#" class="contacts__item-social _icon-telegram"></a>
@@ -479,21 +556,53 @@
 											<div class="contacts__vk-block _icon-vk"></div>
 										</a>
 									</div>
+									<img src="img/contacts-image1.webp" alt="Картинка">
 								</div>
-								
+
 							</div>
 						</div>
 						<div class="contacts__column">
-							<div data-da=".contacts__block_2, 991.98" class="contacts__image">
+							<div class="contacts__image">
 								<img src="img/contacts-image2.webp" alt="Картинка">
 							</div>
 							<div class="contacts__content">
 								<h3 class="contacts__caption">жених</h3>
 								<a href="tel:+79999999999" class="contacts__link _icon-phone">+7 999 999-99-99</a>
-								<div class="contacts__block contacts__block_2">
+								<div class="contacts__block">
 									<div class="contacts__social">
 										<a href="#" class="contacts__item-social _icon-telegram"></a>
 									</div>
+									<img src="img/contacts-image2.webp" alt="Картинка">
+								</div>
+							</div>
+						</div>
+						<div class="contacts__column">
+							<div class="contacts__image">
+								<img src="img/contacts-image2.webp" alt="Картинка">
+							</div>
+							<div class="contacts__content">
+								<h3 class="contacts__caption">жених</h3>
+								<a href="tel:+79999999999" class="contacts__link _icon-phone">+7 999 999-99-99</a>
+								<div class="contacts__block">
+									<div class="contacts__social">
+										<a href="#" class="contacts__item-social _icon-telegram"></a>
+									</div>
+									<img src="img/contacts-image2.webp" alt="Картинка">
+								</div>
+							</div>
+						</div>
+						<div class="contacts__column">
+							<div class="contacts__image">
+								<img src="img/contacts-image2.webp" alt="Картинка">
+							</div>
+							<div class="contacts__content">
+								<h3 class="contacts__caption">жених</h3>
+								<a href="tel:+79999999999" class="contacts__link _icon-phone">+7 999 999-99-99</a>
+								<div class="contacts__block">
+									<div class="contacts__social">
+										<a href="#" class="contacts__item-social _icon-telegram"></a>
+									</div>
+									<img src="img/contacts-image2.webp" alt="Картинка">
 								</div>
 							</div>
 						</div>
@@ -532,7 +641,7 @@
 	</div>
 
 
-	<script src="js/app.js?_v=20240623145836"></script>
+	<script src="js/app.js?_v=20240624111248"></script>
 </body>
 
 </html>
