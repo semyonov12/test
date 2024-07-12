@@ -507,6 +507,8 @@ body {
 .ready {
   padding-bottom: 8.125rem;
   padding-top: 1.25rem;
+  position: relative;
+  z-index: 3;
 }
 
 .ready__container {
@@ -1637,6 +1639,7 @@ body {
 
   .hero {
     padding-top: 5rem;
+    padding-bottom: 4.375rem;
   }
 
   .hero__image {
@@ -1662,8 +1665,8 @@ body {
   }
 
   .ready {
-    padding-top: 3.125rem;
-    padding-bottom: 7.25rem;
+    padding-top: 1.875rem;
+    padding-bottom: 6.25rem;
   }
 
   .ready__container {
@@ -1697,6 +1700,10 @@ body {
 
   .ready__image img {
     max-width: 18.75rem;
+  }
+
+  .earn {
+    padding-top: 2.5rem;
   }
 
   .earn__block {
