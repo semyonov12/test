@@ -15,12 +15,13 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 
 	function rangeInit() {
-		const priceSlider = document.querySelector('#range-amount');
-		const squareSlider = document.querySelector('#range-holding');
+		const amountSlider = document.querySelector('#range-amount');
+		const holdingSlider = document.querySelector('#range-holding');
 		const depositElement = document.querySelector('#deposit');
 		const balanceElement = document.querySelector('#balance');
 		const daysElement = document.querySelector('#days');
 		const amountElement = document.querySelector('#amount');
+
 
 		// Функция для форматирования числа с пробелами между тысячами
 		function formatNumberWithSpaces(number) {
@@ -34,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
 			amountElement.innerHTML = formatNumberWithSpaces(parseInt(sum.toFixed(0)) - deposit);
 		}
 
-		if (priceSlider && squareSlider) {
-			noUiSlider.create(priceSlider, {
+		if (amountSlider && holdingSlider) {
+			noUiSlider.create(amountSlider, {
 				start: [0],
 				connect: [true, false],
 				range: {
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 				}
 			});
 
-			noUiSlider.create(squareSlider, {
+			noUiSlider.create(holdingSlider, {
 				start: [0],
 				connect: [true, false],
 				range: {
@@ -53,16 +54,31 @@ document.addEventListener("DOMContentLoaded", function (e) {
 				}
 			});
 
-			priceSlider.noUiSlider.on('update', function (values) {
-				let priceStartValue = parseInt(values[0]);
-				depositElement.innerHTML = formatNumberWithSpaces(priceStartValue);
-				calculateBalanceAndAmount(priceStartValue, parseInt(daysElement.innerHTML));
+			amountSlider.noUiSlider.on('update', function (values) {
+				let amountStartValue = parseInt(values[0]);
+				depositElement.value = formatNumberWithSpaces(amountStartValue);
+				calculateBalanceAndAmount(amountStartValue, parseInt(daysElement.value.replace(/\s+/g, '')));
 			});
 
-			squareSlider.noUiSlider.on('update', function (values) {
-				let squareStartValue = parseInt(values[0]);
-				daysElement.innerHTML = formatNumberWithSpaces(squareStartValue);
-				calculateBalanceAndAmount(parseInt(depositElement.innerHTML), squareStartValue);
+			holdingSlider.noUiSlider.on('update', function (values) {
+				let holdingStartValue = parseInt(values[0]);
+				daysElement.value = formatNumberWithSpaces(holdingStartValue);
+				calculateBalanceAndAmount(parseInt(depositElement.value.replace(/\s+/g, '')), holdingStartValue);
+			});
+
+
+			depositElement.addEventListener("input", function (e) {
+				let value = parseInt(depositElement.value);
+				if (!isNaN(value)) {
+					amountSlider.noUiSlider.set(value);
+				}
+			});
+
+			daysElement.addEventListener("input", function (e) {
+				let value = parseInt(daysElement.value);
+				if (!isNaN(value)) {
+					holdingSlider.noUiSlider.set(value);
+				}
 			});
 		}
 	}
@@ -251,108 +267,61 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 
 
+// Изначальные углы поворота и изображения
+const imagesConfig = [
+	{ selector: '.earn__image-1', initialRotation: 90 },
+	{ selector: '.earn__image-2', initialRotation: -90 }
+];
 
-	// Изначальный угол поворота
-	const initialRotation1 = 90;
-	const image1 = document.querySelector('.earn__image-1');
-	// Функция для обновления угла поворота картинки
-	function updateRotation(element, angle) {
-		element.style.transform = `rotate(${angle}deg)`;
-	}
+// Функция для обновления угла поворота картинки
+function updateRotation(element, angle) {
+	element.style.transform = `rotate(${angle}deg)`;
+}
 
-	// Функция для обработки скролла для первой картинки
-	function handleScroll1() {
-		let currentRotation = initialRotation1;
-	
-		return function() {
-			// Получаем координаты и размеры картинки
-			const rect = image1.getBoundingClientRect();
-			const imageHalfHeight = rect.height / 2; // половина высоты картинки относительно окна
-	
-			// Получаем текущую позицию скролла
-			const scrollPosition = window.scrollY || window.pageYOffset;
-	
-			// Определяем, когда начинать крутить картинку
-			const imageOffsetTop = rect.top + scrollPosition;
-			const startRotationPosition = imageOffsetTop - window.innerHeight + imageHalfHeight;
-	
-			// Определяем направление скролла и применяем эффекты
-			if (scrollPosition > startRotationPosition) {
-				// Скроллим вниз
-				if (currentRotation > 0) { // Условие для уменьшения угла поворота до 0 градусов
-					currentRotation -= 2; // Уменьшаем угол поворота по часовой стрелке на 1 градус
-					updateRotation(image1, currentRotation);
-				}
-			} else {
-				// Скроллим вверх
-				if (currentRotation < 90) { // Условие для увеличения угла поворота до 90 градусов
-					currentRotation += 2; // Увеличиваем угол поворота против часовой стрелки на 1 градус
-					updateRotation(image1, currentRotation);
-				}
+// Универсальная функция для обработки скролла
+function createScrollHandler(image, initialRotation) {
+	let currentRotation = initialRotation;
+
+	return function () {
+		// Получаем координаты и размеры картинки
+		const rect = image.getBoundingClientRect();
+		const imageHalfHeight = rect.height / 2; // половина высоты картинки относительно окна
+
+		// Получаем текущую позицию скролла
+		const scrollPosition = window.scrollY || window.pageYOffset;
+
+		// Определяем, когда начинать крутить картинку
+		const imageOffsetTop = rect.top + scrollPosition;
+		const startRotationPosition = imageOffsetTop - window.innerHeight + imageHalfHeight;
+
+		// Определяем направление скролла и применяем эффекты
+		if (scrollPosition > startRotationPosition) {
+			// Скроллим вниз
+			if (initialRotation > 0 && currentRotation > 0) {
+				currentRotation -= 2; // Уменьшаем угол поворота по часовой стрелке на 2 градуса
+			} else if (initialRotation < 0 && currentRotation < 0) {
+				currentRotation += 2; // Увеличиваем угол поворота по часовой стрелке на 2 градуса
 			}
-		};
-	}
-
-	// Создаем обработчик события скролла для первой картинки
-	const scrollHandler1 = handleScroll1();
-
-	// Добавляем обработчик события скролла
-	window.addEventListener('scroll', scrollHandler1);
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// Изначальный угол поворота
-	const initialRotation2 = -90;
-	const image2 = document.querySelector('.earn__image-2');
-
-	// Функция для обработки скролла для второй картинки
-	function handleScroll2() {
-		let currentRotation = initialRotation2;
-
-		return function () {
-			// Получаем координаты и размеры картинки
-			const rect = image2.getBoundingClientRect();
-			const imageHalfHeight = rect.height / 2; // половина высоты картинки относительно окна
-
-			// Получаем текущую позицию скролла
-			const scrollPosition = window.scrollY || window.pageYOffset;
-
-			// Определяем, когда начинать крутить картинку
-			const imageOffsetTop = rect.top + scrollPosition;
-			const startRotationPosition = imageOffsetTop - window.innerHeight + imageHalfHeight;
-
-			// Определяем направление скролла и применяем эффекты
-			if (scrollPosition > startRotationPosition) {
-				// Скроллим вниз
-				if (currentRotation < 0) {
-					currentRotation += 2; // Увеличиваем угол поворота по часовой стрелке на 1 градус
-					updateRotation(image2, currentRotation);
-				}
-			} else {
-				// Скроллим вверх
-				if (currentRotation > -90) {
-					currentRotation -= 2; // Уменьшаем угол поворота против часовой стрелки на 1 градус
-					updateRotation(image2, currentRotation);
-				}
+		} else {
+			// Скроллим вверх
+			if (initialRotation > 0 && currentRotation < initialRotation) {
+				currentRotation += 2; // Увеличиваем угол поворота против часовой стрелки на 2 градуса
+			} else if (initialRotation < 0 && currentRotation > initialRotation) {
+				currentRotation -= 2; // Уменьшаем угол поворота против часовой стрелки на 2 градуса
 			}
-		};
+		}
+		updateRotation(image, currentRotation);
+	};
+}
+
+// Добавляем обработчики события скролла для всех изображений
+imagesConfig.forEach(config => {
+	const image = document.querySelector(config.selector);
+	if (image) {
+		const scrollHandler = createScrollHandler(image, config.initialRotation);
+		window.addEventListener('scroll', scrollHandler);
 	}
-
-	// Создаем обработчик события скролла для второй картинки
-	const scrollHandler2 = handleScroll2();
-
-	// Добавляем обработчик события скролла
-	window.addEventListener('scroll', scrollHandler2);
+});
 
 });
 

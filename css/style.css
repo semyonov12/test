@@ -809,6 +809,10 @@ body {
   margin-bottom: 5rem;
 }
 
+.earn__item:last-child .earn__number {
+  width: 1.5625rem;
+}
+
 .earn__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -850,12 +854,15 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 1.5625rem;
+  gap: 0.625rem;
   height: 1.875rem;
 }
 
 .earn__number {
   color: #fff;
+  background: transparent;
+  min-width: auto;
+  width: 3.4375rem;
 }
 
 @supports (font-size: clamp( 0.9375rem , 0.8614864865rem  +  0.3378378378vw , 1.125rem )) {
