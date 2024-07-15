@@ -21,20 +21,33 @@ document.addEventListener("DOMContentLoaded", function (e) {
 		const balanceElement = document.querySelector('#balance');
 		const daysElement = document.querySelector('#days');
 		const amountElement = document.querySelector('#amount');
-
-
+	
 		// Функция для форматирования числа с пробелами между тысячами
 		function formatNumberWithSpaces(number) {
 			return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 		}
-
+	
+		// Функция для форматирования числа
+		function formatNumber(number) {
+			// Если число целое, возвращаем его без дробной части
+			if (Number.isInteger(number)) {
+				return formatNumberWithSpaces(number);
+			} else {
+				// Округляем до одного знака после запятой и убираем нули в конце
+				return formatNumberWithSpaces(parseFloat(number.toFixed(1)));
+			}
+		}
+	
 		// Функция для расчета баланса и суммы
 		function calculateBalanceAndAmount(deposit, days) {
 			let sum = deposit * (1.0067 ** days);
-			balanceElement.innerHTML = formatNumberWithSpaces(sum.toFixed(0));
-			amountElement.innerHTML = formatNumberWithSpaces(parseInt(sum.toFixed(0)) - deposit);
+			let balance = sum.toFixed(1);
+			let amount = (sum - deposit).toFixed(1);
+	
+			balanceElement.innerHTML = formatNumber(parseFloat(balance));
+			amountElement.innerHTML = formatNumber(parseFloat(amount));
 		}
-
+	
 		if (amountSlider && holdingSlider) {
 			noUiSlider.create(amountSlider, {
 				start: [0],
@@ -44,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 					'max': 5000
 				}
 			});
-
+	
 			noUiSlider.create(holdingSlider, {
 				start: [0],
 				connect: [true, false],
@@ -53,37 +66,37 @@ document.addEventListener("DOMContentLoaded", function (e) {
 					'max': 30
 				}
 			});
-
+	
 			amountSlider.noUiSlider.on('update', function (values) {
 				let amountStartValue = parseInt(values[0]);
 				depositElement.value = formatNumberWithSpaces(amountStartValue);
 				calculateBalanceAndAmount(amountStartValue, parseInt(daysElement.value.replace(/\s+/g, '')));
 			});
-
+	
 			holdingSlider.noUiSlider.on('update', function (values) {
 				let holdingStartValue = parseInt(values[0]);
 				daysElement.value = formatNumberWithSpaces(holdingStartValue);
 				calculateBalanceAndAmount(parseInt(depositElement.value.replace(/\s+/g, '')), holdingStartValue);
 			});
-
-
+	
 			depositElement.addEventListener("input", function (e) {
-				let value = parseInt(depositElement.value);
+				let value = parseInt(depositElement.value.replace(/\s+/g, ''));
 				if (!isNaN(value)) {
 					amountSlider.noUiSlider.set(value);
 				}
 			});
-
+	
 			daysElement.addEventListener("input", function (e) {
-				let value = parseInt(daysElement.value);
+				let value = parseInt(daysElement.value.replace(/\s+/g, ''));
 				if (!isNaN(value)) {
 					holdingSlider.noUiSlider.set(value);
 				}
 			});
 		}
 	}
-
+	
 	rangeInit();
+	
 
 
 
@@ -267,60 +280,62 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 
 
-// Изначальные углы поворота и изображения
+	// Изначальные углы поворота и изображения
 const imagesConfig = [
-	{ selector: '.earn__image-1', initialRotation: 90 },
-	{ selector: '.earn__image-2', initialRotation: -90 }
+    { selector: '.earn__image-1', initialRotation: 90 },
+    { selector: '.earn__image-2', initialRotation: -90 }
 ];
 
 // Функция для обновления угла поворота картинки
 function updateRotation(element, angle) {
-	element.style.transform = `rotate(${angle}deg)`;
+    element.style.transform = `rotate(${angle}deg)`;
 }
 
 // Универсальная функция для обработки скролла
 function createScrollHandler(image, initialRotation) {
-	let currentRotation = initialRotation;
+    let currentRotation = initialRotation;
+    let animationDone = false; // Флаг для отслеживания выполнения анимации
 
-	return function () {
-		// Получаем координаты и размеры картинки
-		const rect = image.getBoundingClientRect();
-		const imageHalfHeight = rect.height / 2; // половина высоты картинки относительно окна
+    return function () {
+        if (animationDone) return; // Если анимация уже выполнена, выход из функции
 
-		// Получаем текущую позицию скролла
-		const scrollPosition = window.scrollY || window.pageYOffset;
+        // Получаем координаты и размеры картинки
+        const rect = image.getBoundingClientRect();
+        const imageHalfHeight = rect.height / 2; // половина высоты картинки относительно окна
 
-		// Определяем, когда начинать крутить картинку
-		const imageOffsetTop = rect.top + scrollPosition;
-		const startRotationPosition = imageOffsetTop - window.innerHeight + imageHalfHeight;
+        // Получаем текущую позицию скролла
+        const scrollPosition = window.scrollY || window.pageYOffset;
 
-		// Определяем направление скролла и применяем эффекты
-		if (scrollPosition > startRotationPosition) {
-			// Скроллим вниз
-			if (initialRotation > 0 && currentRotation > 0) {
-				currentRotation -= 2; // Уменьшаем угол поворота по часовой стрелке на 2 градуса
-			} else if (initialRotation < 0 && currentRotation < 0) {
-				currentRotation += 2; // Увеличиваем угол поворота по часовой стрелке на 2 градуса
-			}
-		} else {
-			// Скроллим вверх
-			if (initialRotation > 0 && currentRotation < initialRotation) {
-				currentRotation += 2; // Увеличиваем угол поворота против часовой стрелки на 2 градуса
-			} else if (initialRotation < 0 && currentRotation > initialRotation) {
-				currentRotation -= 2; // Уменьшаем угол поворота против часовой стрелки на 2 градуса
-			}
-		}
-		updateRotation(image, currentRotation);
-	};
+        // Определяем, когда начинать крутить картинку
+        const imageOffsetTop = rect.top + scrollPosition;
+        const startRotationPosition = imageOffsetTop - window.innerHeight + imageHalfHeight;
+
+        // Определяем направление скролла и применяем эффекты
+        if (scrollPosition > startRotationPosition) {
+            // Скроллим вниз
+            if (initialRotation > 0 && currentRotation > 0) {
+                currentRotation -= 2; // Уменьшаем угол поворота по часовой стрелке на 2 градуса
+            } else if (initialRotation < 0 && currentRotation < 0) {
+                currentRotation += 2; // Увеличиваем угол поворота по часовой стрелке на 2 градуса
+            }
+
+            // Проверяем, достигли ли мы конечного угла поворота
+            if ((initialRotation > 0 && currentRotation <= 0) || (initialRotation < 0 && currentRotation >= 0)) {
+                animationDone = true; // Устанавливаем флаг после завершения анимации
+            }
+
+            updateRotation(image, currentRotation);
+        }
+    };
 }
 
 // Добавляем обработчики события скролла для всех изображений
 imagesConfig.forEach(config => {
-	const image = document.querySelector(config.selector);
-	if (image) {
-		const scrollHandler = createScrollHandler(image, config.initialRotation);
-		window.addEventListener('scroll', scrollHandler);
-	}
+    const image = document.querySelector(config.selector);
+    if (image) {
+        const scrollHandler = createScrollHandler(image, config.initialRotation);
+        window.addEventListener('scroll', scrollHandler);
+    }
 });
 
 });
