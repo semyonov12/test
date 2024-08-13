@@ -56,8 +56,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
 				document.querySelector('.table__row').classList.remove('table-open-menu');
 			}
 		 }
-
-
 	 });
 
 
@@ -69,6 +67,22 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 	 inputSearch?.addEventListener("blur", function (e) {
 		inputSearch.closest('.form-data').classList.remove('list-open');
+	 });
+
+
+
+
+	 const inputs = document.querySelectorAll('#code .popup__input');
+
+	 inputs.forEach((input, index) => {
+		 input.setAttribute('maxlength', 1);
+		 input.setAttribute('autocomplete', 'off');
+ 
+		 input.addEventListener('input', function() {
+			 if (input.value.length >= input.maxLength && index < inputs.length - 1) {
+				 inputs[index + 1].focus();
+			 }
+		 });
 	 });
 
 	 

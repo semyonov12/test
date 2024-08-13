@@ -3388,12 +3388,12 @@ body {
 }
 
 .courses-hero__add-bottom {
-  margin-left: 0.3125rem;
   font-weight: 500;
   font-size: 0.6875rem;
   letter-spacing: -0.02em;
   color: #3657a3;
   margin-left: auto;
+  margin-right: 0.25rem;
 }
 
 .price-hero {
@@ -4401,6 +4401,7 @@ body::after {
   -webkit-box-shadow: 0 0.875rem 3rem -0.75rem rgba(16, 24, 40, 0.16);
   box-shadow: 0 0.875rem 3rem -0.75rem rgba(16, 24, 40, 0.16);
   overflow: hidden;
+  position: relative;
 }
 
 .popup_big .popup__content {
@@ -4901,7 +4902,7 @@ body::after {
 }
 
 .popup-courses__buttons {
-  position: fixed;
+  position: absolute;
   z-index: 5;
   bottom: 0;
   left: 0;
@@ -5134,7 +5135,7 @@ body::after {
 }
 
 .popup-listener-data__buttons {
-  position: fixed;
+  position: absolute;
   z-index: 5;
   bottom: 0;
   left: 0;
@@ -5540,7 +5541,7 @@ body::after {
 
 .form-data__bottom {
   display: none;
-  position: fixed;
+  position: absolute;
   z-index: 5;
   bottom: 0;
   left: 0;
@@ -7302,11 +7303,11 @@ body::after {
   }
 
   .method-hero {
-    padding-bottom: 12.5rem;
+    padding-bottom: 13.75rem;
   }
 
   .select-hero {
-    padding-bottom: 23.75rem;
+    padding-bottom: 13.75rem;
   }
 
   .list-listeners {
