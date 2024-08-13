@@ -4315,8 +4315,8 @@ body::after {
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: opacity 0.8s ease 0s;
-  transition: opacity 0.8s ease 0s;
+  -webkit-transition: opacity 0.5s ease 0s;
+  transition: opacity 0.5s ease 0s;
   pointer-events: none;
   z-index: 149;
 }
@@ -4333,8 +4333,8 @@ body::after {
   width: 100%;
   right: 0;
   padding: 0.625rem;
-  -webkit-transition: visibility 0.8s ease 0s;
-  transition: visibility 0.8s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   visibility: hidden;
   pointer-events: none;
   -webkit-transition: all 0.5s;
@@ -4350,9 +4350,7 @@ body::after {
 
 .popup_show .popup__content {
   visibility: visible;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+  opacity: 1;
 }
 
 .popup__wrapper {
@@ -4386,13 +4384,9 @@ body::after {
 
 .popup__content {
   visibility: hidden;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: -webkit-transform 0.3s ease 0s;
-  transition: -webkit-transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   background-color: #fff;
   padding: 1.5rem;
   width: 100%;
@@ -4401,7 +4395,6 @@ body::after {
   -webkit-box-shadow: 0 0.875rem 3rem -0.75rem rgba(16, 24, 40, 0.16);
   box-shadow: 0 0.875rem 3rem -0.75rem rgba(16, 24, 40, 0.16);
   overflow: hidden;
-  position: relative;
 }
 
 .popup_big .popup__content {
@@ -4902,7 +4895,7 @@ body::after {
 }
 
 .popup-courses__buttons {
-  position: absolute;
+  position: fixed;
   z-index: 5;
   bottom: 0;
   left: 0;
@@ -5135,7 +5128,7 @@ body::after {
 }
 
 .popup-listener-data__buttons {
-  position: absolute;
+  position: fixed;
   z-index: 5;
   bottom: 0;
   left: 0;
@@ -5541,7 +5534,7 @@ body::after {
 
 .form-data__bottom {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 5;
   bottom: 0;
   left: 0;
@@ -6710,7 +6703,7 @@ body::after {
     right: 0;
   }
 
-  .popup_right .popup__content {
+  .popup__content {
     -webkit-transform: translate(0rem, 0rem);
     -ms-transform: translate(0rem, 0rem);
     transform: translate(0rem, 0rem);

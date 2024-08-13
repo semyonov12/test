@@ -6,9 +6,9 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 	<!-- стили -->
-	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css?_v=20240813184924">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20240813184924">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240813184924">
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css?_v=20240813201258">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20240813201258">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240813201258">
 	<!-- фавикон -->
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	
@@ -276,8 +276,8 @@
 </div>
 
 <div id="add-courses" aria-hidden="true" class="popup popup_big">
-	<div class="popup__wrapper">
-		<form action="#" class="popup__content">
+	<form action="#" class="popup__wrapper">
+		<div class="popup__content">
 			<div class="popup__top">
 				<h3 class="popup__title">Добавление курса</h3>
 				<button type="button" data-close class="popup__close popup__close_circle"></button>
@@ -389,19 +389,20 @@
 						</div>
 					</div>
 				</div>
-				<div class="popup-courses__buttons">
-					<button type="button" data-close class="popup-courses__cancel">Отменить</button>
-					<button type="submit" class="popup-courses__add">Добавить курсы</button>
-				</div>
+				
 			</div>
-		</form>
-	</div>
+			<div class="popup-courses__buttons">
+				<button type="button" data-close class="popup-courses__cancel">Отменить</button>
+				<button type="submit" class="popup-courses__add">Добавить курсы</button>
+			</div>
+		</div>
+	</form>
 </div>
 
 
 <div id="select-listener" aria-hidden="true" class="popup popup_big popup_right">
-	<div class="popup__wrapper">
-		<form action="#" class="popup__content">
+	<form action="#" class="popup__wrapper">
+		<div class="popup__content">
 			<div data-simplebar class="popup-listener-data__body">
 				<div class="popup-listener-data__content">
 					<div class="popup-listener-data__top">
@@ -648,13 +649,13 @@
 				<a data-close href="#" class="popup-listener-data__cancel">Отмена</a>
 				<a href="#" class="popup-listener-data__save">Сохранить</a>
 			</div>
-		</form>
-	</div>
+		</div>
+	</form>
 </div>
 
 <div id="select-listener-md" aria-hidden="true" class="popup popup_big popup_right">
-	<div class="popup__wrapper">
-		<form action="#" class="popup__content">
+	<form action="#" class="popup__wrapper">
+		<div class="popup__content">
 			<div data-simplebar class="popup-listener-data__body">
 				<div class="form-data">
 					<div class="form-data__top">
@@ -743,13 +744,13 @@
 					<a href="#" class="form-data__save">Сохранить</a>
 				</div>
 			</div>
-		</form>
-	</div>
+		</div>
+	</form>
 </div>
 
 <div id="add-physical" aria-hidden="true" class="popup popup_middle popup_right">
-	<div class="popup__wrapper">
-		<form action="#" class="popup__content">
+	<form action="#" class="popup__wrapper">
+		<div class="popup__content">
 			<div data-simplebar class="popup-listener-data__body">
 				<div class="form-data">
 					<div class="form-data__top">
@@ -820,13 +821,13 @@
 					<a href="#" class="form-data__save">Добавить заказчика</a>
 				</div>
 			</div>
-		</form>
-	</div>
+		</div>
+	</form>
 </div>
 
 <div id="add-legal" aria-hidden="true" class="popup popup_middle popup_right">
-	<div class="popup__wrapper">
-		<form action="#" class="popup__content">
+	<form action="#" class="popup__wrapper">
+		<div class="popup__content">
 			<div data-simplebar class="popup-listener-data__body">
 				<div class="form-data">
 					<div class="form-data__top">
@@ -876,13 +877,13 @@
 					<a href="#" class="form-data__save">Добавить заказчика</a>
 				</div>
 			</div>
-		</form>
-	</div>
+		</div>
+	</form>
 </div>
 
 <div id="listeners" aria-hidden="true" class="popup popup_middle popup_right">
-	<div class="popup__wrapper">
-		<form action="#" class="popup__content">
+	<form action="#" class="popup__wrapper">
+		<div class="popup__content">
 			<div data-simplebar class="popup-listener-data__body popup-listener-data__body_g">
 				<div class="form-data">
 					<div class="form-data__top">
@@ -1016,20 +1017,19 @@
 						</div>
 					</div>
 				</div>
-				
 			</div>
 			<div class="form-data__bottom form-data__bottom_pc">
 				<div class="form-data__buttons form-data__buttons_left">
 					<a href="#" class="form-data__save">Добавить</a>
 				</div>
 			</div>
-		</form>
-	</div>
+		</div>
+	</form>
 </div>
 
 <div id="edit-listeners" aria-hidden="true" class="popup popup_middle popup_right">
-	<div class="popup__wrapper">
-		<form action="#" class="popup__content">
+	<form action="#" class="popup__wrapper">
+		<div class="popup__content">
 			<div data-simplebar class="popup-listener-data__body">
 				<div class="form-data">
 					<div class="form-data__top">
@@ -1109,13 +1109,13 @@
 					<a href="#" class="form-data__save">Сохранить</a>
 				</div>
 			</div>
-		</form>
-	</div>
+		</div>
+	</form>
 </div>
 
 <div id="show-listeners" aria-hidden="true" class="popup popup_middle popup_right">
-	<div class="popup__wrapper">
-		<form action="#" class="popup__content">
+	<form action="#" class="popup__wrapper">
+		<div class="popup__content">
 			<div data-simplebar class="popup-listener-data__body">
 				<div class="form-data">
 					<div class="form-data__top">
@@ -1175,8 +1175,8 @@
 					<a href="#" class="form-data__save">Запросить договор</a>
 				</div>
 			</div>
-		</form>
-	</div>
+		</div>
+	</form>
 </div>
 
 <div id="repeat-order" aria-hidden="true" class="popup popup_md">
@@ -1221,9 +1221,9 @@
 	</div>
 </div>
 
-	<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20240813184924"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20240813184924"></script>
-<script src="js/app.js?_v=20240813184924"></script>
+	<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20240813201258"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20240813201258"></script>
+<script src="js/app.js?_v=20240813201258"></script>
 </body>
 
 </html>
