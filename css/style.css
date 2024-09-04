@@ -1,9 +1,4 @@
-@font-face {
-  font-family: RobotoFlex;
-  font-display: swap;
-  src: url("../fonts/RobotoFlex.woff2") format("woff2");
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 * {
   padding: 0px;
@@ -51,7 +46,7 @@ a:active {
 input,
 button,
 textarea {
-  font-family: "RobotoFlex", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: inherit;
 }
 
@@ -99,7 +94,7 @@ body {
 }
 
 body {
-  font-family: "RobotoFlex", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #000;
   font-size: 1rem;
