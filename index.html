@@ -4,10 +4,12 @@
 	<title>Main</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
 	<!-- стили -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240904152956">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css?_v=20241017171102">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241017171102">
 	<!-- фавикон -->
-	 <link rel="shortcut icon" href="favicon.ico">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,404 +19,59 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-	<div class="header__container">
-		<div class="header__logo">
-			<img src="img/logo.webp" alt="logo">
-		</div>
-		<nav class="header__menu menu">
-			<ul class="menu__list">
-				<li class="menu__item"><a href="https://greenlists.app" class="menu__link">Green Lists</a></li>
-				<li class="menu__item"><a href="https://colorhub.online" class="menu__link">Color Hub</a></li>
-				<li class="menu__item"><a href="https://discord.com/invite/s3KZJCpXtz" class="menu__link">Community</a></li>
-				<li class="menu__item"><a href="https://diary.colorhub.online" class="menu__link menu__link_border"><span>Web app</span></a></li>
-			</ul>
-		</nav>
-		<button type="button" class="header__burger burger-menu"><span></span></button>
-	</div>
-</header>
+			<div class="header__container">
+				<a href="/" class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
+			</div>
+		</header>
 		<main>
 			<section class="hero">
 				<div class="hero__container">
-					<h1 class="hero__title">Start Journaling Now</h1>
-					<div class="hero__text">
-						Your personal space to freely express your thoughts and feelings
-						Store memories, and track your progress
+					<div class="hero__block">
+						<div class="hero__content">
+							<h1 class="hero__title">Digitize Your Life!</h1>
+							<div class="hero__sub-title">Sign in and save time by
+								managing your BlackRock
+								accounts online</div>
+						</div>
+						<form action="#" class="hero__form form-hero">
+							<div class="form-hero__item">
+								<label for="email" class="form-hero__label">Email Address</label>
+								<input id="email" type="email" class="form-hero__input">
+							</div>
+							<div class="form-hero__item">
+								<label for="password" class="form-hero__label">Password</label>
+								<input id="password" type="password" class="form-hero__input">
+							</div>
+							<div class="form-hero__links">
+								<a href="#" class="form-hero__link">Forgot Email?</a>
+								<a href="#" class="form-hero__link">Forgot password?</a>
+							</div>
+							<div class="form-hero__buttons">
+								<a href="agreement.html" class="form-hero__button">Create an account</a>
+								<button type="submit" class="form-hero__submit">Login</button>
+							</div>
+						</form>
 					</div>
-					<div class="hero__image">
-						<img src="img/hero-image.webp" alt="Image">
-						<div class="hero__decor">
-							<svg width="1137" height="1019" viewBox="0 0 1137 1019" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<g filter="url(#filter0_f_1_608)">
-									<path
-										d="M490.921 795.123C430.218 775.274 416.99 704.111 369.027 666.05C321.99 628.724 225.156 632.804 214.206 575.535C202.961 516.725 303.659 478.782 321.851 419.315C341.515 355.039 263.083 270.672 320.743 227.291C379.363 183.188 455.785 263.428 528.923 263.524C582.422 263.594 634.859 212.301 684.275 227.766C733.666 243.224 737.477 305.568 772.616 339.789C818.545 384.518 907.056 397.376 921.252 458.556C935.204 518.681 879.39 578.204 840.535 632.489C801.43 687.123 759.75 743.444 696.17 773.02C632.096 802.827 554.912 816.047 490.921 795.123Z"
-										fill="url(#paint0_linear_1_608)" />
-								</g>
-								<defs>
-									<filter id="filter0_f_1_608" x="-0.00106812" y="0.722321" width="1136.77"
-										height="1017.93" filterUnits="userSpaceOnUse"
-										color-interpolation-filters="sRGB">
-										<feFlood flood-opacity="0" result="BackgroundImageFix" />
-										<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
-											result="shape" />
-										<feGaussianBlur stdDeviation="106.667" result="effect1_foregroundBlur_1_608" />
-									</filter>
-									<linearGradient id="paint0_linear_1_608" x1="114.949" y1="296.819" x2="954.687"
-										y2="746.007" gradientUnits="userSpaceOnUse">
-										<stop offset="0%" stop-color="#DA0788" />
-										<stop offset="100%" stop-color="#7702DA" />
-									</linearGradient>
-								</defs>
-							</svg>
+					<div class="hero__box">
+						<h2 class="hero__title">Need Additional Help or Have Questions?</h2>
+						<div class="hero__text">
+							<p>For mutual fund accounts, call us at <a href="tel:1-800-441-7762">1-800-441-7762</a> , for AFDAS College Advantage 529</p>
+							<p>Plan accounts, call <a href="tel:1-866-529-8582">1-866-529-8582</a></p>
 						</div>
 					</div>
-					<div class="hero__links">
-						<div class="hero__pair">
-							<a href="https://apps.apple.com/us/app/purple-diary-journal-with-lock/id1591910683"
-								class="hero__link">
-								<img src="img/App-Store.svg" alt="App Store">
-							</a>
-							<a href="https://apps.apple.com/us/app/purple-diary-journal-with-lock/id1591910683"
-								class="hero__link">
-								<img src="img/Mac-App-Store.svg" alt="Mac App Store">
-							</a>
-						</div>
-						<div class="hero__pair">
-							<a href="https://play.google.com/store/apps/details?id=orange.id.orangediary"
-								class="hero__link">
-								<img src="img/Google-Play.svg" alt="Google Play">
-							</a>
-							<a href="https://apps.microsoft.com/detail/9PNS3QZ9LFPJ" class="hero__link">
-								<img src="img/Microsoft.svg" alt="Microsoft">
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="need">
-				<div class="need__container">
-					<h2 class="need__title">Everything You Need for Your Diary</h2>
-					<div class="need__sub-title">
-						Explore a rich suite of features designed to make your journaling effortless and deeply
-						personal, tailored to your unique style and needs.
-					</div>
-					<div class="need__body">
-						<article class="need__item">
-							<div class="need__icon">
-								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M11.4667 19.1216V21.3829H13.728L19.2427 15.8683L16.9813 13.6069L11.4667 19.1216Z"
-										fill="white" />
-									<path
-										d="M17.8667 6.44956L11.4667 0.0495605H2.93338C1.76005 0.0495605 0.810716 1.00956 0.810716 2.18289L0.800049 19.2496C0.800049 20.4229 1.74938 21.3829 2.92272 21.3829H9.33338V18.2362L17.8667 9.70289V6.44956ZM10.4 7.51623V1.64956L16.2667 7.51623H10.4Z"
-										fill="white" />
-									<path
-										d="M20.7574 12.8496L20.0001 12.0923C19.5841 11.6763 18.9121 11.6763 18.4961 12.0923L17.7388 12.8496L20.0001 15.1109L20.7574 14.3536C21.1734 13.9376 21.1734 13.2656 20.7574 12.8496Z"
-										fill="white" />
-								</svg>
-							</div>
-							<h4 class="need__caption">Thought Recording</h4>
-							<div class="need__text">
-								Easily capture your ideas and reflections in a convenient editor.
-							</div>
-						</article>
-						<article class="need__item">
-							<div class="need__icon">
-								<svg width="26" height="27" viewBox="0 0 26 27" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_1_695)">
-										<path
-											d="M22.4782 21.1829V6.24954C22.4782 5.07621 21.5182 4.11621 20.3449 4.11621H5.41153C4.2382 4.11621 3.2782 5.07621 3.2782 6.24954V21.1829C3.2782 22.3562 4.2382 23.3162 5.41153 23.3162H20.3449C21.5182 23.3162 22.4782 22.3562 22.4782 21.1829ZM9.14487 15.3162L11.8115 18.5269L15.5449 13.7162L20.3449 20.1162H5.41153L9.14487 15.3162Z"
-											fill="white" />
-									</g>
-									<defs>
-										<clipPath id="clip0_1_695">
-											<rect width="25.6" height="25.6" fill="white"
-												transform="translate(0.0782471 0.91626)" />
-										</clipPath>
-									</defs>
-								</svg>
-							</div>
-							<h4 class="need__caption">Attachments</h4>
-							<div class="need__text">Add images and create visual memories.</div>
-						</article>
-						<article class="need__item">
-							<div class="need__icon">
-								<svg width="23" height="22" viewBox="0 0 23 22" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M11.4126 0.0495605C5.52459 0.0495605 0.756592 4.82823 0.756592 10.7162C0.756592 16.6042 5.52459 21.3829 11.4126 21.3829C17.3113 21.3829 22.0899 16.6042 22.0899 10.7162C22.0899 4.82823 17.3113 0.0495605 11.4126 0.0495605ZM11.4233 19.2496C6.70859 19.2496 2.88993 15.4309 2.88993 10.7162C2.88993 6.00156 6.70859 2.18289 11.4233 2.18289C16.1379 2.18289 19.9566 6.00156 19.9566 10.7162C19.9566 15.4309 16.1379 19.2496 11.4233 19.2496ZM15.1566 9.64956C16.0419 9.64956 16.7566 8.93489 16.7566 8.04956C16.7566 7.16423 16.0419 6.44956 15.1566 6.44956C14.2713 6.44956 13.5566 7.16423 13.5566 8.04956C13.5566 8.93489 14.2713 9.64956 15.1566 9.64956ZM7.68993 9.64956C8.57526 9.64956 9.28993 8.93489 9.28993 8.04956C9.28993 7.16423 8.57526 6.44956 7.68993 6.44956C6.80459 6.44956 6.08993 7.16423 6.08993 8.04956C6.08993 8.93489 6.80459 9.64956 7.68993 9.64956ZM11.4233 16.5829C13.9086 16.5829 16.0206 15.0256 16.8739 12.8496H5.97259C6.82593 15.0256 8.93793 16.5829 11.4233 16.5829Z"
-										fill="white" />
-								</svg>
-							</div>
-							<h4 class="need__caption">Mood Tracking</h4>
-							<div class="need__text">
-								Track your mood to analyze your emotions.
-							</div>
-						</article>
-						<article class="need__item">
-							<div class="need__icon">
-								<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M17.5016 6.58286V4.44953H13.2349V0.182861H11.1016V4.44953H6.83494V0.182861H4.7016V4.44953H0.434937V6.58286H4.7016V10.8495H0.434937V12.9829H4.7016V17.2495H6.83494V12.9829H11.1016V17.2495H13.2349V12.9829H17.5016V10.8495H13.2349V6.58286H17.5016ZM11.1016 10.8495H6.83494V6.58286H11.1016V10.8495Z"
-										fill="white" />
-								</svg>
-							</div>
-							<h4 class="need__caption">Tags System</h4>
-							<div class="need__text">
-								Organize your entries with tags for quick searching.
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-			<div class="reviews">
-				<div class="reviews__container">
-					<div class="reviews__item">
-						<div class="reviews__stars">
-							<img src="img/star.webp" alt="star">
-							<img src="img/star.webp" alt="star">
-							<img src="img/star.webp" alt="star">
-							<img src="img/star.webp" alt="star">
-							<img src="img/star.webp" alt="star">
-						</div>
-						<div class="reviews__text">
-							After I found out that you can take photos of moments, I loved it! I’m absolutely loving my
-							smart diary, hahaha! I loved it so much!
-							<span>Just download it, seriously, that's all.</span>
-						</div>
-						<div class="reviews__row">
-							<div class="reviews__avatar">
-								<img src="img/avatar.webp" alt="avatar">
-							</div>
-							<div class="reviews__name">
-								User from Google Play
-							</div>
-						</div>
-					</div>
-					<div class="reviews__item">
-						<div class="reviews__stars">
-							<img src="img/star.webp" alt="star">
-							<img src="img/star.webp" alt="star">
-							<img src="img/star.webp" alt="star">
-							<img src="img/star.webp" alt="star">
-							<img src="img/star.webp" alt="star">
-						</div>
-						<div class="reviews__text">
-							It’s a nice app for a diary writing.
-							<span>Really recommend it!</span>
-						</div>
-						<div class="reviews__row">
-							<div class="reviews__avatar">
-								<img src="img/avatar.webp" alt="avatar">
-							</div>
-							<div class="reviews__name">
-								User from App Store
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<section class="supports">
-				<div class="supports__container">
-					<h2 class="supports__title">Always with You, on Any Device</h2>
-					<div class="supports__sub-title">
-						Your diary is available on most major platforms.
-					</div>
-					<div class="supports__image">
-						<img src="img/supports-image.webp" alt="image">
-					</div>
-					<div class="supports__text">
-						Purple Diary supports Android, iOS, iPadOS, macOS, Windows, Wear OS and Web, allowing you to
-						keep your journal wherever you are.
-					</div>
-					<a data-goto=".hero__links" href="#" class="supports__link">Download now</a>
-				</div>
-			</section>
-			<section class="diary">
-				<div class="diary__container">
-					<h2 class="diary__title">Tailor Your Diary to Your Needs</h2>
-					<div class="diary__sub-title">Purple Diary adapts to your preferences.</div>
-					<div class="diary__body">
-						<div class="diary__content">
-							<div class="diary__item">
-								<div class="diary__caption">Theme Selection</div>
-								<div class="diary__text">
-									Customize your diary with one of 10 unique theme colors, including both dark and
-									light options, to perfectly match your style and mood.
-								</div>
-								<div class="diary__image-mobile">
-									<img src="img/diary1.webp" alt="image">
-								</div>
-								<div class="diary__decor-mobile">
-									<svg width="848" height="752" viewBox="0 0 848 752" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<g filter="url(#filter0_f_1_1011)">
-											<path
-												d="M364.415 590.38C318.442 575.713 308.66 522.405 272.414 494.038C236.868 466.219 163.404 469.621 155.301 426.721C146.98 382.668 223.494 353.863 237.504 309.212C252.647 260.951 193.454 197.974 237.343 165.244C281.963 131.97 339.646 191.861 395.122 191.673C435.701 191.536 475.656 152.894 513.084 164.314C550.493 175.729 553.163 222.458 579.695 247.991C614.374 281.366 681.465 290.693 692.017 336.512C702.387 381.543 659.841 426.368 630.177 467.206C600.322 508.307 568.508 550.682 520.177 573.082C471.47 595.657 412.879 605.842 364.415 590.38Z"
-												fill="url(#paint0_linear_1_1011)" fill-opacity="0.5" />
-										</g>
-										<defs>
-											<filter id="filter0_f_1_1011" x="0.453552" y="0.960876" width="847.373"
-												height="751.041" filterUnits="userSpaceOnUse"
-												color-interpolation-filters="sRGB">
-												<feFlood flood-opacity="0" result="BackgroundImageFix" />
-												<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
-													result="shape" />
-												<feGaussianBlur stdDeviation="77.1084"
-													result="effect1_foregroundBlur_1_1011" />
-											</filter>
-											<linearGradient id="paint0_linear_1_1011" x1="81" y1="218.102" x2="711.261"
-												y2="561.28" gradientUnits="userSpaceOnUse">
-												<stop stop-color="#DA0788" />
-												<stop offset="1" stop-color="#7702DA" />
-											</linearGradient>
-										</defs>
-									</svg>
-								</div>
-							</div>
-							<div class="diary__item">
-								<div class="diary__caption">Feed Display Options</div>
-								<div class="diary__text">
-									Control how your entries are displayed in the feed.
-								</div>
-								<div class="diary__image-mobile">
-									<img src="img/diary3.webp" alt="image">
-								</div>
-							</div>
-							<div class="diary__item">
-								<div class="diary__caption">Fonts and Styles</div>
-								<div class="diary__text">
-									Pick fonts and text sizes for your comfort.
-								</div>
-								<div class="diary__image-mobile">
-									<img src="img/diary2.webp" alt="image">
-								</div>
-							</div>
-						</div>
-						<div class="diary__media">
-							<div class="diary__image">
-								<img src="img/diary1.webp" alt="image">
-							</div>
-							<div class="diary__box">
-								<div class="diary__image">
-									<img src="img/diary2.webp" alt="image">
-								</div>
-								<div class="diary__image">
-									<img src="img/diary3.webp" alt="image">
-								</div>
-							</div>
-							<div class="diary__decor">
-								<svg width="1279" height="1106" viewBox="0 0 1279 1106" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<g filter="url(#filter0_f_1_772)">
-										<path
-											d="M542.147 881.485C469.844 859.678 455.276 777.864 398.545 734.832C342.91 692.632 226.937 699.057 214.848 633.222C202.435 565.614 323.633 520.078 346.465 451.19C371.142 376.732 278.766 280.852 348.55 229.811C419.496 177.919 509.539 269.077 597.076 267.887C661.107 267.017 724.78 206.947 783.651 223.9C842.493 240.844 845.947 312.658 887.396 351.489C941.574 402.246 1047.28 415.498 1063.19 485.784C1078.82 554.86 1010.96 624.48 963.488 687.759C915.713 751.446 864.825 817.124 788.201 852.354C710.981 887.859 618.365 904.473 542.147 881.485Z"
-											fill="url(#paint0_linear_1_772)" fill-opacity="0.5" />
-									</g>
-									<defs>
-										<filter id="filter0_f_1_772" x="0.625275" y="0.49234" width="1278.18"
-											height="1104.91" filterUnits="userSpaceOnUse"
-											color-interpolation-filters="sRGB">
-											<feFlood flood-opacity="0" result="BackgroundImageFix" />
-											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
-												result="shape" />
-											<feGaussianBlur stdDeviation="106.667"
-												result="effect1_foregroundBlur_1_772" />
-										</filter>
-										<linearGradient id="paint0_linear_1_772" x1="101" y1="313.631" x2="1071.77"
-											y2="863.123" gradientUnits="userSpaceOnUse">
-											<stop stop-color="#DA0788" />
-											<stop offset="1" stop-color="#7702DA" />
-										</linearGradient>
-									</defs>
-								</svg>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="free">
-				<div class="free__container">
-					<h2 class="free__title">Free, No Ads</h2>
-					<div class="free__text">
-						Try it for yourself right now and experience the convenience of having your personal diary
-						accessible wherever you go. Download Purple Diary today and start capturing your thoughts,
-						moods, and memories with ease. Your journey to better self-care and personal growth begins here.
-					</div>
-					<a data-goto=".hero__links" href="#" class="free__link">Get started</a>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
-	<div class="footer__top">
-		<div class="footer__container">
-			<div class="footer__body">
-				<div class="footer__logo">
-					<img src="img/CHLogo.webp" alt="logo">
-				</div>
-				<div class="footer__content">
-					<div class="footer__pair">
-						<div class="footer__column">
-							<div class="footer__title">Download</div>
-							<ul class="footer__list">
-								<li class="footer__item"><a href="https://apps.apple.com/us/app/purple-diary-journal-with-lock/id1591910683" class="footer__link">iOS/iPadOS</a></li>
-								<li class="footer__item"><a href="https://apps.apple.com/us/app/purple-diary-journal-with-lock/id1591910683" class="footer__link">macOS</a></li>
-								<li class="footer__item"><a href="https://play.google.com/store/apps/details?id=orange.id.orangediary" class="footer__link">Android/Wear OS</a></li>
-								<li class="footer__item"><a href="https://apps.microsoft.com/detail/9PNS3QZ9LFPJ" class="footer__link">Windows</a></li>
-								<li class="footer__item"><a href="https://diary.colorhub.online" class="footer__link">Web app</a></li>
-							</ul>
-						</div>
-						<div class="footer__column_pc">
-							<div class="footer__title">Help</div>
-							<ul class="footer__list">
-								<li class="footer__item"><a href="mailto:support@colorhub.online" class="footer__link">Contact Us</a></li>
-								<li class="footer__item"><a href="https://colorhub.online/privacy" class="footer__link">Privacy Policy</a></li>
-								<li class="footer__item"><a href="https://colorhub.online/terms" class="footer__link">Terms of Use</a></li>
-							</ul>
-						</div>
-						<div class="footer__column_mobile">
-							<div class="footer__title">Socials</div>
-							<ul class="footer__list">
-								<li class="footer__item"><a href="https://x.com/purplediaryapp" class="footer__link">X (Twitter)</a></li>
-								<li class="footer__item"><a href="https://discord.com/invite/s3KZJCpXtz" class="footer__link">Discord</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="footer__pair">
-						<div class="footer__column_mobile">
-							<div class="footer__title">Help</div>
-							<ul class="footer__list">
-								<li class="footer__item"><a href="mailto:support@colorhub.online" class="footer__link">Contact Us</a></li>
-								<li class="footer__item"><a href="https://colorhub.online/privacy" class="footer__link">Privacy Policy</a></li>
-								<li class="footer__item"><a href="https://colorhub.online/terms" class="footer__link">Terms of Use</a></li>
-							</ul>
-						</div>
-						<div class="footer__column_pc">
-							<div class="footer__title">Socials</div>
-							<ul class="footer__list">
-								<li class="footer__item"><a href="https://x.com/purplediaryapp" class="footer__link">X (Twitter)</a></li>
-								<li class="footer__item"><a href="https://discord.com/invite/s3KZJCpXtz" class="footer__link">Discord</a></li>
-							</ul>
-						</div>
-						<div class="footer__column">
-							<div class="footer__title">Color Hub</div>
-							<ul class="footer__list">
-								<li class="footer__item"><a href="https://greenlists.app" class="footer__link">Green Lists</a></li>
-								<li class="footer__item"><a href="https://colorhub.online/quotes" class="footer__link">Quote Flow</a></li>
-								<li class="footer__item"><a href="https://colorhub.online/reminder" class="footer__link">Orange Reminder</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer__bottom">
-		<div class="footer__container">
-			<div class="footer__copy">© 2024 Color Hub | All rights reserved</div>
+	<div class="footer__container">
+		<div class="footer__links">
+			<a href="#" class="footer__link">Privacy Statement</a>
+			<a href="#" class="footer__link">Cookie Notice</a>
+			<a href="#" class="footer__link">Manage Cookies</a>
+			<a href="#" class="footer__link">Terms of Use</a>
+			<a href="#" class="footer__link">System Requirements</a>
 		</div>
 	</div>
 </footer>
@@ -422,7 +79,8 @@
 	</div>
 
 
-	<script src="js/app.js?_v=20240904152956"></script>
+	<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20241017171102"></script>
+<script src="js/app.js?_v=20241017171102"></script>
 </body>
 
 </html>
