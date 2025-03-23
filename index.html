@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-	<title>Центр Развития Потенциала</title>
+	<title>EtherBank</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- стили -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250220191931">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250323124516">
 	<!-- фавикон -->
-	<link rel="shortcut icon" href="favicon.ico">
+	 <link rel="shortcut icon" href="favicon.ico">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,1087 +16,234 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header" id="header">
+		<header class="header">
 			<div class="header__container">
-				<a href="/" class="header__logo">
-					<img src="img/logo.svg" alt="Логотип Центр Развития	Потенциала">
-					Центр <br>
-					Развития <br>
-					Потенциала
-				</a>
-				<nav class="header__menu menu">
-					<div class="menu__text">
-						<p>Передовые технологии и лучшие наставники России помогут раскрыть ваши сильные стороны</p>
-					</div>
-					<div class="menu__links">
-						<a href="#" class="menu__link">Записаться к эксперту</a>
-						<a href="#" class="menu__link menu__link_orange"><span>Пройти тест</span></a>
-					</div>
-				</nav>
-				<button type="button" class="header__burger burger-menu"><span></span></button>
+				<div class="header__logo">
+					<img src="img/logo.svg" alt="logo">
+				</div>
+				<a href="#" class="header__link">Register now</a>
 			</div>
 		</header>
-		<main id="main">
+		<main>
 			<section class="hero">
 				<div class="hero__container">
-					<div class="hero__block">
-						<div class="hero__content">
-							<h1 class="hero__title">Узнайте себя <br>
-								за 5 вопросов</h1>
-							<div class="hero__text text">
-								<p>Пройдите <b>бесплатный мини-тест</b> и получите индивидуальный психологический
-									портрет с точным описанием ваших сильных сторон и уникальных качеств.</p>
-							</div>
-							<a href="#" class="hero__link link"><span>Пройти тест</span></a>
-						</div>
+					<div class="hero__content">
 						<div class="hero__image">
-							<img src="img/hero-image.webp" alt="мужчина">
+							<img src="img/hero-image.webp" alt="image">
 						</div>
-						<div class="hero__box">
-							<button data-popup="#popup-video" type="button" class="hero__play-video">
-								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M3.40347 0.352788C1.96098 -0.474645 0.791504 0.203198 0.791504 1.86558V14.1332C0.791504 15.7973 1.96098 16.4743 3.40347 15.6476L14.126 9.49829C15.569 8.67057 15.569 7.32953 14.126 6.502L3.40347 0.352788Z" fill="#2D7279" />
-								</svg>
-							</button>
-							<div class="hero__label">
-								Смотреть <br>
-								видео
-							</div>
-						</div>
+						<h1 class="hero__title">Is your ETH losing value?</h1>
+						<div class="hero__text">If you have been holding Ethereum for more than 8 months and don't know how to benefit from it, we have a solution</div>
+						<a href="#" class="hero__link">To learn more</a>
 					</div>
 				</div>
-			</section>
-			<section class="steps">
-				<div class="steps__container">
-					<h2 class="steps__title title">Три шага для реализации вашего потенциала</h2>
-					<div class="steps__body">
-						<div class="steps__item">
-							<div class="steps__row">
-								<div class="steps__icon">
-									<svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M25.2797 22.4266C27.6609 20.7063 29.0625 18.0156 29.0625 15.1C29.0625 11.8797 27.3703 9.00626 24.7078 7.3797C25.11 8.61319 25.3141 9.90262 25.3125 11.2C25.3125 16.9891 21.3094 21.8875 15.8438 23.425C17.0545 23.9596 18.364 24.2342 19.6875 24.2313C20.1844 24.2313 20.6859 24.1938 21.1828 24.1141C22.9828 25.6375 25.725 25.6563 25.8516 25.6563C26.25 25.6563 26.6063 25.4031 26.7375 25.0281C26.8688 24.6485 26.7469 24.2313 26.4328 23.9828C25.8797 23.5469 25.4906 23.0219 25.2797 22.4266Z" fill="white" />
-										<path d="M23.4375 11.2C23.4375 5.21406 18.3891 0.34375 12.1875 0.34375C5.98594 0.34375 0.9375 5.21406 0.9375 11.2C0.9375 14.7156 2.66719 17.9547 5.59687 19.9937C5.33437 20.8141 4.82812 21.5172 4.07812 22.1031C3.75937 22.3469 3.6375 22.7688 3.76406 23.1484C3.89531 23.5281 4.25156 23.7812 4.65 23.7812C4.8 23.7812 8.15625 23.7578 10.2937 21.9016C10.9219 22.0047 11.5547 22.0562 12.1875 22.0562C18.3891 22.0562 23.4375 17.1859 23.4375 11.2ZM13.125 16.75C13.125 17.2656 12.7031 17.6875 12.1875 17.6875C11.6719 17.6875 11.25 17.2656 11.25 16.75V16.2812C11.25 15.7656 11.6719 15.3438 12.1875 15.3438C12.7031 15.3438 13.125 15.7656 13.125 16.2812V16.75ZM13.8937 12.1188C13.4203 12.3625 13.125 12.8031 13.125 13.2719V13.4688C13.125 13.9844 12.7031 14.4062 12.1875 14.4062C11.6719 14.4062 11.25 13.9844 11.25 13.4688V13.2719C11.25 12.0953 11.9344 11.0172 13.0406 10.45C13.4123 10.2604 13.7104 9.95251 13.8877 9.57483C14.0651 9.19715 14.1118 8.77118 14.0203 8.36406C13.9453 8.01704 13.7719 7.69898 13.5208 7.44792C13.2698 7.19687 12.9517 7.02346 12.6047 6.94844C12.0234 6.82656 11.4563 6.95781 11.0109 7.32344C10.7938 7.49919 10.6187 7.72136 10.4987 7.97363C10.3786 8.22591 10.3166 8.50187 10.3172 8.78125C10.3172 9.29688 9.89531 9.71875 9.37969 9.71875C8.86406 9.71875 8.44219 9.29688 8.44219 8.78125C8.44219 7.64687 8.94844 6.5875 9.82969 5.87031C10.7109 5.15313 11.8641 4.88125 12.9891 5.11563C14.4094 5.41094 15.5625 6.56406 15.8578 7.98437C16.2094 9.67656 15.4219 11.3406 13.8984 12.1188H13.8937Z" fill="white" />
-									</svg>
-								</div>
-								<div class="steps__value">01</div>
-							</div>
-							<div class="steps__caption">Ответьте на 5 вопросов</div>
-							<div class="steps__text text">
-								<p>Пройдите бесплатный тест и откройте основы своего <a href="#">психологического портрета</a>. Узнайте,
-									что делает вас уникальным.</p>
-							</div>
-						</div>
-						<div class="steps__item">
-							<div class="steps__row">
-								<div class="steps__icon">
-									<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M26.25 21.5625C24.1781 21.5625 22.5 19.8844 22.5 17.8125C22.5 17.2969 22.0781 16.875 21.5625 16.875C21.0469 16.875 20.625 17.2969 20.625 17.8125C20.625 19.8844 18.9469 21.5625 16.875 21.5625C16.3594 21.5625 15.9375 21.9844 15.9375 22.5C15.9375 23.0156 16.3594 23.4375 16.875 23.4375C18.9469 23.4375 20.625 25.1156 20.625 27.1875C20.625 27.7031 21.0469 28.125 21.5625 28.125C22.0781 28.125 22.5 27.7031 22.5 27.1875C22.5 25.1156 24.1781 23.4375 26.25 23.4375C26.7656 23.4375 27.1875 23.0156 27.1875 22.5C27.1875 21.9844 26.7656 21.5625 26.25 21.5625Z" fill="white" />
-										<path d="M13.125 13.125C16.2316 13.125 18.75 10.6066 18.75 7.5C18.75 4.3934 16.2316 1.875 13.125 1.875C10.0184 1.875 7.5 4.3934 7.5 7.5C7.5 10.6066 10.0184 13.125 13.125 13.125Z" fill="white" />
-										<path d="M16.875 25.3125C15.3281 25.3125 14.0625 24.0469 14.0625 22.5C14.0625 20.9531 15.3281 19.6875 16.875 19.6875C17.9062 19.6875 18.75 18.8437 18.75 17.8125C18.75 16.9594 19.1344 16.1906 19.7437 15.6656C18.852 15.2245 17.8699 14.9966 16.875 15H9.375C5.75625 15 2.8125 17.9437 2.8125 21.5625V23.4375C2.8125 24.9844 4.07812 26.25 5.625 26.25H18.4969C18.1687 25.6875 17.5688 25.3125 16.875 25.3125Z" fill="white" />
-									</svg>
-								</div>
-								<div class="steps__value">02</div>
-							</div>
-							<div class="steps__caption">Углубленный портрет с Сократом</div>
-							<div class="steps__text text">
-								<p>Telegram-бот "Сократ" выявит ваши сильные и слабые стороны, даст рекомендации по
-									карьере и развитию, а также предложит советы на основе вашего профиля.</p>
-							</div>
-						</div>
-						<div class="steps__item">
-							<div class="steps__row">
-								<div class="steps__icon">
-									<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.26893 14.5521C5.06604 14.4819 5.77464 15.1335 5.8515 16.0075C5.92844 16.8815 5.34454 17.6468 4.54743 17.717C3.75032 17.7871 3.04172 17.1355 2.96478 16.2616C2.888 15.3876 3.47181 14.6222 4.26893 14.5521ZM13.06 18.8413L11.8196 24.7104C11.8165 24.7257 11.8082 24.7394 11.7961 24.7492C11.784 24.759 11.7689 24.7643 11.7533 24.7642H11.3802C11.3673 24.764 11.3547 24.7676 11.3438 24.7745C11.3329 24.7814 11.3243 24.7913 11.3189 24.8029L9.51438 28.6147C9.50044 28.6442 9.46845 28.6593 9.43676 28.6515C9.40507 28.6436 9.38389 28.6152 9.38534 28.5827C9.44377 27.2836 9.52307 25.3493 9.51972 25.25C9.48734 24.3052 8.9087 24.1971 7.00649 23.3334C6.99338 23.3276 6.98248 23.3178 6.9754 23.3053C6.96832 23.2928 6.96544 23.2784 6.96719 23.2642L7.27471 20.4979C7.27621 20.4832 7.28252 20.4694 7.29266 20.4587C7.30279 20.448 7.3162 20.4409 7.33078 20.4386L9.02533 20.152C9.03953 20.1497 9.05262 20.143 9.06266 20.1327C9.07271 20.1224 9.07917 20.1092 9.08109 20.0949L9.61136 16.4637C9.61269 16.4536 9.61637 16.4439 9.62211 16.4354C9.62785 16.4269 9.63549 16.4199 9.64442 16.4149L9.91226 16.2593L9.91698 16.2664L9.99034 16.214L9.99003 16.208C11.1036 15.3122 13.7388 13.0745 13.7388 13.0745L13.0611 18.8351C13.0608 18.8372 13.0605 18.8392 13.06 18.8413ZM14.9577 9.40876C13.5978 9.42583 10.7307 12.9151 8.83984 14.5956L8.83695 14.5984L7.86066 15.5747C7.64752 15.7877 7.59747 16.0991 7.73139 16.3692C7.81549 16.5389 7.88169 16.7138 8.02658 16.8355C8.03628 16.8434 8.04354 16.8539 8.04752 16.8658C8.0515 16.8776 8.05203 16.8904 8.04905 16.9026L7.72949 18.2909C7.72584 18.307 7.71644 18.3211 7.70307 18.3308C7.6897 18.3404 7.67328 18.3448 7.65689 18.3432L5.81532 18.1646C5.44725 18.1276 5.0785 18.2279 4.7798 18.4461C4.48109 18.6643 4.27345 18.9851 4.19671 19.3469C3.94967 20.4929 3.73866 21.4508 3.59514 22.193C3.48309 22.7723 3.16726 24.2421 3.88858 24.9166C4.69986 25.6754 7.1865 25.0098 7.30076 26.7036C7.33177 27.1631 7.42486 28.8944 7.51345 29.2636L7.51375 29.2649L7.76019 30.2152C7.7642 30.2303 7.76281 30.2464 7.75626 30.2606C7.74971 30.2748 7.73841 30.2863 7.72431 30.2931L4.47118 31.8811C4.44726 31.8928 4.42052 31.89 4.39957 31.8735C4.37862 31.8571 4.36956 31.8318 4.37519 31.8057L5.26631 27.7214L5.26662 27.72L5.56249 26.4866C5.5648 26.4775 5.56514 26.468 5.56349 26.4588C5.56183 26.4496 5.55822 26.4408 5.55289 26.4331C5.54777 26.4252 5.54103 26.4185 5.53312 26.4135C5.52521 26.4084 5.51632 26.4051 5.50703 26.4038C4.87324 26.3052 4.01351 26.2185 3.41377 25.8059C3.39305 25.7916 3.36806 25.7897 3.34544 25.8009C3.32281 25.812 3.30902 25.8329 3.30765 25.858L3.22965 27.2952C3.22947 27.2984 3.22906 27.3017 3.22843 27.3049L2.22549 32.2799C2.17894 32.5107 2.22731 32.6794 2.33648 32.8364C2.34813 32.8532 2.35156 32.8724 2.34638 32.8922C2.3412 32.912 2.32893 32.927 2.3105 32.936L2.03817 33.069C2.02432 33.0756 2.01316 33.0868 2.00655 33.1006C1.99993 33.1145 1.99827 33.1302 2.00183 33.1451C2.00519 33.1601 2.01357 33.1735 2.02559 33.183C2.03761 33.1926 2.05253 33.1977 2.06788 33.1976H29.2358C29.2593 33.1976 29.2794 33.1867 29.2924 33.1672C29.3053 33.1476 29.3074 33.1247 29.2981 33.1032L24.8545 22.7151C24.8501 22.7052 24.8482 22.6944 24.849 22.6836C24.8497 22.6728 24.8531 22.6623 24.8589 22.6532L31.9901 10.9351C31.9972 10.9237 32.0007 10.9105 32.0002 10.8971C31.9996 10.8837 31.995 10.8708 31.987 10.86C31.9792 10.8491 31.9683 10.8407 31.9558 10.8361C31.9432 10.8314 31.9295 10.8307 31.9165 10.834L25.0866 12.459C25.0735 12.4619 25.0616 12.4689 25.0525 12.4788L17.7239 20.3991C17.7163 20.4071 17.7109 20.417 17.7081 20.4277L16.5667 24.7138C16.563 24.7283 16.5545 24.7412 16.5426 24.7503C16.5307 24.7594 16.5161 24.7643 16.5012 24.7642H14.0813C14.0591 24.7642 14.04 24.7546 14.0269 24.7368C14.0137 24.7191 14.01 24.6981 14.0164 24.6768C15.1987 20.7481 15.84 18.1538 15.84 18.1538C16.843 17.6046 18.8413 15.7944 18.8413 15.7944C18.7971 16.2368 19.2015 17.9485 19.2133 18.6175C19.2134 18.6311 19.2176 18.6443 19.2254 18.6555C19.2332 18.6666 19.2442 18.675 19.2569 18.6797C19.2696 18.6847 19.2834 18.6857 19.2966 18.6826C19.3098 18.6795 19.3217 18.6725 19.3308 18.6624L20.3661 17.5436C20.3757 17.5334 20.3818 17.5205 20.3835 17.5066L20.7771 14.5676L20.7776 14.5646C20.8515 14.1537 20.6661 13.7592 20.3025 13.554L20.2114 13.5026C19.9076 13.3311 19.5631 13.3319 19.26 13.5046L18.5817 13.8912L18.0632 11.6598C18.0603 11.6476 18.0609 11.6348 18.065 11.623L18.478 10.3839C18.4825 10.3697 18.4918 10.3575 18.5042 10.3493L22.16 7.85552C22.1697 7.84913 22.1775 7.84031 22.1827 7.82995C22.1879 7.81959 22.1902 7.80804 22.1895 7.79648L22.1153 6.15061C22.1143 6.12646 22.1017 6.10619 22.0806 6.09446C22.0595 6.08273 22.0357 6.08273 22.0146 6.09446L17.3715 8.68219L17.3692 8.67229L16.291 9.00289C16.2738 9.00818 16.2594 9.02007 16.251 9.03595C16.2426 9.05183 16.2408 9.07041 16.246 9.0876C16.7043 10.5834 16.9691 12.1107 16.9258 13.6879C16.9252 13.7018 16.929 13.7154 16.9366 13.727C16.9442 13.7387 16.9552 13.7476 16.9681 13.7527L17.6532 14.0295C17.6792 14.04 17.6954 14.0638 17.6956 14.0918C17.6958 14.1198 17.68 14.1439 17.6542 14.1548C16.5166 14.6351 15.8598 15.166 15.4006 15.7176C15.3791 15.7435 15.3426 15.7497 15.3137 15.7325C15.2849 15.7153 15.273 15.6803 15.2855 15.6491L15.7704 14.437C15.7721 14.4329 15.7734 14.4286 15.7741 14.4242C16.0771 12.7859 17.414 8.65857 15.6357 9.20385L14.9766 9.40594C14.9705 9.40784 14.9642 9.40879 14.9577 9.40876ZM15.0342 4.71803C16.0585 4.71803 16.8888 5.54835 16.8888 6.57263C16.8888 7.5969 16.0585 8.42723 15.0342 8.42723C14.01 8.42723 13.1796 7.5969 13.1796 6.57263C13.1796 5.54835 14.0099 4.71803 15.0342 4.71803ZM28.6351 0.849388L29.3789 3.15335C29.3831 3.16709 29.3918 3.17908 29.4034 3.18754C29.4151 3.19599 29.4291 3.20046 29.4435 3.20028L31.8646 3.19563C31.8945 3.19556 31.92 3.21399 31.9292 3.24248C31.9384 3.27097 31.9286 3.30083 31.9044 3.31835L29.9429 4.73768C29.9312 4.74601 29.9225 4.75789 29.918 4.77157C29.9136 4.78525 29.9137 4.8 29.9183 4.81363L30.6708 7.11478C30.6801 7.14319 30.6704 7.17313 30.6462 7.19072C30.622 7.20832 30.5906 7.20824 30.5664 7.19065L28.6105 5.76378C28.5989 5.75518 28.5849 5.75054 28.5705 5.75054C28.5561 5.75054 28.5421 5.75518 28.5305 5.76378L26.5746 7.19065C26.563 7.19922 26.5491 7.20386 26.5347 7.20387C26.5203 7.20389 26.5063 7.19928 26.4948 7.19072C26.4831 7.18239 26.4744 7.1705 26.4699 7.15682C26.4655 7.14314 26.4656 7.1284 26.4702 7.11478L27.2227 4.81363C27.2273 4.8 27.2274 4.78525 27.223 4.77157C27.2185 4.75788 27.2098 4.746 27.1981 4.73768L25.2366 3.31835C25.2249 3.31004 25.2161 3.29817 25.2117 3.28451C25.2072 3.27085 25.2073 3.25611 25.2118 3.24248C25.2161 3.22877 25.2247 3.21681 25.2364 3.20837C25.248 3.19993 25.2621 3.19546 25.2764 3.19563L27.6975 3.20028C27.7119 3.20045 27.7259 3.19597 27.7376 3.18752C27.7492 3.17907 27.7578 3.16709 27.7622 3.15335L28.5059 0.849312C28.5101 0.835582 28.5187 0.823596 28.5303 0.81513C28.542 0.806664 28.556 0.802168 28.5704 0.80231C28.5848 0.802173 28.5989 0.806675 28.6105 0.815153C28.6222 0.82363 28.6308 0.835633 28.6351 0.849388ZM23.1308 7.28564C23.1218 7.28638 23.1127 7.28523 23.1042 7.28228C23.0956 7.27933 23.0877 7.27464 23.0811 7.2685C23.0743 7.26258 23.0687 7.2553 23.0648 7.24713C23.061 7.23897 23.0588 7.23008 23.0585 7.22104L22.9933 5.77505C22.9926 5.76256 22.9954 5.75012 23.0015 5.73916C23.0075 5.72821 23.0165 5.71918 23.0275 5.71312C23.6147 5.37713 24.2013 5.0398 24.787 4.70111C24.8596 4.70221 24.9311 4.7198 24.9959 4.75257C25.0607 4.78534 25.1173 4.83242 25.1612 4.89026C25.2469 5.003 25.1649 5.12816 25.1254 5.26437C25.1225 5.27517 25.1167 5.28502 25.1088 5.29293C24.8793 5.52702 24.2669 6.05729 24.1949 6.29138C24.1032 6.58954 23.725 7.24595 23.1308 7.28564Z" fill="white" />
-									</svg>
-								</div>
-								<div class="steps__value">03</div>
-							</div>
-							<div class="steps__caption">Наставники для вашего успеха</div>
-							<div class="steps__text text">
-								<p>Лучшие эксперты России помогут реализовать ваш потенциал. Они уже добились успеха в
-									своих направлениях и готовы делиться опытом.</p>
-							</div>
-						</div>
-					</div>
-					<div class="steps__block">
-						<div class="steps__content">
-							<div class="steps__heading"><span>Ваш путь</span> к переменам начинается здесь</div>
-							<div class="steps__desc text">
-								<p>Пройдите бесплатный тест и сделайте первый шаг к раскрытию вашего потенциала.</p>
-							</div>
-						</div>
-						<div class="steps__image">
-							<img src="img/steps-image.webp" alt="мозг">
-						</div>
-						<a href="#" class="steps__link link">
-							<span>Начать тест</span>
-						</a>
-					</div>
+				<div class="hero__decor">
+					<img src="img/hero-background2.webp" alt="background">
 				</div>
 			</section>
-			<section class="about">
-				<div class="about__container">
-					<h2 class="about__title title">О тесте</h2>
-					<div class="about__body">
-						<div class="about__block">
-							<div class="about__box">
-								<div class="about__top">
-									<div class="about__star">
-										<svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M27.927 10.1937C27.8374 9.91624 27.6682 9.67126 27.4404 9.48931C27.2126 9.30735 26.9363 9.19647 26.6459 9.17048L18.5643 8.43661L15.3687 0.956814C15.1329 0.408667 14.5963 0.0539551 14.0001 0.0539551C13.4039 0.0539551 12.8672 0.408722 12.6316 0.958181L9.43595 8.43667L1.3531 9.17048C1.06304 9.19705 0.787154 9.30817 0.559651 9.49006C0.332147 9.67195 0.163032 9.91661 0.0732705 10.1937C-0.111086 10.7607 0.0591607 11.3826 0.50843 11.7746L6.61718 17.1319L4.81584 25.0667C4.68404 25.6502 4.91045 26.2533 5.39455 26.6032C5.65471 26.7912 5.95916 26.8869 6.26613 26.8869C6.53083 26.8869 6.79333 26.8155 7.02904 26.6745L14.0001 22.5081L20.9687 26.6745C21.4786 26.9813 22.1214 26.9533 22.6044 26.6032C22.8409 26.432 23.0218 26.1951 23.1247 25.9219C23.2276 25.6488 23.2479 25.3514 23.1832 25.0667L21.3819 17.1319L27.4906 11.7757C27.7103 11.5838 27.8688 11.3315 27.9464 11.0503C28.024 10.769 28.0172 10.4712 27.927 10.1937Z" fill="#FFC107" />
-										</svg>
-									</div>
-									<div class="about__value">4.8 <span>из</span> 5</div>
-								</div>
-								<div class="about__desc text">
-									<p>Более 98% участников рекомендуют наш тест своим друзьям</p>
-								</div>
-							</div>
-							<a href="#" class="about__link link">Смотреть отзывы</a>
-							<div class="about__decor">
-								<svg width="216" height="251" viewBox="0 0 216 251" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M279.674 131.765V106.068C279.603 106.068 279.534 106.064 279.464 106.064C279.437 106.064 279.411 106.068 279.384 106.068H42.3269V131.765C42.3269 138.69 47.9612 144.324 54.8862 144.324H267.115C274.04 144.324 279.674 138.69 279.674 131.765ZM248.286 356.91V165.884H73.7144V356.91C73.7144 363.035 78.6796 368 84.8041 368H101.486V204.398C101.486 198.593 105.947 193.598 111.745 193.325C117.936 193.034 123.046 197.966 123.046 204.093V368H150.819V204.398C150.819 198.593 155.279 193.598 161.078 193.325C167.268 193.034 172.379 197.966 172.379 204.093V368H200.151V204.398C200.151 198.593 204.612 193.598 210.41 193.325C216.601 193.034 221.711 197.966 221.711 204.093V368H237.197C243.321 368 248.286 363.035 248.286 356.91ZM281.759 84.462C303.309 83.4709 320.967 65.8135 321.958 44.263C322.496 32.5776 318.36 21.5023 310.313 13.076C302.26 4.64398 291.406 0 279.75 0H43.0406C19.6058 0 0.297528 18.7017 -0.000715978 41.6902C-0.14876 53.0896 4.17614 63.8314 12.177 71.9364C20.18 80.0436 30.86 84.508 42.25 84.508C49.9124 84.508 57.4123 82.4397 63.9399 78.5258C70.4776 74.6055 71.3745 68.0334 70.0334 63.1889C68.6745 58.279 64.4674 53.0335 56.7375 53.0335C53.1833 53.0272 49.7657 54.4025 47.2066 56.869C42.9119 60.992 36.0875 60.854 31.9646 56.56C27.8409 52.266 27.9796 45.4416 32.2736 41.3179C38.8846 34.97 47.5724 31.4737 56.7375 31.4737C72.8197 31.4737 86.5138 41.9079 90.8121 57.4375C93.4359 66.9166 92.0561 76.5646 87.4329 84.508H233.845C228.839 76.3411 227.478 66.3144 230.474 56.4112C235.057 41.2626 248.213 31.4737 263.993 31.4737C273.358 31.4737 282.479 35.3186 289.018 42.0229C293.175 46.2846 293.09 53.1097 288.828 57.2664C284.566 61.4232 277.741 61.3391 273.585 57.0767C272.334 55.8005 270.842 54.7858 269.195 54.0916C267.549 53.3975 265.78 53.0378 263.993 53.0335C256.641 53.0335 252.518 58.0031 251.111 62.6535C250.443 64.8598 248.85 72.4467 256.368 77.4543C263.878 82.4576 272.658 84.886 281.759 84.462Z" fill="white" fill-opacity="0.07" />
-								</svg>
-							</div>
+			<section class="how">
+				<div class="how__container">
+					<div class="how__content">
+						<h2 class="how__title">EtherBank – effective <br> management of ETH currency</h2>
+						<div class="how__sub-title">Our solution allows ETH holders to earn additional profits without having to sell assets.</div>
+						<div class="how__image">
+							<img src="img/how-image.webp" alt="Image">
 						</div>
-						<div class="about__items">
-							<div class="about__item">
-								<div class="about__row">
-									<div class="about__icon">
-										<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M13.6747 1.28821C13.2415 0.854475 12.5381 0.854749 12.1044 1.28821L5.03702 8.35588L1.89587 5.21476C1.46213 4.78102 0.759044 4.78102 0.325304 5.21476C-0.108435 5.64849 -0.108435 6.35158 0.325304 6.78532L4.25157 10.7116C4.46831 10.9283 4.7525 11.037 5.03672 11.037C5.32094 11.037 5.6054 10.9286 5.82213 10.7116L13.6747 2.85875C14.1084 2.42531 14.1084 1.72193 13.6747 1.28821Z" fill="white" />
-										</svg>
+						<div class="how__items">
+							<div class="how__item">
+								<div class="how__row">
+									<div class="how__icon">
+										<img src="img/how-icon1.svg" alt="Icon">
 									</div>
-									<div class="about__caption">Ответьте на 5 простых вопросов</div>
+									<div class="how__caption">Intelligent Technologies with Advanced AI</div>
 								</div>
-								<div class="about__text text">
-									<p>Не требуется много времени — всего 5 вопросов, чтобы понять себя лучше.</p>
+								<div class="how__text">EtherBank combines state-of-the-art trading systems with the Clauda intelligent language model, creating a powerful and adaptable AI-driven trading bot. This fusion of technologies enables real-time market analytics and precision decision-making, ensuring maximum profitability and swift responses to market changes.</div>
+							</div>
+							<div class="how__item">
+								<div class="how__row">
+									<div class="how__icon">
+										<img src="img/how-icon2.svg" alt="Icon">
+									</div>
+									<div class="how__caption">Why Choose <br> EtherBank?</div>
+								</div>
+								<div class="how__text">
+									<ul>
+										<li>Faster Returns: Start earning dividends within just 7 days of your deposit.</li>
+										<li>Cutting-Edge AI Technology: Identifies high-yield opportunities in real-time to optimize your investments.</li>
+										<li>Unmatched Growth Potential: Consistently delivers high-percentage returns through innovation and expertise.</li>
+									</ul>
+									With EtherBank, your investment grows securely and exponentially, whether you're focused on traditional banking or exploring cryptocurrency.
 								</div>
 							</div>
-							<div class="about__item">
-								<div class="about__row">
-									<div class="about__icon">
-										<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M13.6747 1.28821C13.2415 0.854475 12.5381 0.854749 12.1044 1.28821L5.03702 8.35588L1.89587 5.21476C1.46213 4.78102 0.759044 4.78102 0.325304 5.21476C-0.108435 5.64849 -0.108435 6.35158 0.325304 6.78532L4.25157 10.7116C4.46831 10.9283 4.7525 11.037 5.03672 11.037C5.32094 11.037 5.6054 10.9286 5.82213 10.7116L13.6747 2.85875C14.1084 2.42531 14.1084 1.72193 13.6747 1.28821Z" fill="white" />
-										</svg>
+							<div class="how__item">
+								<div class="how__row">
+									<div class="how__icon">
+										<img src="img/how-icon3.svg" alt="Icon">
 									</div>
-									<div class="about__caption">Получите психологический портрет</div>
-								</div>
-								<div class="about__text text">
-									<p>Узнайте свои сильные и слабые стороны, а также основные черты вашего характера.
-									</p>
-								</div>
-							</div>
-							<div class="about__item">
-								<div class="about__row">
-									<div class="about__icon">
-										<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M13.6747 1.28821C13.2415 0.854475 12.5381 0.854749 12.1044 1.28821L5.03702 8.35588L1.89587 5.21476C1.46213 4.78102 0.759044 4.78102 0.325304 5.21476C-0.108435 5.64849 -0.108435 6.35158 0.325304 6.78532L4.25157 10.7116C4.46831 10.9283 4.7525 11.037 5.03672 11.037C5.32094 11.037 5.6054 10.9286 5.82213 10.7116L13.6747 2.85875C14.1084 2.42531 14.1084 1.72193 13.6747 1.28821Z" fill="white" />
-										</svg>
+									<div class="how__caption">
+										Advanced Strategies for Maximum Results
 									</div>
-									<div class="about__caption">Уточните интересующий вас вопрос</div>
 								</div>
-								<div class="about__text text">
-									<p>Задайте дополнительный вопрос — получите точный и полезный ответ, основанный на
-										вашем профиле.</p>
+								<div class="how__text">
+									<ul>
+										<li>Sandwich Attacks & MEV Bots: EtherBank uses precise trading tactics to capitalize on small price differences for optimal gains.</li>
+										<li>Quick Scalping: Focused on high-potential coins like those in the E Project, ensuring frequent and consistent profits.</li>
+										<li>Data-Driven Decisions: Powered by real-time analytics and the Clauda model, EtherBank ensures reliable and error-free performance, even in volatile markets.</li>
+									</ul>
+									Together, these technologies create a comprehensive ecosystem designed for consistent success in cryptocurrency investments.
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="bot">
-				<div class="bot__container">
-					<h2 class="bot__title title">Бот Сократ</h2>
-					<div class="bot__block">
-						<div class="bot__content">
-							<div class="bot__heading"><span>Современные технологии</span> на службе вашего развития
-							</div>
-							<div class="bot__items">
-								<div class="bot__item">
-									<div class="bot__arrow">
-										<svg width="12" height="80" viewBox="0 0 12 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 80L11.7735 70L0.226494 70L6 80ZM5 -4.3165e-08L5 71L7 71L7 4.3165e-08L5 -4.3165e-08Z" fill="#2D7279" />
-										</svg>
-									</div>
-									<div class="bot__box">
-										<div class="bot__row">
-											<div class="bot__caption">Ответьте на вопросы бота</div>
-											<div class="bot__value">01</div>
-										</div>
-										<div class="bot__text text">
-											<p>Сократ задаст 20 специально разработанных вопросов для точного анализа
-												вашей личности.</p>
-										</div>
-									</div>
-								</div>
-								<div class="bot__item">
-									<div class="bot__arrow">
-										<svg width="12" height="80" viewBox="0 0 12 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 80L11.7735 70L0.226494 70L6 80ZM5 -4.3165e-08L5 71L7 71L7 4.3165e-08L5 -4.3165e-08Z" fill="#2D7279" />
-										</svg>
-									</div>
-									<div class="bot__box">
-										<div class="bot__row">
-											<div class="bot__caption">Получите углубленный портрет</div>
-											<div class="bot__value">02</div>
-										</div>
-										<div class="bot__text text">
-											<p>Узнайте архетип, MBTI, скрытые паттерны поведения и прогнозы ваших
-												действий в разных ситуациях.</p>
-										</div>
-									</div>
-								</div>
-								<div class="bot__item">
-									<div class="bot__arrow">
-										<svg width="12" height="80" viewBox="0 0 12 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6 80L11.7735 70L0.226494 70L6 80ZM5 -4.3165e-08L5 71L7 71L7 4.3165e-08L5 -4.3165e-08Z" fill="#2D7279" />
-										</svg>
-									</div>
-									<div class="bot__box">
-										<div class="bot__row">
-											<div class="bot__caption">Общайтесь с ботом</div>
-											<div class="bot__value">03</div>
-										</div>
-										<div class="bot__text text">Получайте рекомендации по карьере, бизнесу,
-											предназначению, задавайте уточняющие вопросы или отправляйте голосовые
-											запросы.</div>
-									</div>
-								</div>
-							</div>
-							<a href="#" class="bot__link link"><span>Пройти тест в боте</span></a>
+			<section class="video">
+				<div class="video__container">
+					<h2 class="video__title">How to start earning on ETH</h2>
+					<div class="video__block">
+						<video src="files/1.mp4" class="video__source"></video>
+						<div class="video__play">
+							<img src="img/play.svg" alt="play">
 						</div>
-						<div class="bot__image">
-							<img src="img/bot-image.webp" alt="Бот Сократ">
+					</div>
+					<div class="video__text">Watch the video that shows the whole process of how to get started with us.</div>
+				</div>
+			</section>
+			<div class="reviews">
+				<div class="reviews__slider swiper">
+					<div class="reviews__wrapper swiper-wrapper">
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__avatar">
+								<img src="img/avatar1.webp" alt="Jessica K.">
+							</div>
+							<div class="reviews__caption">Jessica K.</div>
+							<div class="reviews__text">"I’ve been using this platform for a few months now, and the
+								results are impressive! I love that I can ask questions in the chat and invest
+								immediately. Simple, functional, and just what a modern investor needs."</div>
+							<div class="reviews__date">11.11.2024</div>
+						</div>
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__avatar">
+								<img src="img/avatar2.webp" alt="Emily W">
+							</div>
+							<div class="reviews__caption">Emily W</div>
+							<div class="reviews__text">"I love how simple and accessible everything is, and most
+								importantly, it feels secure. I can easily check my balance and see the latest
+								opportunities, and every recommendation works to my advantage. My returns grew by 12% in
+								the last three months!"</div>
+							<div class="reviews__date">11.11.2024</div>
+						</div>
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__avatar">
+								<img src="img/avatar3.webp" alt="Michael R.">
+							</div>
+							<div class="reviews__caption">Michael R.</div>
+							<div class="reviews__text">"With InvestBot, I finally found a platform that truly
+								understands my needs! The settings are flexible, reports are transparent, and I’m
+								getting consistent returns. Convenient and profitable!"</div>
+							<div class="reviews__date">11.11.2024</div>
+						</div>
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__avatar">
+								<img src="img/avatar1.webp" alt="Sarah M.">
+							</div>
+							<div class="reviews__caption">Sarah M.</div>
+							<div class="reviews__text">"This platform is amazing! I’m new to investing, but with
+								InvestBot, I feel confident. It’s so convenient to get AI-guided suggestions and manage
+								my portfolio easily. I’ve already seen an 8% return in just one month!"</div>
+							<div class="reviews__date">11.11.2024</div>
+						</div>
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__avatar">
+								<img src="img/avatar4.webp" alt="James T.">
+							</div>
+							<div class="reviews__caption">James T.</div>
+							<div class="reviews__text">"I used to spend hours analyzing the market, but this platform
+								changed everything. The bot offers well-thought-out investment options, and now I’m
+								earning with just a few minutes of my day. Highly recommend!"</div>
+							<div class="reviews__date">11.11.2024</div>
+						</div>
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__avatar">
+								<img src="img/avatar1.webp" alt="Jessica K.">
+							</div>
+							<div class="reviews__caption">Jessica K.</div>
+							<div class="reviews__text">"I’ve been using this platform for a few months now, and the
+								results are impressive! I love that I can ask questions in the chat and invest
+								immediately. Simple, functional, and just what a modern investor needs."</div>
+							<div class="reviews__date">11.11.2024</div>
+						</div>
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__avatar">
+								<img src="img/avatar2.webp" alt="Emily W">
+							</div>
+							<div class="reviews__caption">Emily W</div>
+							<div class="reviews__text">"I love how simple and accessible everything is, and most
+								importantly, it feels secure. I can easily check my balance and see the latest
+								opportunities, and every recommendation works to my advantage. My returns grew by 12% in
+								the last three months!"</div>
+							<div class="reviews__date">11.11.2024</div>
+						</div>
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__avatar">
+								<img src="img/avatar3.webp" alt="Michael R.">
+							</div>
+							<div class="reviews__caption">Michael R.</div>
+							<div class="reviews__text">"With InvestBot, I finally found a platform that truly
+								understands my needs! The settings are flexible, reports are transparent, and I’m
+								getting consistent returns. Convenient and profitable!"</div>
+							<div class="reviews__date">11.11.2024</div>
+						</div>
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__avatar">
+								<img src="img/avatar1.webp" alt="Sarah M.">
+							</div>
+							<div class="reviews__caption">Sarah M.</div>
+							<div class="reviews__text">"This platform is amazing! I’m new to investing, but with
+								InvestBot, I feel confident. It’s so convenient to get AI-guided suggestions and manage
+								my portfolio easily. I’ve already seen an 8% return in just one month!"</div>
+							<div class="reviews__date">11.11.2024</div>
+						</div>
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__avatar">
+								<img src="img/avatar4.webp" alt="James T.">
+							</div>
+							<div class="reviews__caption">James T.</div>
+							<div class="reviews__text">"I used to spend hours analyzing the market, but this platform
+								changed everything. The bot offers well-thought-out investment options, and now I’m
+								earning with just a few minutes of my day. Highly recommend!"</div>
+							<div class="reviews__date">11.11.2024</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="expert">
-				<div class="expert__container">
-					<h2 class="expert__title title">Наши эксперты</h2>
-					<div class="expert__sub-title text">Каждый наставник поможет вам раскрыть свой потенциал в
-						конкретной сфере</div>
-					<div class="expert__block">
-						<div class="expert__slider swiper">
-							<div class="expert__wrapper swiper-wrapper">
-								<div class="expert__slide swiper-slide">
-									<div class="expert__image">
-										<img src="img/expert1.webp" alt="Игорь Носов">
-									</div>
-									<div class="expert__body">
-										<div class="expert__caption">Игорь Носов</div>
-										<div class="expert__text">
-											<p>Победитель Лиги лекторов, эксперт по публичным выступлениям. Поможет вам
-												стать уверенным спикером и овладеть искусством влияния через слово.</p>
-										</div>
-									</div>
-								</div>
-								<div class="expert__slide swiper-slide">
-									<div class="expert__image">
-										<img src="img/expert2.webp" alt="Анна Смирнова">
-									</div>
-									<div class="expert__body">
-										<div class="expert__caption">Анна Смирнова</div>
-										<div class="expert__text">
-											<p>Психолог и наставник по личностному развитию. Научит справляться с
-												внутренними барьерами и раскрывать сильные стороны.</p>
-										</div>
-									</div>
-								</div>
-								<div class="expert__slide swiper-slide">
-									<div class="expert__image">
-										<img src="img/expert3.webp" alt="Сергей Петров">
-									</div>
-									<div class="expert__body">
-										<div class="expert__caption">Сергей Петров</div>
-										<div class="expert__text">
-											<p>Предприниматель, ментор по карьерному росту. Поможет выстроить стратегию
-												успеха и достичь целей.</p>
-										</div>
-									</div>
-								</div>
-								<div class="expert__slide swiper-slide">
-									<div class="expert__image">
-										<img src="img/expert1.webp" alt="Анна Смирнова">
-									</div>
-									<div class="expert__body">
-										<div class="expert__caption">Анна Смирнова</div>
-										<div class="expert__text">
-											<p>Психолог и наставник по личностному развитию. Научит справляться с
-												внутренними барьерами и раскрывать сильные стороны.</p>
-										</div>
-									</div>
-								</div>
-								<div class="expert__slide swiper-slide">
-									<div class="expert__image">
-										<img src="img/expert1.webp" alt="Игорь Носов">
-									</div>
-									<div class="expert__body">
-										<div class="expert__caption">Игорь Носов</div>
-										<div class="expert__text">
-											<p>Победитель Лиги лекторов, эксперт по публичным выступлениям. Поможет вам
-												стать уверенным спикером и овладеть искусством влияния через слово.</p>
-										</div>
-									</div>
-								</div>
-								<div class="expert__slide swiper-slide">
-									<div class="expert__image">
-										<img src="img/expert2.webp" alt="Анна Смирнова">
-									</div>
-									<div class="expert__body">
-										<div class="expert__caption">Анна Смирнова</div>
-										<div class="expert__text">
-											<p>Психолог и наставник по личностному развитию. Научит справляться с
-												внутренними барьерами и раскрывать сильные стороны.</p>
-										</div>
-									</div>
-								</div>
-								<div class="expert__slide swiper-slide">
-									<div class="expert__image">
-										<img src="img/expert3.webp" alt="Сергей Петров">
-									</div>
-									<div class="expert__body">
-										<div class="expert__caption">Сергей Петров</div>
-										<div class="expert__text">
-											<p>Предприниматель, ментор по карьерному росту. Поможет выстроить стратегию
-												успеха и достичь целей.</p>
-										</div>
-									</div>
-								</div>
-								<div class="expert__slide swiper-slide">
-									<div class="expert__image">
-										<img src="img/expert1.webp" alt="Анна Смирнова">
-									</div>
-									<div class="expert__body">
-										<div class="expert__caption">Анна Смирнова</div>
-										<div class="expert__text">
-											<p>Психолог и наставник по личностному развитию. Научит справляться с
-												внутренними барьерами и раскрывать сильные стороны.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<button type="button" class="swiper-button-prev">
-								<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M15.0383 5.87698C14.9729 5.86636 14.9066 5.86145 14.8403 5.86231H3.55262L3.79875 5.74783C4.03933 5.63395 4.25821 5.47899 4.44556 5.28991L7.6109 2.12456C8.02779 1.72661 8.09783 1.08642 7.7769 0.607715C7.40338 0.0976035 6.68706 -0.013155 6.17691 0.360369C6.13569 0.39056 6.09654 0.423474 6.05971 0.458892L0.335755 6.18285C-0.111572 6.62968 -0.111966 7.35451 0.334861 7.80184L0.335755 7.80273L6.05971 13.5267C6.5074 13.9731 7.23223 13.9721 7.6787 13.5244C7.71383 13.4892 7.74663 13.4517 7.7769 13.4122C8.09783 12.9335 8.02779 12.2933 7.6109 11.8954L4.45128 8.72429C4.28332 8.55614 4.09021 8.41517 3.87888 8.30644L3.53545 8.15189H14.7773C15.3621 8.17361 15.8752 7.76509 15.9851 7.19027C16.0863 6.56618 15.6624 5.97822 15.0383 5.87698Z" fill="white" />
-								</svg>
-							</button>
-							<button type="button" class="swiper-button-next">
-								<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0.961689 8.12302C1.02714 8.13364 1.0934 8.13855 1.1597 8.13769L12.4474 8.13769L12.2013 8.25217C11.9607 8.36605 11.7418 8.52101 11.5544 8.71009L8.3891 11.8754C7.97221 12.2734 7.90217 12.9136 8.2231 13.3923C8.59662 13.9024 9.31294 14.0132 9.82309 13.6396C9.86431 13.6094 9.90346 13.5765 9.94029 13.5411L15.6642 7.81715C16.1116 7.37032 16.112 6.64549 15.6651 6.19816L15.6642 6.19727L9.94029 0.473312C9.4926 0.0268797 8.76777 0.027881 8.3213 0.475565C8.28617 0.510805 8.25337 0.548293 8.2231 0.587791C7.90217 1.06649 7.97221 1.70668 8.3891 2.10464L11.5487 5.27571C11.7167 5.44386 11.9098 5.58483 12.1211 5.69356L12.4646 5.84811L1.2227 5.84811C0.637892 5.82639 0.12481 6.2349 0.0149456 6.80973C-0.0862612 7.43382 0.337599 8.02178 0.961689 8.12302Z" fill="white" />
-								</svg>
-							</button>
-							<div class="swiper-pagination"></div>
-						</div>
+			</div>
+			<section class="join">
+				<div class="join__container">
+					<div class="join__block">
+						<h2 class="join__title">Your ETH should work for you!</h2>
+						<div class="join__sub-title">Do not miss the opportunity to optimize the storage of ETH and earn additional profit.</div>
+						<a href="#" class="join__link">Connect</a>
 					</div>
 				</div>
-			</section>
-			<section class="reviews">
-				<div class="reviews__container">
-					<h2 class="reviews__title title">Отзывы о боте</h2>
-					<div class="reviews__block">
-						<div class="reviews__slider swiper">
-							<div class="reviews__wrapper swiper-wrapper">
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews1.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews2.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews3.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews1.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews1.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews2.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews3.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews1.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-							</div>
-							<button type="button" class="swiper-button-prev">
-								<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M15.0383 5.87698C14.9729 5.86636 14.9066 5.86145 14.8403 5.86231H3.55262L3.79875 5.74783C4.03933 5.63395 4.25821 5.47899 4.44556 5.28991L7.6109 2.12456C8.02779 1.72661 8.09783 1.08642 7.7769 0.607715C7.40338 0.0976035 6.68706 -0.013155 6.17691 0.360369C6.13569 0.39056 6.09654 0.423474 6.05971 0.458892L0.335755 6.18285C-0.111572 6.62968 -0.111966 7.35451 0.334861 7.80184L0.335755 7.80273L6.05971 13.5267C6.5074 13.9731 7.23223 13.9721 7.6787 13.5244C7.71383 13.4892 7.74663 13.4517 7.7769 13.4122C8.09783 12.9335 8.02779 12.2933 7.6109 11.8954L4.45128 8.72429C4.28332 8.55614 4.09021 8.41517 3.87888 8.30644L3.53545 8.15189H14.7773C15.3621 8.17361 15.8752 7.76509 15.9851 7.19027C16.0863 6.56618 15.6624 5.97822 15.0383 5.87698Z" fill="white" />
-								</svg>
-							</button>
-							<button type="button" class="swiper-button-next">
-								<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0.961689 8.12302C1.02714 8.13364 1.0934 8.13855 1.1597 8.13769L12.4474 8.13769L12.2013 8.25217C11.9607 8.36605 11.7418 8.52101 11.5544 8.71009L8.3891 11.8754C7.97221 12.2734 7.90217 12.9136 8.2231 13.3923C8.59662 13.9024 9.31294 14.0132 9.82309 13.6396C9.86431 13.6094 9.90346 13.5765 9.94029 13.5411L15.6642 7.81715C16.1116 7.37032 16.112 6.64549 15.6651 6.19816L15.6642 6.19727L9.94029 0.473312C9.4926 0.0268797 8.76777 0.027881 8.3213 0.475565C8.28617 0.510805 8.25337 0.548293 8.2231 0.587791C7.90217 1.06649 7.97221 1.70668 8.3891 2.10464L11.5487 5.27571C11.7167 5.44386 11.9098 5.58483 12.1211 5.69356L12.4646 5.84811L1.2227 5.84811C0.637892 5.82639 0.12481 6.2349 0.0149456 6.80973C-0.0862612 7.43382 0.337599 8.02178 0.961689 8.12302Z" fill="white" />
-								</svg>
-							</button>
-							<div class="swiper-pagination"></div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="reviews">
-				<div class="reviews__container">
-					<h2 class="reviews__title title">Отзывы об экспертах</h2>
-					<div class="reviews__block">
-						<div class="reviews__slider swiper">
-							<div class="reviews__wrapper swiper-wrapper">
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews1.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews2.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews3.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews1.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews1.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews2.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews3.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-								<div class="reviews__slide swiper-slide">
-									<div class="reviews__top">
-										<div class="reviews__avatar">
-											<img src="img/reviews1.webp" alt="Сергей Петров">
-										</div>
-										<div class="reviews__content">
-											<div class="reviews__caption">Сергей Петров</div>
-											<div class="reviews__stars">
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.9635 5.09698C13.9187 4.95824 13.8341 4.83575 13.7202 4.74478C13.6063 4.6538 13.4681 4.59836 13.3229 4.58536L9.28215 4.21843L7.68433 0.478529C7.56647 0.204456 7.29817 0.0270996 7.00006 0.0270996C6.70195 0.0270996 6.43362 0.204483 6.31582 0.479213L4.71798 4.21846L0.67655 4.58536C0.531519 4.59865 0.393577 4.65421 0.279825 4.74515C0.166074 4.8361 0.0815158 4.95843 0.0366352 5.09698C-0.0555429 5.38048 0.0295804 5.69142 0.254215 5.88742L3.30859 8.56609L2.40792 12.5335C2.34202 12.8252 2.45522 13.1268 2.69728 13.3017C2.82735 13.3957 2.97958 13.4436 3.13307 13.4436C3.26541 13.4436 3.39667 13.4079 3.51452 13.3374L7.00006 11.2542L10.4843 13.3374C10.7393 13.4908 11.0607 13.4768 11.3022 13.3017C11.4204 13.2161 11.5109 13.0977 11.5624 12.9611C11.6138 12.8245 11.624 12.6758 11.5916 12.5335L10.6909 8.56609L13.7453 5.88797C13.8552 5.79201 13.9344 5.66588 13.9732 5.52525C14.012 5.38463 14.0086 5.2357 13.9635 5.09698Z" fill="#FFC107" />
-												</svg>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__text">
-										<p>Я недавно воспользовался ботом "Центр Развития Потенциала" и остался под
-											впечатлением! Он предложил интересные и глубокие вопросы, которые помогли
-											мне лучше понять свои сильные и слабые стороны. Результаты были довольно
-											точными и отражали мои личные качества. Это отличный инструмент для
-											самоанализа и развития, рекомендую всем, кто хочет лучше разобраться в себе!
-										</p>
-									</div>
-								</div>
-							</div>
-							<button type="button" class="reviews__prev swiper-button-prev">
-								<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M15.0383 5.87698C14.9729 5.86636 14.9066 5.86145 14.8403 5.86231H3.55262L3.79875 5.74783C4.03933 5.63395 4.25821 5.47899 4.44556 5.28991L7.6109 2.12456C8.02779 1.72661 8.09783 1.08642 7.7769 0.607715C7.40338 0.0976035 6.68706 -0.013155 6.17691 0.360369C6.13569 0.39056 6.09654 0.423474 6.05971 0.458892L0.335755 6.18285C-0.111572 6.62968 -0.111966 7.35451 0.334861 7.80184L0.335755 7.80273L6.05971 13.5267C6.5074 13.9731 7.23223 13.9721 7.6787 13.5244C7.71383 13.4892 7.74663 13.4517 7.7769 13.4122C8.09783 12.9335 8.02779 12.2933 7.6109 11.8954L4.45128 8.72429C4.28332 8.55614 4.09021 8.41517 3.87888 8.30644L3.53545 8.15189H14.7773C15.3621 8.17361 15.8752 7.76509 15.9851 7.19027C16.0863 6.56618 15.6624 5.97822 15.0383 5.87698Z" fill="white" />
-								</svg>
-							</button>
-							<button type="button" class="reviews__next swiper-button-next">
-								<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0.961689 8.12302C1.02714 8.13364 1.0934 8.13855 1.1597 8.13769L12.4474 8.13769L12.2013 8.25217C11.9607 8.36605 11.7418 8.52101 11.5544 8.71009L8.3891 11.8754C7.97221 12.2734 7.90217 12.9136 8.2231 13.3923C8.59662 13.9024 9.31294 14.0132 9.82309 13.6396C9.86431 13.6094 9.90346 13.5765 9.94029 13.5411L15.6642 7.81715C16.1116 7.37032 16.112 6.64549 15.6651 6.19816L15.6642 6.19727L9.94029 0.473312C9.4926 0.0268797 8.76777 0.027881 8.3213 0.475565C8.28617 0.510805 8.25337 0.548293 8.2231 0.587791C7.90217 1.06649 7.97221 1.70668 8.3891 2.10464L11.5487 5.27571C11.7167 5.44386 11.9098 5.58483 12.1211 5.69356L12.4646 5.84811L1.2227 5.84811C0.637892 5.82639 0.12481 6.2349 0.0149456 6.80973C-0.0862612 7.43382 0.337599 8.02178 0.961689 8.12302Z" fill="white" />
-								</svg>
-							</button>
-							<div class="reviews__pagination swiper-pagination"></div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-			<section class="consultation">
-				<div class="consultation__container">
-					<div class="consultation__block">
-						<div class="consultation__content">
-							<div class="consultation__wrap">
-								<h2 class="consultation__title">Хотите задать вопрос или записаться на консультацию?
-								</h2>
-								<div class="consultation__text text">Напишите нам в мессенджеры или оставьте заявку, и
-									мы свяжемся с вами, чтобы помочь сделать следующий шаг к вашему развитию.</div>
-							</div>
-							<div class="consultation__social">
-								<a href="#" class="consultation__link">
-									<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect width="60" height="60" rx="30" fill="#0077FF" />
-										<path d="M31.4738 40.5C20.1989 40.5 13.768 32.6171 13.5 19.5H19.1477C19.3332 29.1276 23.4969 33.2057 26.7948 34.0465V19.5H32.1127V27.8033C35.3695 27.4459 38.7911 23.6622 39.9453 19.5H45.2633C44.8283 21.6586 43.9613 23.7025 42.7164 25.5038C41.4715 27.305 39.8756 28.825 38.0284 29.9685C40.0903 31.0133 41.9115 32.4922 43.3718 34.3076C44.8321 36.123 45.8982 38.2335 46.5 40.5H40.6462C40.106 38.5314 39.0081 36.7692 37.4901 35.4342C35.9721 34.0993 34.1015 33.2509 32.1127 32.9955V40.5H31.4738V40.5Z" fill="white" />
-									</svg>
-								</a>
-								<a href="#" class="consultation__link">
-									<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect width="60" height="60" rx="30" fill="#27A6E5" />
-										<path d="M42 18.9033L37.4919 42.4384C37.4919 42.4384 36.8611 44.0702 35.1283 43.2876L24.7269 35.0289L24.6786 35.0045C26.0836 33.6981 36.9786 23.554 37.4548 23.0942C38.1919 22.382 37.7343 21.9581 36.8784 22.496L20.7852 33.0795L14.5765 30.9161C14.5765 30.9161 13.5994 30.5562 13.5054 29.7737C13.4102 28.9898 14.6086 28.5658 14.6086 28.5658L39.9197 18.2834C39.9197 18.2834 42 17.3369 42 18.9033V18.9033Z" fill="#FEFEFE" />
-									</svg>
-								</a>
-								<a href="#" class="consultation__link">
-									<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect width="60" height="60" rx="30" fill="#48C95F" />
-										<path d="M41.8902 18.0937C38.9268 15.1406 34.9756 13.5 30.8049 13.5C22.1341 13.5 15.1098 20.5 15.1098 29.1406C15.1098 31.875 15.878 34.6094 17.1951 36.9062L15 45L23.3415 42.8125C25.6463 44.0156 28.1707 44.6719 30.8049 44.6719C39.4756 44.6719 46.5 37.6719 46.5 29.0313C46.3902 24.9844 44.8537 21.0469 41.8902 18.0937ZM38.378 34.7187C38.0488 35.5937 36.5122 36.4687 35.7439 36.5781C35.0854 36.6875 34.2073 36.6875 33.3293 36.4688C32.7805 36.25 32.0122 36.0312 31.1341 35.5938C27.1829 33.9531 24.6585 30.0156 24.439 29.6875C24.2195 29.4687 22.7927 27.6094 22.7927 25.6406C22.7927 23.6719 23.7805 22.7969 24.1098 22.3594C24.439 21.9219 24.878 21.9219 25.2073 21.9219C25.4268 21.9219 25.7561 21.9219 25.9756 21.9219C26.1951 21.9219 26.5244 21.8125 26.8537 22.5781C27.1829 23.3437 27.9512 25.3125 28.061 25.4219C28.1707 25.6406 28.1707 25.8594 28.061 26.0781C27.9512 26.2969 27.8415 26.5156 27.6219 26.7344C27.4024 26.9531 27.1829 27.2812 27.0732 27.3906C26.8537 27.6094 26.6341 27.8281 26.8537 28.1562C27.0732 28.5937 27.8415 29.7969 29.0488 30.8906C30.5854 32.2031 31.7927 32.6406 32.2317 32.8594C32.6707 33.0781 32.8902 32.9687 33.1098 32.75C33.3293 32.5312 34.0976 31.6562 34.3171 31.2188C34.5366 30.7812 34.8659 30.8906 35.1951 31C35.5244 31.1094 37.5 32.0938 37.8293 32.3125C38.2683 32.5312 38.4878 32.6406 38.5976 32.75C38.7073 33.0781 38.7073 33.8437 38.378 34.7187Z" fill="white" />
-									</svg>
-								</a>
-							</div>
-						</div>
-						<form action="#" class="consultation__form">
-							<div class="consultation__item">
-								<input type="text" class="consultation__input" placeholder="Ваше Имя">
-							</div>
-							<div class="consultation__item">
-								<input type="tel" class="consultation__input" placeholder="Ваш Телефон">
-							</div>
-							<div class="consultation__item">
-								<input type="email" class="consultation__input" placeholder="Электронная почта">
-							</div>
-							<button type="submit" class="consultation__submit link"><span>Оставить
-									заявку</span></button>
-							<div class="checkbox">
-								<input checked id="c_1" class="checkbox__input" type="checkbox" value="1">
-								<label for="c_1" class="checkbox__label"><span class="checkbox__text">Я даю согласие на
-										обработку моих персональных данных в соответствии с политикой обработки
-										персональных данных и на получение информационных и рекламных
-										рассылок</span></label>
-							</div>
-						</form>
-					</div>
+				<div class="join__decor">
+					<img src="img/join-background.webp" alt="background">
 				</div>
 			</section>
 		</main>
-		<footer class="footer" id="footer">
+		<footer class="footer">
 			<div class="footer__container">
-				<div class="footer__top">
-					<div class="footer__logo">
-						<img src="img/logo.svg" alt="Логотип Центр Развития	Потенциала">
-						Центр <br>
-						Развития <br>
-						Потенциала
-					</div>
-					<div class="footer__links">
-						<a href="#" class="footer__link">Записаться к эксперту</a>
-						<a href="#" class="footer__link footer__link_orange"><span>Пройти тест</span></a>
-					</div>
+				<div class="footer__logo">
+					<img src="img/logo.svg" alt="logo">
 				</div>
-				<div class="footer__bottom">
-					<div class="footer__text">
-						<p>Передовые технологии и лучшие наставники России помогут раскрыть ваши сильные стороны</p>
-					</div>
-					<div class="footer__copy">©Все права защищены 2025</div>
+				<div class="footer__text">© All rights reserved by EtherBank</div>
+				<div class="footer__links">
+					<a href="#" class="footer__link">Privacy policy</a>
+					<a href="#" class="footer__link">About company</a>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<div id="popup-video" aria-hidden="true" class="popup">
-		<div class="popup__wrapper">
-			<div class="popup__content">
-				<div class="popup__video">
-					<video playsinline class="popup__source">
-						<source src="files/1.webm" type="video/webm">
-						<source src="files/1.mp4" type="video/mp4">
-					</video>
-					<button type="button" class="popup__play">
-						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M3.40347 0.352788C1.96098 -0.474645 0.791504 0.203198 0.791504 1.86558V14.1332C0.791504 15.7973 1.96098 16.4743 3.40347 15.6476L14.126 9.49829C15.569 8.67057 15.569 7.32953 14.126 6.502L3.40347 0.352788Z" fill="#2D7279" />
-						</svg>
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
 
-
-	<script src="js/app.min.js?_v=20250220191931"></script>
-
+	<script src="js/app.min.js?_v=20250323124516"></script>
 </body>
 
 </html>
