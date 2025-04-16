@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-	<title>EtherBank</title>
+	<title>Neuro 3L Agency</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- стили -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250323124516">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250416201345">
 	<!-- фавикон -->
-	 <link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="favicon.ico">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,231 +19,165 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__logo">
-					<img src="img/logo.svg" alt="logo">
+					Site name
 				</div>
-				<a href="#" class="header__link">Register now</a>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#" class="menu__link">Page</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Page</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Page</a></li>
+					</ul>
+				</nav>
+				<button type="button" class="header__button">
+					Button
+				</button>
+				<button type="button" class="header__burger burger-menu"><span></span></button>
 			</div>
 		</header>
 		<main>
 			<section class="hero">
 				<div class="hero__container">
 					<div class="hero__content">
-						<div class="hero__image">
-							<img src="img/hero-image.webp" alt="image">
+						<h1 class="hero__title">Neuro 3L Agency</h1>
+						<div class="hero__text">
+							Создаём видеоконтент нового поколения с помощью генеративного ИИ. <br>
+							Наш подход: «Быстро не значит дорого!»
 						</div>
-						<h1 class="hero__title">Is your ETH losing value?</h1>
-						<div class="hero__text">If you have been holding Ethereum for more than 8 months and don't know how to benefit from it, we have a solution</div>
-						<a href="#" class="hero__link">To learn more</a>
+						<a data-popup="#form-popup" href="#" class="hero__link">Оставить заявку</a>
+					</div>
+					<div class="hero__image">
+						<img src="img/hero-image.webp" alt="Neuro 3L Agency">
 					</div>
 				</div>
-				<div class="hero__decor">
-					<img src="img/hero-background2.webp" alt="background">
-				</div>
+
 			</section>
-			<section class="how">
-				<div class="how__container">
-					<div class="how__content">
-						<h2 class="how__title">EtherBank – effective <br> management of ETH currency</h2>
-						<div class="how__sub-title">Our solution allows ETH holders to earn additional profits without having to sell assets.</div>
-						<div class="how__image">
-							<img src="img/how-image.webp" alt="Image">
-						</div>
-						<div class="how__items">
-							<div class="how__item">
-								<div class="how__row">
-									<div class="how__icon">
-										<img src="img/how-icon1.svg" alt="Icon">
-									</div>
-									<div class="how__caption">Intelligent Technologies with Advanced AI</div>
-								</div>
-								<div class="how__text">EtherBank combines state-of-the-art trading systems with the Clauda intelligent language model, creating a powerful and adaptable AI-driven trading bot. This fusion of technologies enables real-time market analytics and precision decision-making, ensuring maximum profitability and swift responses to market changes.</div>
-							</div>
-							<div class="how__item">
-								<div class="how__row">
-									<div class="how__icon">
-										<img src="img/how-icon2.svg" alt="Icon">
-									</div>
-									<div class="how__caption">Why Choose <br> EtherBank?</div>
-								</div>
-								<div class="how__text">
-									<ul>
-										<li>Faster Returns: Start earning dividends within just 7 days of your deposit.</li>
-										<li>Cutting-Edge AI Technology: Identifies high-yield opportunities in real-time to optimize your investments.</li>
-										<li>Unmatched Growth Potential: Consistently delivers high-percentage returns through innovation and expertise.</li>
-									</ul>
-									With EtherBank, your investment grows securely and exponentially, whether you're focused on traditional banking or exploring cryptocurrency.
-								</div>
-							</div>
-							<div class="how__item">
-								<div class="how__row">
-									<div class="how__icon">
-										<img src="img/how-icon3.svg" alt="Icon">
-									</div>
-									<div class="how__caption">
-										Advanced Strategies for Maximum Results
-									</div>
-								</div>
-								<div class="how__text">
-									<ul>
-										<li>Sandwich Attacks & MEV Bots: EtherBank uses precise trading tactics to capitalize on small price differences for optimal gains.</li>
-										<li>Quick Scalping: Focused on high-potential coins like those in the E Project, ensuring frequent and consistent profits.</li>
-										<li>Data-Driven Decisions: Powered by real-time analytics and the Clauda model, EtherBank ensures reliable and error-free performance, even in volatile markets.</li>
-									</ul>
-									Together, these technologies create a comprehensive ecosystem designed for consistent success in cryptocurrency investments.
-								</div>
-							</div>
-						</div>
-					</div>
+			<div class="video-block">
+				<div class="video-block__container">
+					<video loop autoplay muted playsinline class="video-block__source">
+						<source src="video/profile_video.webm" type="video/webm">
+					</video>
 				</div>
-			</section>
-			<section class="video">
-				<div class="video__container">
-					<h2 class="video__title">How to start earning on ETH</h2>
-					<div class="video__block">
-						<video src="files/1.mp4" class="video__source"></video>
-						<div class="video__play">
-							<img src="img/play.svg" alt="play">
+			</div>
+			<div class="why">
+				<div class="why__container">
+					<h2 class="why__title">ПОЧЕМУ МЫ</h2>
+					<div class="why__items">
+						<div class="why__item">
+							<video loop autoplay muted playsinline class="why__video">
+								<source src="video/Standard_Mode1.webm" type="video/webm">
+							</video>
+							<div class="why__text">Создание качественного видео за часы, а не недели!</div>
 						</div>
-					</div>
-					<div class="video__text">Watch the video that shows the whole process of how to get started with us.</div>
-				</div>
-			</section>
-			<div class="reviews">
-				<div class="reviews__slider swiper">
-					<div class="reviews__wrapper swiper-wrapper">
-						<div class="reviews__slide swiper-slide">
-							<div class="reviews__avatar">
-								<img src="img/avatar1.webp" alt="Jessica K.">
-							</div>
-							<div class="reviews__caption">Jessica K.</div>
-							<div class="reviews__text">"I’ve been using this platform for a few months now, and the
-								results are impressive! I love that I can ask questions in the chat and invest
-								immediately. Simple, functional, and just what a modern investor needs."</div>
-							<div class="reviews__date">11.11.2024</div>
+						<div class="why__item">
+							<video loop autoplay muted playsinline class="why__video">
+								<source src="video/Standard_Mode2.webm" type="video/webm">
+							</video>
+							<div class="why__text">Индивидуальный контент, созданный нейросетями специально для вашего
+								бренда</div>
 						</div>
-						<div class="reviews__slide swiper-slide">
-							<div class="reviews__avatar">
-								<img src="img/avatar2.webp" alt="Emily W">
-							</div>
-							<div class="reviews__caption">Emily W</div>
-							<div class="reviews__text">"I love how simple and accessible everything is, and most
-								importantly, it feels secure. I can easily check my balance and see the latest
-								opportunities, and every recommendation works to my advantage. My returns grew by 12% in
-								the last three months!"</div>
-							<div class="reviews__date">11.11.2024</div>
+						<div class="why__item">
+							<video loop autoplay muted playsinline class="why__video">
+								<source src="video/Standard_Mode3.webm" type="video/webm">
+							</video>
+							<div class="why__text">Снижение расходов на производство видео контента
+								до 70%</div>
 						</div>
-						<div class="reviews__slide swiper-slide">
-							<div class="reviews__avatar">
-								<img src="img/avatar3.webp" alt="Michael R.">
-							</div>
-							<div class="reviews__caption">Michael R.</div>
-							<div class="reviews__text">"With InvestBot, I finally found a platform that truly
-								understands my needs! The settings are flexible, reports are transparent, and I’m
-								getting consistent returns. Convenient and profitable!"</div>
-							<div class="reviews__date">11.11.2024</div>
-						</div>
-						<div class="reviews__slide swiper-slide">
-							<div class="reviews__avatar">
-								<img src="img/avatar1.webp" alt="Sarah M.">
-							</div>
-							<div class="reviews__caption">Sarah M.</div>
-							<div class="reviews__text">"This platform is amazing! I’m new to investing, but with
-								InvestBot, I feel confident. It’s so convenient to get AI-guided suggestions and manage
-								my portfolio easily. I’ve already seen an 8% return in just one month!"</div>
-							<div class="reviews__date">11.11.2024</div>
-						</div>
-						<div class="reviews__slide swiper-slide">
-							<div class="reviews__avatar">
-								<img src="img/avatar4.webp" alt="James T.">
-							</div>
-							<div class="reviews__caption">James T.</div>
-							<div class="reviews__text">"I used to spend hours analyzing the market, but this platform
-								changed everything. The bot offers well-thought-out investment options, and now I’m
-								earning with just a few minutes of my day. Highly recommend!"</div>
-							<div class="reviews__date">11.11.2024</div>
-						</div>
-						<div class="reviews__slide swiper-slide">
-							<div class="reviews__avatar">
-								<img src="img/avatar1.webp" alt="Jessica K.">
-							</div>
-							<div class="reviews__caption">Jessica K.</div>
-							<div class="reviews__text">"I’ve been using this platform for a few months now, and the
-								results are impressive! I love that I can ask questions in the chat and invest
-								immediately. Simple, functional, and just what a modern investor needs."</div>
-							<div class="reviews__date">11.11.2024</div>
-						</div>
-						<div class="reviews__slide swiper-slide">
-							<div class="reviews__avatar">
-								<img src="img/avatar2.webp" alt="Emily W">
-							</div>
-							<div class="reviews__caption">Emily W</div>
-							<div class="reviews__text">"I love how simple and accessible everything is, and most
-								importantly, it feels secure. I can easily check my balance and see the latest
-								opportunities, and every recommendation works to my advantage. My returns grew by 12% in
-								the last three months!"</div>
-							<div class="reviews__date">11.11.2024</div>
-						</div>
-						<div class="reviews__slide swiper-slide">
-							<div class="reviews__avatar">
-								<img src="img/avatar3.webp" alt="Michael R.">
-							</div>
-							<div class="reviews__caption">Michael R.</div>
-							<div class="reviews__text">"With InvestBot, I finally found a platform that truly
-								understands my needs! The settings are flexible, reports are transparent, and I’m
-								getting consistent returns. Convenient and profitable!"</div>
-							<div class="reviews__date">11.11.2024</div>
-						</div>
-						<div class="reviews__slide swiper-slide">
-							<div class="reviews__avatar">
-								<img src="img/avatar1.webp" alt="Sarah M.">
-							</div>
-							<div class="reviews__caption">Sarah M.</div>
-							<div class="reviews__text">"This platform is amazing! I’m new to investing, but with
-								InvestBot, I feel confident. It’s so convenient to get AI-guided suggestions and manage
-								my portfolio easily. I’ve already seen an 8% return in just one month!"</div>
-							<div class="reviews__date">11.11.2024</div>
-						</div>
-						<div class="reviews__slide swiper-slide">
-							<div class="reviews__avatar">
-								<img src="img/avatar4.webp" alt="James T.">
-							</div>
-							<div class="reviews__caption">James T.</div>
-							<div class="reviews__text">"I used to spend hours analyzing the market, but this platform
-								changed everything. The bot offers well-thought-out investment options, and now I’m
-								earning with just a few minutes of my day. Highly recommend!"</div>
-							<div class="reviews__date">11.11.2024</div>
+						<div class="why__item">
+							<video loop autoplay muted playsinline class="why__video">
+								<source src="video/Standard_Mode4.webm" type="video/webm">
+							</video>
+							<div class="why__text">Рост вовлечения аудитории и повышение конверсий
+								за счёт персонализированных решений</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<section class="join">
-				<div class="join__container">
-					<div class="join__block">
-						<h2 class="join__title">Your ETH should work for you!</h2>
-						<div class="join__sub-title">Do not miss the opportunity to optimize the storage of ETH and earn additional profit.</div>
-						<a href="#" class="join__link">Connect</a>
+			<section class="work">
+				<div class="work__container">
+					<h2 class="work__title">Для кого мы работаем:</h2>
+					<div class="work__top">
+						<div class="work__caption">HoReCa</div>
+						<div class="work__caption">Fashion и Beauty</div>
+						<div class="work__caption">МАРКЕТПЛЕЙС и E-commerce</div>
+					</div>
+					<div class="work__body">
+						<video loop autoplay muted playsinline class="work__video">
+							<source src="video/1.webm" type="video/webm">
+						</video>
+						<video loop autoplay muted playsinline class="work__video">
+							<source src="video/2.webm" type="video/webm">
+						</video>
+						<video loop autoplay muted playsinline class="work__video">
+							<source src="video/3.webm" type="video/webm">
+						</video>
+						<video loop autoplay muted playsinline class="work__video">
+							<source src="video/4.webm" type="video/webm">
+						</video>
 					</div>
 				</div>
-				<div class="join__decor">
-					<img src="img/join-background.webp" alt="background">
+			</section>
+			<section class="services">
+				<div class="services__container">
+					<h2 class="services__title">ПРОИЗВОДИТЕЛИ ТОВАРОВ И УСЛУГ</h2>
+					<video loop autoplay muted playsinline class="services__video">
+						<source src="video/services.webm" type="video/webm">
+					</video>
+					<ul class="services__list">
+						<li class="services__item"> Fashion и Beauty</li>
+						<li class="services__item">Фармацевтические компании</li>
+						<li class="services__item">Финансовый сектор и банки</li>
+						<li class="services__item">Недвижимость и девелопмент</li>
+						<li class="services__item">HoReCa (отели, рестораны, кафе)</li>
+						<li class="services__item">Геймдев и развлечения</li>
+						<li class="services__item">Автомобильная отрасль</li>
+						<li class="services__item">Спорт и события</li>
+					</ul>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<div class="footer__logo">
-					<img src="img/logo.svg" alt="logo">
+				<div class="footer__top">
+					<div class="footer__title">«Получите бесплатный демо-ролик прямо сейчас!»</div>
+					<div class="footer__links">
+						<a href="#" class="footer__link footer__link_black">ЧАТ</a>
+						<a href="#" class="footer__link">НАШИ КОНТАКТЫ</a>
+					</div>
 				</div>
-				<div class="footer__text">© All rights reserved by EtherBank</div>
-				<div class="footer__links">
-					<a href="#" class="footer__link">Privacy policy</a>
-					<a href="#" class="footer__link">About company</a>
+				<div class="footer__bottom">
+					<ul class="footer__list">
+						<li class="footer__item">Номер телефона (например, "<a href="tel:+7987290819">+7 (985)
+								729-08-19</a>")</li>
+						<li class="footer__item">Telegram <a
+								href="https://t.me/+ePhH4qlDZx83MmNi">https://t.me/+ePhH4qlDZx83MmNi</a></li>
+						<li class="footer__item">Почта <a href="mailto:neuro3lagency@mail.ru">neuro3lagency@mail.ru</a>
+						</li>
+					</ul>
+					<a href="#" class="footer__button">ВЕРНУТЬСЯ НА ГЛАВНУЮ</a>
 				</div>
 			</div>
 		</footer>
 	</div>
+	<div id="form-popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button type="button" data-close class="popup__close"></button>
+				<form id="form" action="#" class="popup__form">
+					<div class="popup__title">Оставьте заявку</div>
+					<div class="popup__item">
+						<input required type="text" class="popup__input" name="name" placeholder="Введите имя">
+					</div>
+					<div class="popup__item">
+						<input required type="tel" class="popup__input" name="tel" placeholder="Введите телефон">
+					</div>
+					<button type="submit" class="popup__submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
 
-	<script src="js/app.min.js?_v=20250323124516"></script>
+
+	<script src="js/app.min.js?_v=20250416201345"></script>
 </body>
 
 </html>
