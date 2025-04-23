@@ -3492,4 +3492,9 @@
         }
     }
     new ScrollWatcher({});
+    document.addEventListener("DOMContentLoaded", (function() {
+        setTimeout((() => {
+            documentBody.classList.add("loading");
+        }), 1e3);
+    }));
 })();
