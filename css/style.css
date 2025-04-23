@@ -132,7 +132,7 @@ body {
   color: #fff;
   font-size: 1rem;
   background-color: #030202;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .loading body {
@@ -164,7 +164,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  display: none;
+  display: flex;
 }
 
 .loading .wrapper {
@@ -1371,6 +1371,7 @@ body {
   transition: all .5s;
   opacity: 1;
   visibility: visible;
+  display: none;
 }
 
 .loading .video {
