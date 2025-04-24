@@ -3499,7 +3499,7 @@
             heroVideo.load();
         }
         setTimeout((() => {
-            document.body.classList.add("loading");
+            documentBody.classList.add("loading");
         }), 1e3);
     }));
 })();

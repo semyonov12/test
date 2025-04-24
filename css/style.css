@@ -132,11 +132,6 @@ body {
   color: #fff;
   font-size: 1rem;
   background-color: #030202;
-  overflow: hidden;
-}
-
-.loading body {
-  overflow: auto;
 }
 
 .lock body {
