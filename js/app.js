@@ -3493,11 +3493,6 @@
     }
     new ScrollWatcher({});
     document.addEventListener("DOMContentLoaded", (function() {
-        const heroVideo = document.querySelector(".hero__video");
-        if (heroVideo) {
-            heroVideo.innerHTML = `\n            <source src="files/1.webm" type="video/webm">\n            <source src="files/1.mov" type="video/mov">\n        `;
-            heroVideo.load();
-        }
         setTimeout((() => {
             documentBody.classList.add("loading");
         }), 1e3);
