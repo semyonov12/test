@@ -159,13 +159,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  display: none;
-}
-
-.loading .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 @supports (overflow: clip) {
@@ -1362,13 +1355,11 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 999;
-  opacity: 1;
-  visibility: visible;
+  display: block;
 }
 
 .loading .video {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 
 @-webkit-keyframes move {

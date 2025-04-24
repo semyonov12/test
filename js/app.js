@@ -3493,18 +3493,8 @@
     }
     new ScrollWatcher({});
     document.addEventListener("DOMContentLoaded", (function() {
-        const heroVideo = document.createElement("video");
-        heroVideo.className = "hero__video";
-        heroVideo.loop = true;
-        heroVideo.autoplay = true;
-        heroVideo.muted = true;
-        heroVideo.playsInline = true;
-        heroVideo.preload = "auto";
-        heroVideo.innerHTML = `\n        <source src="files/1.webm" type="video/webm">\n        <source src="files/1.mov" type="video/mov">\n    `;
-        const heroSection = document.querySelector(".hero");
-        if (heroSection) heroSection.appendChild(heroVideo);
         setTimeout((() => {
-            document.body.classList.add("loading");
+            documentBody.classList.add("loading");
         }), 1e3);
     }));
 })();
