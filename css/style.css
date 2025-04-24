@@ -1362,8 +1362,6 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 999;
-  -webkit-transition: all .5s;
-  transition: all .5s;
   opacity: 1;
   visibility: visible;
 }
