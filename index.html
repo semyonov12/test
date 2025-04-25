@@ -2,31 +2,47 @@
 <html lang="ru">
 
 <head>
-	<script>
-		let documentBody = document.documentElement;
-		const wrapper = document.querySelector('.wrapper');
-
-		wrapper.display = "none";
-
-		document.addEventListener('DOMContentLoaded', function() {
-			// Скрываем видео через 1 секунду
-			setTimeout(() => {
-				documentBody.classList.add("loading");
-				wrapper.display = "flex";
-			}, 1000); // 1000 мс = 1 секунда
-		});
-	</script>
 	<title>Adrush Agency</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- стили -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250425180410">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250425184626">
 	<!-- фавикон -->
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.wrapper {
+			opacity: 0;
+			visibility: hidden;
+		}
 
+		body {
+			overflow: hidden;
+		}
+
+		.loading body {
+			overflow: auto;
+		}
+
+		.loading .wrapper {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		* {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: border-box;
+		}
+	</style>
 </head>
 
 <body>
@@ -497,8 +513,11 @@
 			</section>
 			<section class="block-info">
 				<div class="block-info__container">
-					<h2 data-watch-threshold="0.3" data-watch data-watch-once class="block-info__title">Давай работать вместе!</h2>
-					<div data-watch-threshold="0.3" data-watch data-watch-once class="block-info__text">Пора работать с нами, а не с теми, кто всё знает и ничего не делает. <br> Давайте поговорим, если еще не поняли, что с нами можно заработать!</div>
+					<h2 data-watch-threshold="0.3" data-watch data-watch-once class="block-info__title">Давай работать
+						вместе!</h2>
+					<div data-watch-threshold="0.3" data-watch data-watch-once class="block-info__text">Пора работать с
+						нами, а не с теми, кто всё знает и ничего не делает. <br> Давайте поговорим, если еще не поняли,
+						что с нами можно заработать!</div>
 					<a href="sign-up.html" data-watch-threshold="0.3" data-watch data-watch-once class="block-info__link">Присоединиться</a>
 				</div>
 				<div class="container">
@@ -555,7 +574,9 @@
 		<source src="files/1.mov" type="video/mov">
 	</video>
 
-	<script src="js/app.min.js?_v=20250425180410"></script>
+
+
+	<script src="js/app.min.js?_v=20250425184626"></script>
 </body>
 
 </html>

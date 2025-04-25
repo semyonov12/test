@@ -6,13 +6,43 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- стили -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250424204143">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250425184626">
 	<!-- фавикон -->
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.wrapper {
+			opacity: 0;
+			visibility: hidden;
+		}
 
+		body {
+			overflow: hidden;
+		}
+
+		.loading body {
+			overflow: auto;
+		}
+
+		.loading .wrapper {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		* {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: border-box;
+		}
+	</style>
 </head>
 
 <body>
@@ -90,7 +120,7 @@
 		<source src="files/1.mov" type="video/mov">
 	</video>
 
-	<script src="js/app.min.js?_v=20250424204143"></script>
+	<script src="js/app.min.js?_v=20250425184626"></script>
 </body>
 
 </html>
