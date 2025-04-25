@@ -2,11 +2,25 @@
 <html lang="ru">
 
 <head>
+	<script>
+		let documentBody = document.documentElement;
+		const wrapper = document.querySelector('.wrapper');
+
+		wrapper.display = "none";
+
+		document.addEventListener('DOMContentLoaded', function() {
+			// Скрываем видео через 1 секунду
+			setTimeout(() => {
+				documentBody.classList.add("loading");
+				wrapper.display = "flex";
+			}, 1000); // 1000 мс = 1 секунда
+		});
+	</script>
 	<title>Adrush Agency</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- стили -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250424204143">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250425180410">
 	<!-- фавикон -->
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -17,10 +31,6 @@
 
 <body>
 	<div class="wrapper">
-		<video loop autoplay muted playsinline class="video">
-			<source src="files/1.webm" type="video/webm">
-			<source src="files/1.mov" type="video/mov">
-		</video>
 		<header class="header" id="header">
 			<div class="header__container">
 				<a href="/" class="header__logo">
@@ -499,7 +509,6 @@
 					</div>
 				</div>
 			</section>
-
 		</main>
 		<footer data-watch-threshold="0.3" data-watch data-watch-once class="footer">
 			<div class="footer__container">
@@ -541,9 +550,12 @@
 		</footer>
 
 	</div>
+	<video loop autoplay muted playsinline class="video">
+		<source src="files/1.webm" type="video/webm">
+		<source src="files/1.mov" type="video/mov">
+	</video>
 
-
-	<script src="js/app.min.js?_v=20250424204143"></script>
+	<script src="js/app.min.js?_v=20250425180410"></script>
 </body>
 
 </html>

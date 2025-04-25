@@ -1355,11 +1355,15 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 999;
-  display: block;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  opacity: 1;
+  visibility: visible;
 }
 
 .loading .video {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 @-webkit-keyframes move {
